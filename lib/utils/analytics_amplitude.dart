@@ -6,7 +6,7 @@ class AnalyticsAmplitude {
 
   void initializeAnalytics() {
     try {
-      analyticsAmplitude.init("ef2d2889511f42334dc0080662dd89d6");
+      analyticsAmplitude.init("");
     } catch (e) {
       print("Amplitude Error: $e");
     }
