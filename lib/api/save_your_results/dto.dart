@@ -341,13 +341,13 @@ enum SaveResultsSubTextEnum {
   ColorGroupEnum getColor(SaveResultsSubTextEnum scoreEnum) {
     switch (this) {
       case random:
-        return ColorGroupEnum.salad;
+        return ColorGroupEnum.lightGreen;
       case average:
-        return ColorGroupEnum.purple;
+        return ColorGroupEnum.blueLight;
       case belowAverage:
-        return ColorGroupEnum.red;
+        return ColorGroupEnum.pinkLight;
       default:
-        return ColorGroupEnum.salad;
+        return ColorGroupEnum.lightGreen;
     }
   }
 }

@@ -42,10 +42,10 @@ class CustomShowSmallResults extends StatelessWidget {
         width: double.infinity,
         child: Container(
           decoration: BoxDecoration(
-            color: BC.lightGray.withOpacity(0.4),
+            color: BC.white.withOpacity(0.4),
             borderRadius: BorderRadius.circular(AppRadius.r20),
             border: Border.all(
-              color: BC.white.withOpacity(0.6),
+              color: BC.white.withOpacity(1),
               width: 1,
             ),
           ),
@@ -111,7 +111,7 @@ class CustomShowSmallResults extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: s.youAreA,
-                                  style: BS.tex21Text.apply(color: BC.white),
+                                  style: BS.tex21Text,
                                 ),
                                 const WidgetSpan(
                                   child: SizedBox(width: Sizes.s8),
@@ -130,7 +130,7 @@ class CustomShowSmallResults extends StatelessWidget {
                                             child: Text(
                                               "$personalEstimate/10",
                                               style: BS.tex32Text
-                                                  .apply(color: BC.salad),
+                                                  .apply(color: BC.lightGreen),
                                             ),
                                           ),
                                         ),
@@ -138,7 +138,7 @@ class CustomShowSmallResults extends StatelessWidget {
                                     : TextSpan(
                                         text: "$personalEstimate/10",
                                         style:
-                                            BS.tex32Text.apply(color: BC.salad),
+                                            BS.tex32Text.apply(color: BC.lightGreen),
                                       ),
                               ],
                             ),
@@ -150,7 +150,7 @@ class CustomShowSmallResults extends StatelessWidget {
                   Space.h4,
                   Text(
                     topWorld,
-                    style: BS.tex16.apply(color: BC.white),
+                    style: BS.tex16,
                   ),
                 ],
               )

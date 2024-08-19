@@ -57,7 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Analyzing your info..."),
         "antioxidants": MessageLookupByLibrary.simpleMessage("Antioxidants:"),
         "appName": MessageLookupByLibrary.simpleMessage(
-            "LooksMax - Looksmaxxing Guide"),
+            "GlowUp - Glow Up Tips, Skin AI"),
         "application": MessageLookupByLibrary.simpleMessage(
             "Apply fragrance to pulse points like wrists, neck, and chest. These areas emit heat, helping to diffuse the scent. Less is more—start with one or two spritzes and adjust based on the strength of the fragrance."),
         "applicationTitle":
@@ -619,8 +619,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Score Given by Male:"),
         "scoreGivenByWomen":
             MessageLookupByLibrary.simpleMessage("Score Given by Female:"),
-        "screenShotButtonSubTitle": MessageLookupByLibrary.simpleMessage(
-            "Analyze, Enhance, Scan, Improve"),
+        "screenShotButtonSubTitle":
+            MessageLookupByLibrary.simpleMessage("Glow Up Tips for Girls"),
         "secondHydration": MessageLookupByLibrary.simpleMessage("Hydration:"),
         "securedWithITunes":
             MessageLookupByLibrary.simpleMessage("Secured with iTunes"),

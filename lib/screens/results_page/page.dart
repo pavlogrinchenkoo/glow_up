@@ -103,7 +103,7 @@ class _ResultsPageState extends State<ResultsPage> {
                           width: double.infinity,
                           height: double.infinity,
                           decoration: BoxDecoration(
-                            color: BC.navyGrey,
+                            color: BC.pink,
                           ),
                           child: Stack(
                             children: [
@@ -112,10 +112,10 @@ class _ResultsPageState extends State<ResultsPage> {
                                   : CustomBokeh(
                                       size: height / 2,
                                       scaleX: height < 840 ? 0.3 : 0.3,
-                                      scaleY: height < 840 ? 0.4 : 0.5,
+                                      scaleY: 1,
                                       alignment: Alignment.bottomCenter,
                                       transform: const Offset(0, Sizes.s160),
-                                      shape: BoxShape.circle,
+                                      shape: BoxShape.rectangle,
                                       angleInRadians: pi / Sizes.s2,
                                     ),
                               Column(
@@ -148,7 +148,7 @@ class _ResultsPageState extends State<ResultsPage> {
                                     height: newHeight,
                                     width: width,
                                     itemCard: 6,
-                                    color: BC.navyGrey,
+                                    color: BC.pink,
                                     useBlur: state.useBlurBlock,
                                     autoSwipe: false,
                                     onIndexChanged: (index) =>

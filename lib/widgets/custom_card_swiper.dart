@@ -50,8 +50,8 @@ class CustomCardSwiper extends StatelessWidget {
             ? null
             : SwiperPagination(
                 builder: DotSwiperPaginationBuilder(
-                  activeColor: BC.white,
-                  color: BC.avatarGrey,
+                  activeColor: BC.black,
+                  color: BC.black.withOpacity(0.4),
                 ),
               ),
         control: null,

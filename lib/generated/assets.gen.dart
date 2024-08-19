@@ -28,6 +28,10 @@ class $AssetsImagesGen {
   $AssetsImagesDeepScanningGen get deepScanning =>
       const $AssetsImagesDeepScanningGen();
 
+  /// File path: assets/images/glowUpApp.png
+  AssetGenImage get glowUpApp =>
+      const AssetGenImage('assets/images/glowUpApp.png');
+
   /// File path: assets/images/goToAllResults.svg
   SvgGenImage get goToAllResults =>
       const SvgGenImage('assets/images/goToAllResults.svg');
@@ -44,10 +48,6 @@ class $AssetsImagesGen {
   /// File path: assets/images/instagramShowed.svg
   SvgGenImage get instagramShowed =>
       const SvgGenImage('assets/images/instagramShowed.svg');
-
-  /// File path: assets/images/looksmaxApp.png
-  AssetGenImage get looksmaxApp =>
-      const AssetGenImage('assets/images/looksmaxApp.png');
 
   /// File path: assets/images/makeScan.svg
   SvgGenImage get makeScan => const SvgGenImage('assets/images/makeScan.svg');
@@ -89,10 +89,10 @@ class $AssetsImagesGen {
         back,
         cancel,
         checkMark,
+        glowUpApp,
         goToAllResults,
         instagram,
         instagramShowed,
-        looksmaxApp,
         makeScan,
         photoButton,
         settings,

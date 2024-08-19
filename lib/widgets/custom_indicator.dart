@@ -73,7 +73,7 @@ class CustomIndicator extends StatelessWidget {
                           child: CircularProgressIndicator(
                             value: downloadIndicatorValue,
                             strokeWidth: strokeWidth,
-                            valueColor: AlwaysStoppedAnimation<Color>(BC.salad),
+                            valueColor: AlwaysStoppedAnimation<Color>(BC.lightGreen),
                             backgroundColor: BC.lightGray,
                             strokeCap: StrokeCap.round,
                           ),
@@ -81,7 +81,7 @@ class CustomIndicator extends StatelessWidget {
                       ),
                       Text(
                         textProgress,
-                        style: BS.tex16.apply(color: BC.white),
+                        style: BS.tex16,
                       ),
                     ],
                   ),

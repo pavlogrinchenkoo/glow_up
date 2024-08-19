@@ -63,10 +63,10 @@ const _$ImageTextGroupEnumEnumMap = {
 };
 
 const _$ColorGroupEnumEnumMap = {
-  ColorGroupEnum.white: 'white',
-  ColorGroupEnum.salad: 'salad',
-  ColorGroupEnum.red: 'red',
-  ColorGroupEnum.purple: 'purple',
+  ColorGroupEnum.black: 'black',
+  ColorGroupEnum.lightGreen: 'lightGreen',
+  ColorGroupEnum.pinkLight: 'pinkLight',
+  ColorGroupEnum.blueLight: 'blueLight',
 };
 
 CardShowYourResultsModel _$CardShowYourResultsModelFromJson(

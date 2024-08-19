@@ -4090,20 +4090,20 @@ class S {
     );
   }
 
-  /// `LooksMax - Looksmaxxing Guide`
+  /// `GlowUp - Glow Up Tips, Skin AI`
   String get appName {
     return Intl.message(
-      'LooksMax - Looksmaxxing Guide',
+      'GlowUp - Glow Up Tips, Skin AI',
       name: 'appName',
       desc: '',
       args: [],
     );
   }
 
-  /// `Analyze, Enhance, Scan, Improve`
+  /// `Glow Up Tips for Girls`
   String get screenShotButtonSubTitle {
     return Intl.message(
-      'Analyze, Enhance, Scan, Improve',
+      'Glow Up Tips for Girls',
       name: 'screenShotButtonSubTitle',
       desc: '',
       args: [],
