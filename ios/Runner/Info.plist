@@ -27,8 +27,8 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>app-settings</string>
-	    <string>https</string>
-        <string>http</string>
+		<string>https</string>
+		<string>http</string>
 		<string>mailto</string>
 		<string>snssdk1233</string>
 		<string>instagram</string>
