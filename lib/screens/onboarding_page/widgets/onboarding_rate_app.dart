@@ -70,7 +70,7 @@ class OnboardingRateApp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s25),
                 child: CustomButton(
-                  s.onboardingContinueButtonText,
+                  s.onboardingReviewButtonText,
                   onTap: nextPage,
                   outLine: true,
                   borderColor: BC.purpleViolet,

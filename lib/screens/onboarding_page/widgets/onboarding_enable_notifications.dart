@@ -22,28 +22,32 @@ class OnboardingEnableNotifications extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    double topOffset = screenHeight / 1.67;
+    double topOffset =
+        screenHeight > 950 ? screenHeight / 1.3 : screenHeight / 1.6;
     return Stack(
       children: [
-        Align(
-          alignment: Alignment.topCenter,
-          child: Padding(
-            padding: EdgeInsets.only(top: screenHeight / 7),
-            child: Assets.images.onboarding.onboardingBell.image(
-              width: screenHeight / 2.5,
-              height: screenHeight / 2.5,
-              fit: BoxFit.cover,
-            ),
+        Positioned(
+          top: 0,
+          child: Assets.images.onboarding.onboardingBell.image(
+            width: screenWidth,
+            height: screenHeight > 950
+                ? 1600
+                : screenHeight > 920
+                    ? 940
+                    : 800,
+            fit: BoxFit.cover,
           ),
         ),
         CustomBokeh(
-          size: screenWidth / 1.5,
-          scaleY: 0.7,
-          scaleX: 0.4,
+          size: screenWidth,
+          scaleY: screenHeight > 950 ? 0.8 : 0.6,
+          scaleX: screenHeight > 950 ? 0.2 : 0.4,
           alignment: Alignment.bottomCenter,
-          transform: Offset(Sizes.scale, screenHeight / 12),
+          transform: Offset(Sizes.scale,
+              screenHeight > 950 ? screenHeight / 4 : screenHeight / 7),
           shape: BoxShape.rectangle,
           angleInRadians: pi / Sizes.s2,
+          isPurpleShadow: true,
         ),
         Padding(
           padding: EdgeInsets.only(top: topOffset),
@@ -51,14 +55,14 @@ class OnboardingEnableNotifications extends StatelessWidget {
             children: [
               Text(
                 s.onboardingNotificationTitleText,
-                style: BS.tex24.apply(color: BC.white),
+                style: BS.tex24,
               ),
               Space.h24,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s30),
                 child: Text(
                   s.onboardingNotificationText,
-                  style: BS.tex14.apply(color: BC.white),
+                  style: BS.tex14,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -69,10 +73,11 @@ class OnboardingEnableNotifications extends StatelessWidget {
                   s.onboardingNotificationButtonText,
                   onTap: nextPage,
                   outLine: true,
-                  borderColor: BC.salad,
-                  colorButton: BC.salad,
+                  borderColor: BC.purpleViolet,
+                  colorButton: BC.purpleViolet,
                   borderRadius: AppRadius.r18,
                   padding: Sizes.s23,
+                  textColor: BC.white,
                 ),
               ),
             ],
@@ -82,3 +87,4 @@ class OnboardingEnableNotifications extends StatelessWidget {
     );
   }
 }
+
