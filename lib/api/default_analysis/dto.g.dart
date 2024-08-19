@@ -63,7 +63,7 @@ Map<String, dynamic> _$GenderModelToJson(GenderModel instance) =>
     };
 
 AgeModel _$AgeModelFromJson(Map<String, dynamic> json) => AgeModel(
-      value: json['value'] as int,
+      value: (json['value'] as num).toInt(),
     );
 
 Map<String, dynamic> _$AgeModelToJson(AgeModel instance) => <String, dynamic>{
@@ -566,8 +566,8 @@ Map<String, dynamic> _$LandmarkModelToJson(LandmarkModel instance) =>
     };
 
 PointModel _$PointModelFromJson(Map<String, dynamic> json) => PointModel(
-      x: json['x'] as int,
-      y: json['y'] as int,
+      x: (json['x'] as num).toInt(),
+      y: (json['y'] as num).toInt(),
     );
 
 Map<String, dynamic> _$PointModelToJson(PointModel instance) =>
@@ -578,10 +578,10 @@ Map<String, dynamic> _$PointModelToJson(PointModel instance) =>
 
 FaceRectangleModel _$FaceRectangleModelFromJson(Map<String, dynamic> json) =>
     FaceRectangleModel(
-      top: json['top'] as int,
-      left: json['left'] as int,
-      width: json['width'] as int,
-      height: json['height'] as int,
+      top: (json['top'] as num).toInt(),
+      left: (json['left'] as num).toInt(),
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
     );
 
 Map<String, dynamic> _$FaceRectangleModelToJson(FaceRectangleModel instance) =>

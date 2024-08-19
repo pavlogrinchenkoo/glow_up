@@ -49,6 +49,36 @@ class OnboardingPhotoPreview extends StatelessWidget {
                   ),
                 ),
               ),
+              CustomBokeh(
+                size: screenWidth / 1,
+                scaleY: 1,
+                scaleX: 1,
+                alignment: Alignment.center,
+                transform: Offset(Sizes.scale, screenHeight / 12),
+                shape: BoxShape.rectangle,
+                angleInRadians: pi / Sizes.s2,
+                // isPurpleShadow: true,
+              ),
+              CustomBokeh(
+                size: screenWidth / 1,
+                scaleY: 0.2,
+                scaleX: 1,
+                alignment: Alignment.bottomCenter,
+                transform: Offset(screenHeight / 5, screenHeight / 12),
+                shape: BoxShape.rectangle,
+                angleInRadians: pi / Sizes.s2,
+                // isPurpleShadow: true,
+              ),
+              CustomBokeh(
+                size: screenWidth / 1,
+                scaleY: 0.2,
+                scaleX: 1,
+                alignment: Alignment.bottomCenter,
+                transform: Offset(-screenHeight / 5, screenHeight / 12),
+                shape: BoxShape.rectangle,
+                angleInRadians: pi / Sizes.s2,
+                // isPurpleShadow: true,
+              ),
               Align(
                 alignment: Alignment.topCenter,
                 child: Padding(
@@ -56,7 +86,7 @@ class OnboardingPhotoPreview extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: BC.white,
+                        color: BC.purpleViolet,
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(AppRadius.r20),
@@ -77,9 +107,10 @@ class OnboardingPhotoPreview extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   );
                                 } else {
-                                  return SizedBox(
+                                  return Container(
                                     width: screenHeight / 2,
                                     height: screenHeight / 1.9,
+                                    color: BC.black,
                                     child: const Center(
                                       child: CircularProgressIndicator(),
                                     ),
@@ -87,9 +118,10 @@ class OnboardingPhotoPreview extends StatelessWidget {
                                 }
                               },
                             )
-                          : SizedBox(
+                          : Container(
                               width: screenHeight / 2,
                               height: screenHeight / 1.9,
+                              color: BC.black,
                               child: const Center(
                                 child: CircularProgressIndicator(),
                               ),
@@ -99,11 +131,11 @@ class OnboardingPhotoPreview extends StatelessWidget {
                 ),
               ),
               CustomBokeh(
-                size: screenWidth / 1.5,
-                scaleY: 0.7,
-                scaleX: 0.4,
+                size: screenWidth / 1,
+                scaleY: 1,
+                scaleX: 0.3,
                 alignment: Alignment.bottomCenter,
-                transform: Offset(Sizes.scale, screenHeight / 12),
+                transform: Offset(Sizes.scale, screenHeight / 3.8),
                 shape: BoxShape.rectangle,
                 angleInRadians: pi / Sizes.s2,
               ),
@@ -130,19 +162,20 @@ class OnboardingPhotoPreview extends StatelessWidget {
                             s.onboardingContinueButtonText,
                             onTap: createNextPhoto,
                             outLine: true,
-                            borderColor: BC.salad,
-                            colorButton: BC.salad,
+                            borderColor: BC.purpleViolet,
+                            colorButton: BC.purpleViolet,
                             borderRadius: AppRadius.r18,
                             padding: Sizes.s23,
+                            textColor: BC.white,
                           ),
                           Space.h8,
                           CustomButton(
                             s.onboardingRetakeButtonText,
                             onTap: backAgainTakePhoto,
                             outLine: true,
-                            borderColor: BC.salad,
-                            colorButton: BC.navyGrey,
-                            textColor: BC.salad,
+                            borderColor: BC.purpleViolet,
+                            colorButton: BC.white,
+                            textColor: BC.purpleViolet,
                             borderRadius: AppRadius.r18,
                             padding: Sizes.s23,
                           ),

@@ -9,6 +9,7 @@ class CustomBokeh extends StatelessWidget {
   final BoxShape? shape;
   final double? angleInRadians;
   final bool isPurpleShadow;
+  final bool blurWhiteHard;
 
   const CustomBokeh({
     required this.size,
@@ -18,7 +19,8 @@ class CustomBokeh extends StatelessWidget {
     this.transform,
     this.shape,
     this.angleInRadians,
-    this.isPurpleShadow = true,
+    this.isPurpleShadow = false,
+    this.blurWhiteHard = false,
     super.key,
   });
 
@@ -38,9 +40,11 @@ class CustomBokeh extends StatelessWidget {
               height: size,
               decoration: BoxDecoration(
                 shape: shape ?? BoxShape.circle,
-                boxShadow: isPurpleShadow
-                    ? [CustomShadows.bokehPurpule(context)]
-                    : [CustomShadows.bokehSalad(context)],
+                boxShadow: blurWhiteHard
+                    ? [CustomShadows.bokehWhiteHard(context)]
+                    : isPurpleShadow
+                        ? [CustomShadows.bokehPurpule(context)]
+                        : [CustomShadows.bokehWhite(context)],
               ),
             ),
           ),
@@ -53,14 +57,21 @@ class CustomBokeh extends StatelessWidget {
 class CustomShadows {
   static BoxShadow bokehPurpule(BuildContext context) {
     return BoxShadow(
-      color: BC.purple.withOpacity(1),
+      color: BC.purple.withOpacity(0.6),
       blurRadius: 200,
     );
   }
 
-  static BoxShadow bokehSalad(BuildContext context) {
+  static BoxShadow bokehWhite(BuildContext context) {
     return BoxShadow(
-      color: BC.navyGrey.withOpacity(1),
+      color: BC.white.withOpacity(1),
+      blurRadius: 100,
+    );
+  }
+
+  static BoxShadow bokehWhiteHard(BuildContext context) {
+    return BoxShadow(
+      color: BC.white.withOpacity(1),
       blurRadius: 200,
     );
   }

@@ -41,16 +41,9 @@ class _SplashPageState extends State<SplashPage> {
               children: [
                 Expanded(
                   child: Container(
-                      color: BC.navyGrey,
+                      color: BC.pink,
                       child: Stack(
                         children: [
-                          CustomBokeh(
-                            size: screenHeight / 5,
-                            alignment: Alignment.center,
-                            transform: const Offset(Sizes.scale, Sizes.scale),
-                            shape: BoxShape.rectangle,
-                            angleInRadians: pi / Sizes.s2,
-                          ),
                           Positioned(
                             top: 0,
                             child:
@@ -65,19 +58,6 @@ class _SplashPageState extends State<SplashPage> {
                                   : 750,
                               fit: BoxFit.cover,
                             ),
-                          ),
-                          CustomBokeh(
-                            size: screenWidth,
-                            scaleY: 1,
-                            scaleX: screenHeight > 950 ? 0.2 : 0.4,
-                            alignment: Alignment.bottomCenter,
-                            transform: Offset(
-                                Sizes.scale,
-                                screenHeight > 950
-                                    ? screenHeight / 2.5
-                                    : Sizes.s300),
-                            shape: BoxShape.rectangle,
-                            angleInRadians: pi / Sizes.s2,
                           ),
                         ],
                       )),

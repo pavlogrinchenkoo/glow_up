@@ -1,9 +1,12 @@
+import 'dart:math';
+
 import 'package:glow_up/api/load_data_point/dto.dart';
 import 'package:glow_up/generated/l10n.dart';
 import 'package:glow_up/screens/onboarding_page/bloc.dart';
 import 'package:glow_up/style.dart';
 import 'package:glow_up/utils/spaces.dart';
 import 'package:flutter/material.dart';
+import 'package:glow_up/widgets/custom_boxeh.dart';
 
 class OnboardingFinishIndicator extends StatefulWidget {
   final double valueProgress;
@@ -45,9 +48,30 @@ class _OnboardingFinishIndicatorState extends State<OnboardingFinishIndicator> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: BC.navyGrey,
+      backgroundColor: BC.pink,
       body: Stack(
         children: [
+          CustomBokeh(
+            size: height / 1,
+            scaleY: 0.3,
+            scaleX: 0.5,
+            alignment: Alignment.bottomCenter,
+            transform: Offset(Sizes.scale, -height / 7),
+            shape: BoxShape.rectangle,
+            angleInRadians: pi / Sizes.s2,
+            blurWhiteHard: true,
+            // isPurpleShadow: true,
+          ),
+          CustomBokeh(
+            size: height / 1,
+            scaleY: 1,
+            scaleX: 1,
+            alignment: Alignment.bottomCenter,
+            transform: Offset(Sizes.scale, height / 3.4),
+            shape: BoxShape.rectangle,
+            angleInRadians: pi / Sizes.s2,
+            // isPurpleShadow: true,
+          ),
           SafeArea(
             bottom: false,
             child: Column(
@@ -72,17 +96,15 @@ class _OnboardingFinishIndicatorState extends State<OnboardingFinishIndicator> {
                           child: CircularProgressIndicator(
                             value: widget.valueProgress,
                             strokeWidth: height < 840 ? 9 : 12,
-                            valueColor: AlwaysStoppedAnimation<Color>(BC.salad),
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(BC.lightGreen),
                             backgroundColor: BC.lightGray,
                           ),
                         ),
                       ),
-                      Text(
-                        '${(widget.valueProgress * 100).toInt()} %',
-                        style: height < 840
-                            ? BS.tex32Text.apply(color: BC.white)
-                            : BS.indicatorText.apply(color: BC.white),
-                      ),
+                      Text('${(widget.valueProgress * 100).toInt()} %',
+                          style:
+                              height < 840 ? BS.tex32Text : BS.indicatorText),
                     ],
                   ),
                 ),
@@ -95,7 +117,7 @@ class _OnboardingFinishIndicatorState extends State<OnboardingFinishIndicator> {
                 if (widget.isLastText)
                   Text(
                     widget.s.scanCompleted,
-                    style: BS.tex24.apply(color: BC.white),
+                    style: BS.tex24,
                     textAlign: TextAlign.center,
                   )
               ],
@@ -124,12 +146,14 @@ class ShowDataPoint extends StatelessWidget {
               height: Sizes.s25,
               width: Sizes.s25,
               decoration: BoxDecoration(
-                color: loadDataInfoStatus.isActive ? BC.salad : BC.darkSalad,
+                color: loadDataInfoStatus.isActive
+                    ? BC.purpleViolet
+                    : BC.purpleViolet.withOpacity(0.7),
                 shape: BoxShape.circle,
               ),
               child: Icon(
                 Icons.check,
-                color: BC.navyGrey,
+                color: BC.white,
                 size: Sizes.s16,
               ),
             ),
@@ -137,7 +161,7 @@ class ShowDataPoint extends StatelessWidget {
           Expanded(
             child: Text(
               loadDataInfoStatus.name,
-              style: BS.tex14withFont400.apply(color: BC.white),
+              style: BS.tex14withFont400,
             ),
           ),
         ],

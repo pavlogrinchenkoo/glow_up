@@ -29,13 +29,6 @@ class OnboardingShapeFuture extends StatelessWidget {
         screenHeight > 950 ? screenHeight / 1.3 : screenHeight / 1.6;
     return Stack(
       children: [
-        CustomBokeh(
-          size: screenHeight / 5,
-          alignment: Alignment.center,
-          transform: const Offset(Sizes.scale, Sizes.scale),
-          shape: BoxShape.rectangle,
-          angleInRadians: pi / Sizes.s2,
-        ),
         Positioned(
           top: 0,
           child: Assets.images.onboarding.onboardingFirst.image(
@@ -59,6 +52,7 @@ class OnboardingShapeFuture extends StatelessWidget {
               Sizes.scale, screenHeight > 950 ? screenHeight / 4 : Sizes.s100),
           shape: BoxShape.rectangle,
           angleInRadians: pi / Sizes.s2,
+          isPurpleShadow: true,
         ),
         Padding(
           padding: EdgeInsets.only(top: topOffset),
@@ -66,14 +60,14 @@ class OnboardingShapeFuture extends StatelessWidget {
             children: [
               Text(
                 s.onboardingShapeTitleText,
-                style: BS.tex24.apply(color: BC.white),
+                style: BS.tex24,
               ),
               Space.h24,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s30),
                 child: Text(
                   s.onboardingShapeText,
-                  style: BS.tex14.apply(color: BC.white),
+                  style: BS.tex14,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -84,18 +78,20 @@ class OnboardingShapeFuture extends StatelessWidget {
                   s.onboardingGetButtonText,
                   onTap: nextPage,
                   outLine: true,
-                  borderColor: BC.salad,
-                  colorButton: BC.salad,
+                  borderColor: BC.purpleViolet,
+                  colorButton: BC.purpleViolet,
                   borderRadius: AppRadius.r18,
                   padding: Sizes.s23,
                   svgGenImage: Assets.images.starsIcon,
                   spaceBetweenTextImage: Sizes.s8,
+                  textColor: BC.white,
+                  imageColor: BC.white,
                 ),
               ),
               Space.h16,
               Text(
                 s.onboardingTermFooterTitleText,
-                style: BS.tex10.apply(color: BC.white),
+                style: BS.tex10,
                 textAlign: TextAlign.center,
               ),
               InkWell(
@@ -104,9 +100,8 @@ class OnboardingShapeFuture extends StatelessWidget {
                 child: Text(
                   s.onboardingTermFooterText,
                   style: BS.tex10.apply(
-                      color: BC.white,
                       decoration: TextDecoration.underline,
-                      decorationColor: BC.white),
+                      decorationColor: BC.black),
                   textAlign: TextAlign.center,
                 ),
               ),

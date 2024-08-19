@@ -26,14 +26,6 @@ class OnboardingBeforeOrAfter extends StatelessWidget {
         screenHeight > 950 ? screenHeight / 1.3 : screenHeight / 1.6;
     return Stack(
       children: [
-        CustomBokeh(
-          size: screenHeight / 3,
-          alignment: Alignment.centerLeft,
-          transform: const Offset(Sizes.scale, Sizes.scale),
-          shape: BoxShape.rectangle,
-          angleInRadians: pi / Sizes.s2,
-          isPurpleShadow: false,
-        ),
         Positioned(
           top: 0,
           child: Assets.images.onboarding.onboardingSecond.image(
@@ -55,6 +47,7 @@ class OnboardingBeforeOrAfter extends StatelessWidget {
               screenHeight > 950 ? screenHeight / 4 : screenHeight / 7),
           shape: BoxShape.rectangle,
           angleInRadians: pi / Sizes.s2,
+          isPurpleShadow: true,
         ),
         Padding(
           padding: EdgeInsets.only(top: topOffset),
@@ -62,14 +55,14 @@ class OnboardingBeforeOrAfter extends StatelessWidget {
             children: [
               Text(
                 s.onboardingBeforeAfterTitleText,
-                style: BS.tex24.apply(color: BC.white),
+                style: BS.tex24,
               ),
               Space.h24,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s30),
                 child: Text(
                   s.onboardingBeforeAfterText,
-                  style: BS.tex14.apply(color: BC.white),
+                  style: BS.tex14,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -80,10 +73,11 @@ class OnboardingBeforeOrAfter extends StatelessWidget {
                   s.onboardingContinueButtonText,
                   onTap: nextPage,
                   outLine: true,
-                  borderColor: BC.salad,
-                  colorButton: BC.salad,
+                  borderColor: BC.purpleViolet,
+                  colorButton: BC.purpleViolet,
                   borderRadius: AppRadius.r18,
                   padding: Sizes.s23,
+                  textColor: BC.white,
                 ),
               ),
             ],
