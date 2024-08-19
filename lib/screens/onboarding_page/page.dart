@@ -55,7 +55,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               children: [
                 Expanded(
                   child: Container(
-                    color: BC.navyGrey,
+                    color: BC.pink,
                     child: PageView(
                       physics: const NeverScrollableScrollPhysics(),
                       controller: pageController,

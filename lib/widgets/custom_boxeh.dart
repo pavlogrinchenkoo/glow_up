@@ -18,7 +18,7 @@ class CustomBokeh extends StatelessWidget {
     this.transform,
     this.shape,
     this.angleInRadians,
-    this.isPurpleShadow = true,
+    this.isPurpleShadow = false,
     super.key,
   });
 
@@ -40,7 +40,7 @@ class CustomBokeh extends StatelessWidget {
                 shape: shape ?? BoxShape.circle,
                 boxShadow: isPurpleShadow
                     ? [CustomShadows.bokehPurpule(context)]
-                    : [CustomShadows.bokehSalad(context)],
+                    : [CustomShadows.bokehWhite(context)],
               ),
             ),
           ),
@@ -53,14 +53,14 @@ class CustomBokeh extends StatelessWidget {
 class CustomShadows {
   static BoxShadow bokehPurpule(BuildContext context) {
     return BoxShadow(
-      color: BC.white.withOpacity(1),
+      color: BC.purple.withOpacity(0.6),
       blurRadius: 200,
     );
   }
 
-  static BoxShadow bokehSalad(BuildContext context) {
+  static BoxShadow bokehWhite(BuildContext context) {
     return BoxShadow(
-      color: BC.navyGrey.withOpacity(1),
+      color: BC.white.withOpacity(1),
       blurRadius: 200,
     );
   }

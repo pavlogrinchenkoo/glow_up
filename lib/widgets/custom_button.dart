@@ -19,6 +19,7 @@ class CustomButton extends StatelessWidget {
   final double? heightImage;
   final bool useShareButton;
   final AssetGenImage? assetGenImage;
+  final Color? imageColor;
 
   const CustomButton(
     this.title, {
@@ -36,6 +37,7 @@ class CustomButton extends StatelessWidget {
     this.heightImage,
     this.useShareButton = false,
     this.assetGenImage,
+    this.imageColor,
     super.key,
   });
 
@@ -92,7 +94,8 @@ class CustomButton extends StatelessWidget {
                   ]
                 : [
                     if (svgGenImage != null)
-                      svgGenImage!.svg(height: heightImage ?? Sizes.s16),
+                      svgGenImage!.svg(
+                          height: heightImage ?? Sizes.s16, color: imageColor),
                     if (svgGenImage != null)
                       SizedBox(width: spaceBetweenTextImage),
                     if (svgGenImage == null) Space.h8,
