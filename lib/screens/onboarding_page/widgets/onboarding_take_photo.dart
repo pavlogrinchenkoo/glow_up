@@ -126,6 +126,7 @@ class _OnboardingTakePhotoState extends State<OnboardingTakePhoto> {
           transform: Offset(Sizes.scale, screenHeight / 14),
           shape: BoxShape.rectangle,
           angleInRadians: pi / Sizes.s2,
+          blurWhiteHard: true,
         ),
         Padding(
           padding: EdgeInsets.only(top: topOffset * 1.0),
