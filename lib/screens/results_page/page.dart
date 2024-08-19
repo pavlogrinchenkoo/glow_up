@@ -110,13 +110,15 @@ class _ResultsPageState extends State<ResultsPage> {
                               state.useBlurBlock
                                   ? const SizedBox.shrink()
                                   : CustomBokeh(
-                                      size: height / 2,
-                                      scaleX: height < 840 ? 0.3 : 0.3,
+                                      size: height / 1,
                                       scaleY: 1,
+                                      scaleX: 0.4,
                                       alignment: Alignment.bottomCenter,
-                                      transform: const Offset(0, Sizes.s160),
+                                      transform:
+                                          Offset(Sizes.scale, height / 2.3),
                                       shape: BoxShape.rectangle,
                                       angleInRadians: pi / Sizes.s2,
+                                      blurWhiteHard: true,
                                     ),
                               Column(
                                 children: [
