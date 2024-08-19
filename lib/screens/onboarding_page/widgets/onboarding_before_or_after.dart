@@ -73,7 +73,7 @@ class OnboardingBeforeOrAfter extends StatelessWidget {
                   s.onboardingContinueButtonText,
                   onTap: nextPage,
                   outLine: true,
-                  borderColor: BC.salad,
+                  borderColor: BC.purpleViolet,
                   colorButton: BC.purpleViolet,
                   borderRadius: AppRadius.r18,
                   padding: Sizes.s23,
