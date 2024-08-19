@@ -13,13 +13,13 @@ SaveMainResultsModel _$SaveMainResultsModelFromJson(
       personalEstimateInWorldEnum: $enumDecode(
           _$SaveYourResultsEstimateInWorldEnumEnumMap,
           json['personalEstimateInWorldEnum']),
-      overallEstimate: json['overallEstimate'] as int,
-      potentialEstimate: json['potentialEstimate'] as int,
-      age: json['age'] as int,
-      valueScoreFemale: json['valueScoreFemale'] as int,
-      valueScoreMale: json['valueScoreMale'] as int,
-      femininity: json['femininity'] as int,
-      masculinity: json['masculinity'] as int,
+      overallEstimate: (json['overallEstimate'] as num).toInt(),
+      potentialEstimate: (json['potentialEstimate'] as num).toInt(),
+      age: (json['age'] as num).toInt(),
+      valueScoreFemale: (json['valueScoreFemale'] as num).toInt(),
+      valueScoreMale: (json['valueScoreMale'] as num).toInt(),
+      femininity: (json['femininity'] as num).toInt(),
+      masculinity: (json['masculinity'] as num).toInt(),
       scoreEnumFemale:
           $enumDecode(_$SaveResultsSubTextEnumEnumMap, json['scoreEnumFemale']),
       scoreEnumMale:
@@ -80,13 +80,13 @@ SaveFaceResultsModel _$SaveFaceResultsModelFromJson(
           $enumDecode(_$SaveFaceResultsEnumEnumMap, json['faceNoseShapeText']),
       faceJawlineDefinitionText: $enumDecode(
           _$SaveFaceResultsEnumEnumMap, json['faceJawlineDefinitionText']),
-      faceAnalyzingAPI: json['faceAnalyzingAPI'] as int,
+      faceAnalyzingAPI: (json['faceAnalyzingAPI'] as num).toInt(),
       faceGlassAPI: json['faceGlassAPI'] as String,
       faceEmotionAPI: json['faceEmotionAPI'] as String,
-      faceSymmetryRandomAPI: json['faceSymmetryRandomAPI'] as int,
-      faceNoseShapeRandomAPI: json['faceNoseShapeRandomAPI'] as int,
+      faceSymmetryRandomAPI: (json['faceSymmetryRandomAPI'] as num).toInt(),
+      faceNoseShapeRandomAPI: (json['faceNoseShapeRandomAPI'] as num).toInt(),
       faceJawlineDefinitionRandomAPI:
-          json['faceJawlineDefinitionRandomAPI'] as int,
+          (json['faceJawlineDefinitionRandomAPI'] as num).toInt(),
       faceSymmetryRandomEnum: $enumDecode(
           _$SaveResultsSubTextEnumEnumMap, json['faceSymmetryRandomEnum']),
       faceNoseShapeRandomEnum: $enumDecode(
@@ -144,12 +144,12 @@ SaveSkinResultsModel _$SaveSkinResultsModelFromJson(
       skinDarkCircle:
           $enumDecode(_$SaveSkinResultsEnumEnumMap, json['skinDarkCircle']),
       skinAcne: $enumDecode(_$SaveSkinResultsEnumEnumMap, json['skinAcne']),
-      skinAnalyzingAPI: json['skinAnalyzingAPI'] as int,
-      skinQualityAPI: json['skinQualityAPI'] as int,
-      skinHealthAPI: json['skinHealthAPI'] as int,
-      skinStainAPI: json['skinStainAPI'] as int,
-      skinDarkCircleAPI: json['skinDarkCircleAPI'] as int,
-      skinAcneAPI: json['skinAcneAPI'] as int,
+      skinAnalyzingAPI: (json['skinAnalyzingAPI'] as num).toInt(),
+      skinQualityAPI: (json['skinQualityAPI'] as num).toInt(),
+      skinHealthAPI: (json['skinHealthAPI'] as num).toInt(),
+      skinStainAPI: (json['skinStainAPI'] as num).toInt(),
+      skinDarkCircleAPI: (json['skinDarkCircleAPI'] as num).toInt(),
+      skinAcneAPI: (json['skinAcneAPI'] as num).toInt(),
       skinQualityEnum:
           $enumDecode(_$SaveResultsSubTextEnumEnumMap, json['skinQualityEnum']),
       skinHealthEnum:
@@ -208,12 +208,12 @@ SaveHairResultsModel _$SaveHairResultsModelFromJson(
       hairShine: $enumDecode(_$SaveHairResultsEnumEnumMap, json['hairShine']),
       hairStyle: $enumDecode(_$SaveHairResultsEnumEnumMap, json['hairStyle']),
       hairVolume: $enumDecode(_$SaveHairResultsEnumEnumMap, json['hairVolume']),
-      hairAnalyzingAPI: json['hairAnalyzingAPI'] as int,
-      hairThicknessAPI: json['hairThicknessAPI'] as int,
-      hairHealthAPI: json['hairHealthAPI'] as int,
-      hairShineAPI: json['hairShineAPI'] as int,
-      hairStyleAPI: json['hairStyleAPI'] as int,
-      hairVolumeAPI: json['hairVolumeAPI'] as int,
+      hairAnalyzingAPI: (json['hairAnalyzingAPI'] as num).toInt(),
+      hairThicknessAPI: (json['hairThicknessAPI'] as num).toInt(),
+      hairHealthAPI: (json['hairHealthAPI'] as num).toInt(),
+      hairShineAPI: (json['hairShineAPI'] as num).toInt(),
+      hairStyleAPI: (json['hairStyleAPI'] as num).toInt(),
+      hairVolumeAPI: (json['hairVolumeAPI'] as num).toInt(),
       hairThicknessEnum: $enumDecode(
           _$SaveResultsSubTextEnumEnumMap, json['hairThicknessEnum']),
       hairHealthEnum:
@@ -274,12 +274,12 @@ SaveEyesResultsModel _$SaveEyesResultsModelFromJson(
           $enumDecode(_$SaveEyesResultsEnumEnumMap, json['eyesSymmetry']),
       eyesExpressiveness:
           $enumDecode(_$SaveEyesResultsEnumEnumMap, json['eyesExpressiveness']),
-      eyesAnalyzingAPI: json['eyesAnalyzingAPI'] as int,
-      eyesShapeAPI: json['eyesShapeAPI'] as int,
-      eyesColorAPI: json['eyesColorAPI'] as int,
-      eyesBrightnessAPI: json['eyesBrightnessAPI'] as int,
-      eyesSymmetryAPI: json['eyesSymmetryAPI'] as int,
-      eyesExpressivenessAPI: json['eyesExpressivenessAPI'] as int,
+      eyesAnalyzingAPI: (json['eyesAnalyzingAPI'] as num).toInt(),
+      eyesShapeAPI: (json['eyesShapeAPI'] as num).toInt(),
+      eyesColorAPI: (json['eyesColorAPI'] as num).toInt(),
+      eyesBrightnessAPI: (json['eyesBrightnessAPI'] as num).toInt(),
+      eyesSymmetryAPI: (json['eyesSymmetryAPI'] as num).toInt(),
+      eyesExpressivenessAPI: (json['eyesExpressivenessAPI'] as num).toInt(),
       eyesShapeEnum:
           $enumDecode(_$SaveResultsSubTextEnumEnumMap, json['eyesShapeEnum']),
       eyesColorEnum:
@@ -343,12 +343,12 @@ SaveFitnessResultsModel _$SaveFitnessResultsModelFromJson(
           _$SaveFitnessResultsEnumEnumMap, json['fitnessFlexibility']),
       fitnessStrength:
           $enumDecode(_$SaveFitnessResultsEnumEnumMap, json['fitnessStrength']),
-      fitnessAnalyzingAPI: json['fitnessAnalyzingAPI'] as int,
-      fitnessBodyAPI: json['fitnessBodyAPI'] as int,
-      fitnessMuscleAPI: json['fitnessMuscleAPI'] as int,
-      fitnessStaminaAPI: json['fitnessStaminaAPI'] as int,
-      fitnessFlexibilityAPI: json['fitnessFlexibilityAPI'] as int,
-      fitnessStrengthAPI: json['fitnessStrengthAPI'] as int,
+      fitnessAnalyzingAPI: (json['fitnessAnalyzingAPI'] as num).toInt(),
+      fitnessBodyAPI: (json['fitnessBodyAPI'] as num).toInt(),
+      fitnessMuscleAPI: (json['fitnessMuscleAPI'] as num).toInt(),
+      fitnessStaminaAPI: (json['fitnessStaminaAPI'] as num).toInt(),
+      fitnessFlexibilityAPI: (json['fitnessFlexibilityAPI'] as num).toInt(),
+      fitnessStrengthAPI: (json['fitnessStrengthAPI'] as num).toInt(),
       fitnessBodyEnum:
           $enumDecode(_$SaveResultsSubTextEnumEnumMap, json['fitnessBodyEnum']),
       fitnessMuscleEnum: $enumDecode(

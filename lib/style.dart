@@ -18,6 +18,7 @@ class ThemeColors {
   static const Color salad = Color(0xFFD1FF6F);
   static const Color lightSalad = Color(0xFF687F37);
   static const Color lightGray = Color(0xFF55545A);
+  static const Color pink = Color(0xFFF19EC6);
 }
 
 abstract class BC {
@@ -52,6 +53,8 @@ abstract class BC {
   static Color get darkSalad => ThemeColors.lightSalad;
 
   static Color get lightGray => ThemeColors.lightGray;
+
+  static Color get pink => ThemeColors.pink;
 }
 
 abstract class BS {
@@ -134,7 +137,6 @@ abstract class BS {
       height: 1.28,
       letterSpacing: 0.09,
       fontWeight: FontWeight.w700);
-
 
   static TextStyle get indicatorText => TextStyle(
       color: BC.black,

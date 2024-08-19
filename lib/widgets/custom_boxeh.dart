@@ -53,7 +53,7 @@ class CustomBokeh extends StatelessWidget {
 class CustomShadows {
   static BoxShadow bokehPurpule(BuildContext context) {
     return BoxShadow(
-      color: BC.purple.withOpacity(1),
+      color: BC.white.withOpacity(1),
       blurRadius: 200,
     );
   }

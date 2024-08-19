@@ -8,8 +8,9 @@
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:vector_graphics/vector_graphics.dart';
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
@@ -23,6 +24,7 @@ class $AssetsImagesGen {
   /// File path: assets/images/checkMark.svg
   SvgGenImage get checkMark => const SvgGenImage('assets/images/checkMark.svg');
 
+  /// Directory path: assets/images/deep_scanning
   $AssetsImagesDeepScanningGen get deepScanning =>
       const $AssetsImagesDeepScanningGen();
 
@@ -30,7 +32,10 @@ class $AssetsImagesGen {
   SvgGenImage get goToAllResults =>
       const SvgGenImage('assets/images/goToAllResults.svg');
 
+  /// Directory path: assets/images/guide
   $AssetsImagesGuideGen get guide => const $AssetsImagesGuideGen();
+
+  /// Directory path: assets/images/guide_info
   $AssetsImagesGuideInfoGen get guideInfo => const $AssetsImagesGuideInfoGen();
 
   /// File path: assets/images/instagram.svg
@@ -47,6 +52,7 @@ class $AssetsImagesGen {
   /// File path: assets/images/makeScan.svg
   SvgGenImage get makeScan => const SvgGenImage('assets/images/makeScan.svg');
 
+  /// Directory path: assets/images/onboarding
   $AssetsImagesOnboardingGen get onboarding =>
       const $AssetsImagesOnboardingGen();
 
@@ -67,6 +73,7 @@ class $AssetsImagesGen {
   /// File path: assets/images/starsIcon.svg
   SvgGenImage get starsIcon => const SvgGenImage('assets/images/starsIcon.svg');
 
+  /// Directory path: assets/images/subscription
   $AssetsImagesSubscriptionGen get subscription =>
       const $AssetsImagesSubscriptionGen();
 
@@ -290,9 +297,16 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName);
+  const AssetGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  });
 
   final String _assetName;
+
+  final Size? size;
+  final Set<String> flavors;
 
   Image image({
     Key? key,
@@ -364,9 +378,22 @@ class AssetGenImage {
 }
 
 class SvgGenImage {
-  const SvgGenImage(this._assetName);
+  const SvgGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  }) : _isVecFormat = false;
+
+  const SvgGenImage.vec(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  }) : _isVecFormat = true;
 
   final String _assetName;
+  final Size? size;
+  final Set<String> flavors;
+  final bool _isVecFormat;
 
   SvgPicture svg({
     Key? key,
@@ -381,19 +408,32 @@ class SvgGenImage {
     WidgetBuilder? placeholderBuilder,
     String? semanticsLabel,
     bool excludeFromSemantics = false,
-    SvgTheme theme = const SvgTheme(),
+    SvgTheme? theme,
     ColorFilter? colorFilter,
     Clip clipBehavior = Clip.hardEdge,
     @deprecated Color? color,
     @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
     @deprecated bool cacheColorFilter = false,
   }) {
-    return SvgPicture.asset(
-      _assetName,
+    final BytesLoader loader;
+    if (_isVecFormat) {
+      loader = AssetBytesLoader(
+        _assetName,
+        assetBundle: bundle,
+        packageName: package,
+      );
+    } else {
+      loader = SvgAssetLoader(
+        _assetName,
+        assetBundle: bundle,
+        packageName: package,
+        theme: theme,
+      );
+    }
+    return SvgPicture(
+      loader,
       key: key,
       matchTextDirection: matchTextDirection,
-      bundle: bundle,
-      package: package,
       width: width,
       height: height,
       fit: fit,
@@ -402,10 +442,8 @@ class SvgGenImage {
       placeholderBuilder: placeholderBuilder,
       semanticsLabel: semanticsLabel,
       excludeFromSemantics: excludeFromSemantics,
-      theme: theme,
-      colorFilter: colorFilter,
-      color: color,
-      colorBlendMode: colorBlendMode,
+      colorFilter: colorFilter ??
+          (color == null ? null : ColorFilter.mode(color, colorBlendMode)),
       clipBehavior: clipBehavior,
       cacheColorFilter: cacheColorFilter,
     );

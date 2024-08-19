@@ -30,7 +30,7 @@ class CustomScaffold extends StatelessWidget {
       body: activateFullSafeArea
           ? body ?? const SizedBox.shrink()
           : Container(
-              color: BC.navyGrey,
+              color: BC.pink,
               child: SafeArea(
                   top: safeAreaTop,
                   bottom: safeAreaBottom,
