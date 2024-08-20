@@ -186,6 +186,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "cleansingMakeup": MessageLookupByLibrary.simpleMessage("Cleansing:"),
         "cleansingText": MessageLookupByLibrary.simpleMessage(
             "Shampoo your hair based on your scalp’s needs—daily for oily scalps, or every few days for dry scalps. Use a sulfate-free shampoo for color-treated or sensitive hair."),
+        "cleansingTextSkin": MessageLookupByLibrary.simpleMessage(
+            " Cleanse your face twice daily to remove dirt, oil, and makeup. Use a gentle cleanser that suits your skin type."),
         "clenchYourJawFor10Seconds": MessageLookupByLibrary.simpleMessage(
             "Clench your jaw for 10 seconds and release. Do this several times to work the muscles around the jaw."),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
@@ -1119,6 +1121,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tapToEnter": MessageLookupByLibrary.simpleMessage("TAP TO ENTER"),
         "targetedTreatments":
             MessageLookupByLibrary.simpleMessage("Targeted Treatments"),
+        "targetedTreatmentsFace":
+            MessageLookupByLibrary.simpleMessage("Targeted Treatments:"),
         "targetedTreatmentsText": MessageLookupByLibrary.simpleMessage(
             "Use products that target specific concerns like acne, pigmentation, or aging to maintain a smooth, even complexion."),
         "technique": MessageLookupByLibrary.simpleMessage("Technique:"),
@@ -1234,7 +1238,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Understanding Your Body Shape"),
         "undertones": MessageLookupByLibrary.simpleMessage("Undertones:"),
         "undertonesDescription": MessageLookupByLibrary.simpleMessage(
-            "Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones."),
+            "Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden-based foundations, while cool undertones suit pink or blue-based shades."),
         "unlockFillAccess":
             MessageLookupByLibrary.simpleMessage("Unlock Full Access"),
         "uploadLimitDialog": MessageLookupByLibrary.simpleMessage(

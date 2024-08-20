@@ -5670,6 +5670,16 @@ class S {
     );
   }
 
+  /// `Targeted Treatments:`
+  String get targetedTreatmentsFace {
+    return Intl.message(
+      'Targeted Treatments:',
+      name: 'targetedTreatmentsFace',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Targeted Treatments`
   String get targetedTreatments {
     return Intl.message(
@@ -5835,6 +5845,16 @@ class S {
     return Intl.message(
       'Cleansing:',
       name: 'cleansing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Cleanse your face twice daily to remove dirt, oil, and makeup. Use a gentle cleanser that suits your skin type.`
+  String get cleansingTextSkin {
+    return Intl.message(
+      ' Cleanse your face twice daily to remove dirt, oil, and makeup. Use a gentle cleanser that suits your skin type.',
+      name: 'cleansingTextSkin',
       desc: '',
       args: [],
     );
@@ -7520,10 +7540,10 @@ class S {
     );
   }
 
-  /// `Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones.`
+  /// `Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden-based foundations, while cool undertones suit pink or blue-based shades.`
   String get undertonesDescription {
     return Intl.message(
-      'Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones.',
+      'Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden-based foundations, while cool undertones suit pink or blue-based shades.',
       name: 'undertonesDescription',
       desc: '',
       args: [],

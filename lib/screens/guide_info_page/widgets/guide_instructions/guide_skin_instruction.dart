@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -46,7 +45,7 @@ class GuideSkinInstruction extends StatelessWidget {
           items: [
             ListItem(
               text: s.cleansing,
-              subText: s.cleansingText,
+              subText: s.cleansingTextSkin,
             ),
             ListItem(
               text: s.toning,
