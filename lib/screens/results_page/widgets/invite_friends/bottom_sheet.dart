@@ -73,8 +73,8 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  BC.salad,
-                  BC.navyGrey,
+                  BC.purpleViolet,
+                  BC.white,
                 ],
               ),
             ),
@@ -83,7 +83,7 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                   horizontal: Sizes.scale, vertical: Sizes.scale),
               child: Container(
                 decoration: BoxDecoration(
-                  color: BC.navyGrey,
+                  color: BC.white,
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(AppRadius.r30),
                   ),
@@ -98,6 +98,7 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                       transform: const Offset(Sizes.scale, 100),
                       shape: BoxShape.circle,
                       angleInRadians: pi / Sizes.s2,
+                      isPinkShadow: true,
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.min,
@@ -109,7 +110,7 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                           width: Sizes.s100,
                           height: Sizes.s8,
                           decoration: BoxDecoration(
-                            color: BC.gray,
+                            color: BC.gray.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(Sizes.s8),
                           ),
                         ),
@@ -128,7 +129,8 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                                       state.changeSheetContent
                                           ? s.gotInviteCode
                                           : s.inviteFriends,
-                                      style: BS.tex24.apply(color: BC.salad),
+                                      style: BS.tex24
+                                          .apply(color: BC.purpleViolet),
                                       textAlign: TextAlign.center,
                                     ),
                                     SizedBox(height: height / Sizes.s400),
@@ -139,8 +141,7 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                                         state.changeSheetContent
                                             ? s.youCanActivate
                                             : s.useYourCode,
-                                        style: BS.tex14withFont500
-                                            .apply(color: BC.white),
+                                        style: BS.tex14withFont500,
                                         textAlign: TextAlign.center,
                                       ),
                                     ),
@@ -151,15 +152,14 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                                             children: [
                                               Text(
                                                 s.earn,
-                                                style: BS.tex24
-                                                    .apply(color: BC.salad),
+                                                style: BS.tex24.apply(
+                                                    color: BC.purpleViolet),
                                                 textAlign: TextAlign.center,
                                               ),
                                               Space.h8,
                                               Text(
                                                 s.whenThenPay,
-                                                style: BS.tex14withFont500
-                                                    .apply(color: BC.white),
+                                                style: BS.tex14withFont500,
                                                 textAlign: TextAlign.center,
                                               ),
                                               Space.h24,
@@ -170,7 +170,9 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                                           ? s.tapToEnter
                                           : state.code,
                                       controller: controller,
-                                      borderColor: BC.gray,
+                                      colorTextField: BC.purpleViolet.withOpacity(0.1),
+                                      borderColor: BC.purpleViolet.withOpacity(0.1),
+                                      textColor: BC.black,
                                       borderRadius: AppRadius.r18,
                                       borderWidth: 0.5,
                                       verticalPadding: Sizes.s7,
@@ -178,7 +180,7 @@ class _FriendsBottomSheetState extends State<FriendsBottomSheet> {
                                           bloc.checkTextController(controller),
                                       hintStyleColor: state.changeSheetContent
                                           ? BC.avatarGrey
-                                          : BC.white,
+                                          : BC.black,
                                       readOnly: state.changeSheetContent
                                           ? state.isAcceptFriendCode
                                               ? true

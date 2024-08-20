@@ -57,7 +57,7 @@ class CustomIndicator extends StatelessWidget {
                         blurColor: BC.lightGray.withOpacity(0.8),
                         child: Text(
                           textProgress,
-                          style: BS.tex16.apply(color: BC.white),
+                          style: BS.tex16.apply(color: BC.black),
                         ),
                       ),
                     ],

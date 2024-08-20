@@ -21,6 +21,9 @@ class CustomTextField extends StatelessWidget {
   final bool? exitingCode;
   final FocusNode? focusNode;
   final bool? autoFocus;
+  final Color? colorTextField;
+  final Color? textColor;
+  final Color? cursorColor;
 
   const CustomTextField({
     super.key,
@@ -41,6 +44,9 @@ class CustomTextField extends StatelessWidget {
     this.exitingCode,
     this.focusNode,
     this.autoFocus,
+    this.colorTextField,
+    this.textColor,
+    this.cursorColor,
   });
 
   @override
@@ -57,7 +63,7 @@ class CustomTextField extends StatelessWidget {
             color: borderColor ?? BC.black,
             width: borderWidth,
           ),
-          color: BC.lightGray.withOpacity(0.4),
+          color: colorTextField ?? BC.lightGray.withOpacity(0.4),
         ),
         child: Row(
           children: [
@@ -73,11 +79,11 @@ class CustomTextField extends StatelessWidget {
                 //   if (inputFormatters != null) ...inputFormatters!,
                 // ],
                 controller: controller,
-                style: BS.tex32Text.apply(color: BC.white),
+                style: BS.tex32Text.apply(color: textColor ?? BC.white),
                 autocorrect: false,
                 keyboardType: keyboardType,
                 textAlign: TextAlign.center,
-                cursorColor: BC.white,
+                cursorColor: cursorColor ?? BC.white,
                 decoration: InputDecoration(
                   contentPadding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
