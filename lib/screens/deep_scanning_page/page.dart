@@ -73,7 +73,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: BC.navyGrey,
+              color: BC.pink,
             ),
             child: state.showCircularProgress
                 ? const Center(child: AppCircularProgressIndicator())
@@ -87,6 +87,28 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                       )
                     : Stack(
                         children: [
+                          CustomBokeh(
+                            size: height / 1,
+                            scaleY: 1,
+                            scaleX: 0.4,
+                            alignment: Alignment.center,
+                            transform:
+                            Offset(Sizes.scale, height/10),
+                            shape: BoxShape.rectangle,
+                            angleInRadians: pi / Sizes.s2,
+                            blurWhiteHard: true,
+                          ),
+                          CustomBokeh(
+                            size: height / 1,
+                            scaleY: 1,
+                            scaleX: 1,
+                            alignment: Alignment.bottomCenter,
+                            transform:
+                            Offset(Sizes.scale, height / 2.5),
+                            shape: BoxShape.rectangle,
+                            angleInRadians: pi / Sizes.s2,
+                            blurWhiteHard: true,
+                          ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -95,7 +117,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                   : const SizedBox.shrink(),
                               Text(
                                 s.aiPoweredSkinAnalyzer,
-                                style: BS.tex24.apply(color: BC.salad),
+                                style: BS.tex24.apply(color: BC.white),
                                 textAlign: TextAlign.center,
                               ),
                               Space.h8,
@@ -115,6 +137,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                       height: newHeight,
                                       width: width,
                                       itemCard: 4,
+                                      color: Colors.transparent,
                                       autoSwipe: true,
                                       itemBuilder: (_, index) {
                                         return Column(
@@ -144,8 +167,8 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                                 state.listDeepModel[index]
                                                     .deepTextGroupEnum
                                                     .getText(s),
-                                                style: BS.tex20Text
-                                                    .apply(color: BC.white)),
+                                                style: BS.tex20Text.apply(
+                                                    color: BC.purpleViolet)),
                                             height > 950 ? Space.h32 : Space.h4,
                                             if (height > 950)
                                               Padding(
@@ -166,7 +189,8 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                                     .deepTitleGroupEnum
                                                     .getTitleText(s),
                                                 style: BS.tex14withFont500
-                                                    .apply(color: BC.white),
+                                                    .apply(
+                                                        color: BC.avatarGrey),
                                                 textAlign: TextAlign.center,
                                               ),
                                           ],
@@ -177,29 +201,6 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                 ),
                               ),
                             ],
-                          ),
-                          CustomBokeh(
-                            size: width / 1.5,
-                            scaleY: height > 950
-                                ? 0.9
-                                : height > 840
-                                    ? 0.7
-                                    : 0.7,
-                            scaleX: height > 950
-                                ? 0.3
-                                : height > 840
-                                    ? 0.3
-                                    : 0.3,
-                            alignment: Alignment.bottomCenter,
-                            transform: Offset(
-                                Sizes.scale,
-                                height > 950
-                                    ? Sizes.s80
-                                    : height > 840
-                                        ? -Sizes.s20
-                                        : Sizes.s40),
-                            shape: BoxShape.rectangle,
-                            angleInRadians: pi / Sizes.s2,
                           ),
                           Column(
                             children: [
@@ -219,12 +220,14 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                                             .logDeepScanningBuySubscription();
                                       },
                                       outLine: true,
-                                      borderColor: BC.salad,
-                                      colorButton: BC.salad,
+                                      borderColor: BC.purpleViolet,
+                                      colorButton: BC.purpleViolet,
                                       borderRadius: AppRadius.r18,
                                       padding: Sizes.s23,
                                       svgGenImage: Assets.images.starsIcon,
                                       spaceBetweenTextImage: Sizes.s8,
+                                      textColor: BC.white,
+                                      imageColor: BC.white,
                                     ),
                                     height > 840
                                         ? SizedBox(height: height / 30)

@@ -43,7 +43,7 @@ class _DeepScanningIndicatorWidgetState
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: BC.navyGrey,
+      backgroundColor: BC.white,
       body: Align(
         alignment: Alignment.topCenter,
         child: SafeArea(
@@ -65,7 +65,7 @@ class _DeepScanningIndicatorWidgetState
                         child: CircularProgressIndicator(
                           value: widget.valueProgress,
                           strokeWidth: height < 840 ? 6 : 9,
-                          valueColor: AlwaysStoppedAnimation<Color>(BC.salad),
+                          valueColor: AlwaysStoppedAnimation<Color>(BC.lightGreen),
                           backgroundColor: BC.lightGray,
                         ),
                       ),
@@ -73,8 +73,8 @@ class _DeepScanningIndicatorWidgetState
                     Text(
                       "${(widget.valueProgress * 100).toInt()}",
                       style: height < 840
-                          ? BS.tex48Text.apply(color: BC.white)
-                          : BS.indicatorText.apply(color: BC.white),
+                          ? BS.tex48Text.apply(color: BC.black)
+                          : BS.indicatorText.apply(color: BC.black),
                     ),
                   ],
                 ),
@@ -84,7 +84,7 @@ class _DeepScanningIndicatorWidgetState
                 padding: EdgeInsets.symmetric(horizontal: width / 4),
                 child: Text(
                   widget.s.pleaseWaitForYourResults,
-                  style: BS.tex16.apply(color: BC.white),
+                  style: BS.tex16.apply(color: BC.black),
                   textAlign: TextAlign.center,
                 ),
               ),
