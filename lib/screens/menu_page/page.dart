@@ -50,7 +50,7 @@ class _MenuPageState extends State<MenuPage> {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: BC.navyGrey,
+              color: BC.pink,
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: Sizes.s25),
