@@ -46,7 +46,7 @@ enum GuideTextGroupEnum {
       case hair:
         return s.hair;
       case jawline:
-        return s.jawline;
+        return s.jawlineS;
       case eyes:
         return s.eyes;
       case fitness:

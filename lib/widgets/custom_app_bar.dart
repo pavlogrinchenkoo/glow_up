@@ -12,6 +12,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final SvgGenImage? leftIcon;
   final SvgGenImage? rightIcon;
   final bool usePoint;
+  final Color? backgroundeWhiteColor;
 
   const CustomAppBar({
     this.title,
@@ -23,6 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.leftIcon,
     this.rightIcon,
     this.usePoint = false,
+    this.backgroundeWhiteColor,
     super.key,
   });
 
@@ -32,14 +34,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: BC.pink,
-      foregroundColor: BC.pink,
-      shadowColor: BC.pink,
-      surfaceTintColor: BC.pink,
+      backgroundColor: backgroundeWhiteColor ?? BC.pink,
+      foregroundColor: backgroundeWhiteColor ?? BC.pink,
+      shadowColor: backgroundeWhiteColor ?? BC.pink,
+      surfaceTintColor: backgroundeWhiteColor ?? BC.pink,
       elevation: 0,
       leading: useLeftButton
           ? IconButton(
-              icon: leftIcon?.svg() ?? const Icon(Icons.abc_rounded),
+              icon: leftIcon?.svg(
+                      color: backgroundeWhiteColor != null ? BC.black : null) ??
+                  const Icon(Icons.abc_rounded),
               onPressed: leftOnClick,
             )
           : null,
@@ -52,7 +56,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             Flexible(
               child: Text(
                 title ?? "",
-                style: BS.tex18Text.apply(color: BC.white),
+                style: BS.tex18Text.apply(
+                    color: backgroundeWhiteColor != null ? BC.black : BC.white),
                 overflow: TextOverflow.ellipsis,
                 softWrap: false,
                 textAlign: TextAlign.center,
@@ -65,7 +70,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: useRightButton
           ? [
               IconButton(
-                icon: rightIcon?.svg() ?? const Icon(Icons.abc_rounded),
+                icon: rightIcon?.svg(
+                        color:
+                            backgroundeWhiteColor != null ? BC.black : null) ??
+                    const Icon(Icons.abc_rounded),
                 onPressed: rightOnClick,
               ),
             ]

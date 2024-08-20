@@ -55,5 +55,5 @@ const _$GuideOnTapGroupEnumEnumMap = {
   GuideOnTapGroupEnum.eyes: 'eyes',
   GuideOnTapGroupEnum.fitness: 'fitness',
   GuideOnTapGroupEnum.fashion: 'fashion',
-  GuideOnTapGroupEnum.makeup: 'grooming',
+  GuideOnTapGroupEnum.makeup: 'makeup',
 };

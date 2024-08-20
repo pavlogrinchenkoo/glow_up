@@ -23,12 +23,13 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aDefinedJawline": MessageLookupByLibrary.simpleMessage(
-            "A defined jawline is a coveted feature, symbolizing strength and attractiveness. Achieving and maintaining a sharp jawline involves a combination of targeted exercises, dietary choices, and skincare techniques. This section explores practical steps to enhance your jawline\'s definition, from exercises that tone facial muscles to contouring tips and professional treatments that refine your profile. Tailor your routine to sculpt a jawline that complements your facial features and boosts your confidence."),
+            "A defined jawline is often seen as a sign of strength and attractiveness. Here’s how to enhance your jawline and make it more prominent:"),
         "aSerumWithVitaminC": MessageLookupByLibrary.simpleMessage(
             "A serum with Vitamin C can brighten the under-eye area and strengthen the skin’s natural defenses."),
         "aWellMaintainedSkincareRoutine": MessageLookupByLibrary.simpleMessage(
             "A well-maintained skincare routine can enhance the skin’s elasticity around the jawline, providing a more defined appearance. Look for firming creams and serums that target this area."),
         "accessories": MessageLookupByLibrary.simpleMessage("Accessories"),
+        "accessorizing": MessageLookupByLibrary.simpleMessage("Accessorizing"),
         "acne": MessageLookupByLibrary.simpleMessage("Acne"),
         "acneAnalysis": MessageLookupByLibrary.simpleMessage("Acne Analysis"),
         "activate": MessageLookupByLibrary.simpleMessage("Activate"),
@@ -47,6 +48,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("🔎 AI-Driven Deep Analysis"),
         "aiPoweredSkinAnalyzer":
             MessageLookupByLibrary.simpleMessage("AI-Powered Skin Analyzer"),
+        "almondEyes": MessageLookupByLibrary.simpleMessage("Almond Eyes:"),
+        "almondEyesDescription": MessageLookupByLibrary.simpleMessage(
+            "Highlight your almond eyes with a cat-eye liner."),
         "alwaysRemoveEye": MessageLookupByLibrary.simpleMessage(
             "Always remove eye makeup with a gentle, non-irritating makeup remover to avoid stress on the skin."),
         "alwaysUseAHeatProtectant": MessageLookupByLibrary.simpleMessage(
@@ -73,33 +77,79 @@ class MessageLookup extends MessageLookupByLibrary {
         "attractivenessIndex": MessageLookupByLibrary.simpleMessage(
             "Attractiveness Index Calculation"),
         "average": MessageLookupByLibrary.simpleMessage("Average"),
+        "avoidSlouching":
+            MessageLookupByLibrary.simpleMessage("Avoid Slouching:"),
+        "avoidSlouchingDescription": MessageLookupByLibrary.simpleMessage(
+            "Slouching can make your neck and jawline appear less defined. Practice sitting and standing tall to maintain a sharp appearance."),
         "avoidTightHairstyles": MessageLookupByLibrary.simpleMessage(
             "Avoid tight hairstyles and harsh treatments that can exacerbate hair loss."),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
+        "bagsShoes": MessageLookupByLibrary.simpleMessage("Bags & Shoes:"),
+        "bagsShoesDescription": MessageLookupByLibrary.simpleMessage(
+            "Match your bags and shoes with your outfit to create a cohesive look. Consider the occasion when choosing between heels, flats, or sneakers."),
+        "balance": MessageLookupByLibrary.simpleMessage("Balance:"),
+        "balanceSymmetry": MessageLookupByLibrary.simpleMessage(
+            "Symmetry is often associated with attractiveness. Focus on balanced skincare, grooming, and makeup application to enhance facial symmetry."),
+        "balancedDiet": MessageLookupByLibrary.simpleMessage("Balanced Diet:"),
+        "balancedDietDescription": MessageLookupByLibrary.simpleMessage(
+            "Eat a balanced diet with a mix of protein, carbohydrates, and healthy fats to fuel your workouts and aid in recovery."),
+        "basics": MessageLookupByLibrary.simpleMessage("Basics:"),
+        "basicsDescription": MessageLookupByLibrary.simpleMessage(
+            "Invest in high-quality basics like a well-fitted pair of jeans, a white shirt, and a little black dress that can be mixed and matched with other items."),
         "beCautious": MessageLookupByLibrary.simpleMessage(
             "Be cautious when removing eye makeup to avoid lash breakage. Opt for a nourishing makeup remover designed for the eyes."),
+        "beardShaping": MessageLookupByLibrary.simpleMessage("Beard Shaping:"),
+        "beardShapingDescription": MessageLookupByLibrary.simpleMessage(
+            "If you have facial hair, shape your beard to accentuate your jawline. A well-groomed beard can add definition and make your jaw appear stronger."),
         "beardStyling": MessageLookupByLibrary.simpleMessage("Beard Styling:"),
         "beautyProfile":
             MessageLookupByLibrary.simpleMessage("Beauty Profile Compilation"),
         "belowAverage": MessageLookupByLibrary.simpleMessage("Below Average"),
         "blackheadCount":
             MessageLookupByLibrary.simpleMessage("Blackhead Count"),
+        "blending": MessageLookupByLibrary.simpleMessage("Blending:"),
+        "blendingDescription": MessageLookupByLibrary.simpleMessage(
+            "Blend well to avoid harsh lines. A makeup sponge or brush works well to diffuse the contour for a natural look."),
         "blinking": MessageLookupByLibrary.simpleMessage("Blinking:"),
+        "blueLightProtection":
+            MessageLookupByLibrary.simpleMessage("Blue Light Protection:"),
+        "blueLightProtectionDescription": MessageLookupByLibrary.simpleMessage(
+            "Use glasses or screen filters to protect your eyes from blue light if you spend a lot of time in front of screens."),
+        "blush": MessageLookupByLibrary.simpleMessage("Blush:"),
+        "blushBronzer": MessageLookupByLibrary.simpleMessage("Blush & Bronzer"),
+        "blushDescription": MessageLookupByLibrary.simpleMessage(
+            "Blush adds a healthy flush of color to your cheeks. Choose a shade that complements your skin tone—peachy tones for warm undertones, and pink or berry tones for cool undertones."),
         "bodyDeepNotification": MessageLookupByLibrary.simpleMessage(
             "Tap to get a deep scan for detailed insights."),
         "bodyOnboardingNotification": MessageLookupByLibrary.simpleMessage(
             "Complete onboarding to reveal your results."),
         "bodySubscriptionNotification": MessageLookupByLibrary.simpleMessage(
             "Tap to reveal your personal score."),
+        "bodyTypes": MessageLookupByLibrary.simpleMessage("Body Types:"),
+        "bodyTypesDescription": MessageLookupByLibrary.simpleMessage(
+            "Identify your body shape (pear, apple, hourglass, rectangle) to choose clothes that enhance your figure."),
+        "broadSpectrum":
+            MessageLookupByLibrary.simpleMessage("Broad Spectrum:"),
+        "broadSpectrumText": MessageLookupByLibrary.simpleMessage(
+            "Choose a broad-spectrum sunscreen that protects against both UVA and UVB rays."),
+        "bronzer": MessageLookupByLibrary.simpleMessage("Bronzer:"),
+        "bronzerDescription": MessageLookupByLibrary.simpleMessage(
+            "Bronzer gives your skin a sun-kissed glow. Apply it to areas where the sun naturally hits your face, like your forehead, cheeks, and the bridge of your nose."),
         "browGel": MessageLookupByLibrary.simpleMessage("Brow Gel:"),
         "brownArea": MessageLookupByLibrary.simpleMessage("Brown Area"),
         "brownDark": MessageLookupByLibrary.simpleMessage("Brown/Dark"),
         "brows": MessageLookupByLibrary.simpleMessage("Brows"),
+        "buildingAWardrobe":
+            MessageLookupByLibrary.simpleMessage("Building a Wardrobe"),
+        "cardioWorkouts":
+            MessageLookupByLibrary.simpleMessage("Cardio Workouts"),
         "causedByExcessMelaninProduction": MessageLookupByLibrary.simpleMessage(
             "Caused by excess melanin production, it can result from sun exposure, inflammation, or hormonal changes."),
         "certainHairstylesCanVisuallyEnhance": MessageLookupByLibrary.simpleMessage(
             "Certain hairstyles can visually enhance the jawline. Short sides and back with a longer top can help elongate the face and make the jawline appear more pronounced."),
-        "cheekbones": MessageLookupByLibrary.simpleMessage("Cheekbones"),
+        "cheekbones": MessageLookupByLibrary.simpleMessage("Cheekbones:"),
+        "cheekbonesHighlight": MessageLookupByLibrary.simpleMessage(
+            "Highlighting your cheekbones can add definition to your face. Use a highlighter on the high points of your cheeks for a lifted look."),
         "chin": MessageLookupByLibrary.simpleMessage("Chin"),
         "chinTucks": MessageLookupByLibrary.simpleMessage("Chin Tucks:"),
         "chooseQuality": MessageLookupByLibrary.simpleMessage(
@@ -108,55 +158,130 @@ class MessageLookup extends MessageLookupByLibrary {
             "Invest in a good razor and change blades regularly to minimize skin irritation. Consider whether traditional razors, safety razors, or electric shavers best suit your skin and beard type."),
         "chooseQualityToolsTitle":
             MessageLookupByLibrary.simpleMessage("Choose Quality Tools:"),
+        "choosingAColor":
+            MessageLookupByLibrary.simpleMessage("Choosing a Color:"),
+        "choosingAColorDescription": MessageLookupByLibrary.simpleMessage(
+            "Select a hair color that complements your skin tone. Warmer skin tones suit golden and caramel shades, while cooler tones look great with ash or platinum shades."),
         "choosingAFragrance": MessageLookupByLibrary.simpleMessage(
             "When selecting a fragrance, consider your personal style and the occasions on which you\'ll wear it. Test fragrances on your skin and live with them for a few hours to see how they evolve."),
         "choosingAFragranceTitle":
             MessageLookupByLibrary.simpleMessage("Choosing a Fragrance:"),
         "choosingShampoo":
             MessageLookupByLibrary.simpleMessage("Choosing Shampoo:"),
+        "choosingTheRightFoundation": MessageLookupByLibrary.simpleMessage(
+            "Choosing the Right Foundation:"),
+        "choosingTheRightFoundationDescription":
+            MessageLookupByLibrary.simpleMessage(
+                "Select a foundation that matches your skin tone and type. For oily skin, a matte or oil-free foundation works best, while those with dry skin should opt for a hydrating or dewy foundation."),
         "choosingTheRightMoisturizer": MessageLookupByLibrary.simpleMessage(
             "Choosing the Right Moisturizer:"),
         "circles": MessageLookupByLibrary.simpleMessage("Circles"),
-        "cleansing": MessageLookupByLibrary.simpleMessage("Cleansing"),
+        "classicPieces":
+            MessageLookupByLibrary.simpleMessage("Classic Pieces:"),
+        "classicPiecesDescription": MessageLookupByLibrary.simpleMessage(
+            "Invest in classic pieces that never go out of style, like a trench coat, tailored blazer, or a pair of black pumps."),
+        "cleansing": MessageLookupByLibrary.simpleMessage("Cleansing:"),
+        "cleansingDescription": MessageLookupByLibrary.simpleMessage(
+            "Remove your makeup thoroughly at the end of the day to prevent clogged pores and breakouts. Use a gentle makeup remover or cleansing oil to dissolve makeup, followed by a cleanser to remove any residue."),
+        "cleansingMakeup": MessageLookupByLibrary.simpleMessage("Cleansing:"),
+        "cleansingText": MessageLookupByLibrary.simpleMessage(
+            "Shampoo your hair based on your scalp’s needs—daily for oily scalps, or every few days for dry scalps. Use a sulfate-free shampoo for color-treated or sensitive hair."),
         "clenchYourJawFor10Seconds": MessageLookupByLibrary.simpleMessage(
             "Clench your jaw for 10 seconds and release. Do this several times to work the muscles around the jaw."),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
+        "colorCoordination":
+            MessageLookupByLibrary.simpleMessage("Color Coordination:"),
+        "colorCoordinationDescription": MessageLookupByLibrary.simpleMessage(
+            "Understand which colors complement your skin tone. Warm tones look great in earthy colors, while cool tones shine in blues and purples."),
+        "coloredLenses":
+            MessageLookupByLibrary.simpleMessage("Colored Lenses:"),
+        "coloredLensesDescription": MessageLookupByLibrary.simpleMessage(
+            "Experiment with colored contact lenses to temporarily change your eye color and enhance your look."),
         "colors": MessageLookupByLibrary.simpleMessage("Colors"),
+        "colorsPatterns":
+            MessageLookupByLibrary.simpleMessage("Colors & Patterns"),
         "combinationSkin":
             MessageLookupByLibrary.simpleMessage("Combination skin"),
         "compare": MessageLookupByLibrary.simpleMessage("Compare"),
         "conclusion": MessageLookupByLibrary.simpleMessage("Conclusion"),
-        "conditioning": MessageLookupByLibrary.simpleMessage(
-            "Use conditioner to add moisture and shine, focusing on the mid-lengths and ends of your hair."),
+        "conditioning": MessageLookupByLibrary.simpleMessage("Conditioning:"),
+        "conditioningText": MessageLookupByLibrary.simpleMessage(
+            "Condition your hair after every wash to keep it hydrated. Apply conditioner from mid-lengths to ends, avoiding the scalp."),
         "conditioningTitle":
             MessageLookupByLibrary.simpleMessage("Conditioning:"),
+        "consistency": MessageLookupByLibrary.simpleMessage("Consistency:"),
+        "consistencyDescription": MessageLookupByLibrary.simpleMessage(
+            "Like any workout, consistency is key. Practice these exercises daily for noticeable results over time."),
+        "consistencyMotivation":
+            MessageLookupByLibrary.simpleMessage("Consistency & Motivation"),
         "consultADermatologist": MessageLookupByLibrary.simpleMessage(
             "Consult a dermatologist or trichologist for personalized treatment options, especially for pattern baldness or significant thinning."),
+        "contactLenses": MessageLookupByLibrary.simpleMessage("Contact Lenses"),
         "contactSupport":
             MessageLookupByLibrary.simpleMessage("✉️ Contact Support"),
-        "contouring": MessageLookupByLibrary.simpleMessage("Contouring"),
+        "contouring": MessageLookupByLibrary.simpleMessage("Contouring:"),
+        "contouringDescription": MessageLookupByLibrary.simpleMessage(
+            "Contouring enhances your facial structure by creating shadows. Use a matte contour powder or cream two shades darker than your skin tone to define your cheekbones, jawline, and nose."),
+        "contouringHighlighting":
+            MessageLookupByLibrary.simpleMessage("Contouring & Highlighting"),
+        "contouringJaw": MessageLookupByLibrary.simpleMessage("Contouring"),
+        "contouringMakeup": MessageLookupByLibrary.simpleMessage("Contouring:"),
+        "contouringText": MessageLookupByLibrary.simpleMessage(
+            "Use makeup to contour and highlight, creating the illusion of more symmetrical features."),
         "coolCompresses":
             MessageLookupByLibrary.simpleMessage("Cool Compresses:"),
         "copied": MessageLookupByLibrary.simpleMessage("Copied"),
         "copyYourCode": MessageLookupByLibrary.simpleMessage("Copy your code"),
+        "coreStrength": MessageLookupByLibrary.simpleMessage("Core Strength:"),
+        "coreStrengthDescription": MessageLookupByLibrary.simpleMessage(
+            "Focus on core exercises to improve posture and enhance abdominal definition."),
+        "correctPosture":
+            MessageLookupByLibrary.simpleMessage("Correct Posture:"),
+        "correctPostureDescription": MessageLookupByLibrary.simpleMessage(
+            "Good posture can make your jawline more prominent. Keep your head up and shoulders back to naturally enhance your jawline."),
         "crowsFeet": MessageLookupByLibrary.simpleMessage("Crows Feet"),
+        "curling": MessageLookupByLibrary.simpleMessage("Curling:"),
+        "curlingDescription": MessageLookupByLibrary.simpleMessage(
+            "Curl your lashes before applying mascara to lift them and make your eyes appear larger."),
         "dailyApplicationOfSunscreen": MessageLookupByLibrary.simpleMessage(
             "Daily application of sunscreen around the eye area prevents premature aging and skin damage."),
         "dailyRoutine": MessageLookupByLibrary.simpleMessage(
             "Develop a simple yet effective skincare routine that includes cleansing, moisturizing, and applying sunscreen daily. Tailor products to your skin type—oily, dry, combination, or sensitive."),
         "dailyRoutineTitle":
             MessageLookupByLibrary.simpleMessage("Daily Routine:"),
+        "dailySkincare":
+            MessageLookupByLibrary.simpleMessage("Daily Skincare Routine"),
         "darkCircle": MessageLookupByLibrary.simpleMessage("Dark Circle"),
         "darkCircles": MessageLookupByLibrary.simpleMessage("Dark Circles"),
         "darkCirclesWithShadows":
             MessageLookupByLibrary.simpleMessage("Dark circles with shadows"),
+        "dayVsNightLooks":
+            MessageLookupByLibrary.simpleMessage("Day vs. Night Looks:"),
+        "dayVsNightLooksDescription": MessageLookupByLibrary.simpleMessage(
+            "For daytime, opt for softer shades like browns, taupes, and pinks. For a night out, experiment with bolder colors like deep purples, blues, or smoky blacks."),
+        "deepConditioning":
+            MessageLookupByLibrary.simpleMessage("Deep Conditioning:"),
+        "deepConditioningDescription": MessageLookupByLibrary.simpleMessage(
+            "Use a deep conditioner or hair mask once a week to nourish and strengthen your hair."),
         "deepScan": MessageLookupByLibrary.simpleMessage("Deep Scan"),
         "deepScanningResult":
             MessageLookupByLibrary.simpleMessage("Deep Scanning Results"),
         "definition": MessageLookupByLibrary.simpleMessage("Definition"),
+        "dermalFillers":
+            MessageLookupByLibrary.simpleMessage("Dermal Fillers:"),
+        "dermalFillersDescription": MessageLookupByLibrary.simpleMessage(
+            "Consider non-surgical options like dermal fillers to enhance your jawline. Consult with a professional to explore this option."),
+        "dermatologistVisits":
+            MessageLookupByLibrary.simpleMessage("Dermatologist Visits:"),
+        "dermatologistVisitsText": MessageLookupByLibrary.simpleMessage(
+            "See a dermatologist for persistent skin issues like acne, rosacea, or severe dryness."),
         "diet": MessageLookupByLibrary.simpleMessage("Diet:"),
+        "dietAndHydration":
+            MessageLookupByLibrary.simpleMessage("Diet & Hydration"),
         "dietCheekbones": MessageLookupByLibrary.simpleMessage(
             "Maintain a balanced diet rich in calcium and vitamin D to support bone health."),
+        "dietNutrition":
+            MessageLookupByLibrary.simpleMessage("Diet & Nutrition"),
         "dietStressAndHygiene": MessageLookupByLibrary.simpleMessage(
             "Diet, stress, and hygiene can all impact acne. Maintain a balanced diet, manage stress through activities like exercise or meditation, and avoid touching your face with unclean hands."),
         "diveDeepIntoYourSkin": MessageLookupByLibrary.simpleMessage(
@@ -174,6 +299,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Embrace Natural Texture:"),
         "enhancedTextureLines":
             MessageLookupByLibrary.simpleMessage("Enhanced Texture Lines"),
+        "enhancingEyeShape":
+            MessageLookupByLibrary.simpleMessage("Enhancing Eye Shape"),
+        "enhancingFacial": MessageLookupByLibrary.simpleMessage(
+            "Enhancing your facial features is about understanding your unique structure and making subtle adjustments that highlight your best attributes. Here’s a comprehensive guide to help you optimize your facial appearance:"),
         "ensureNoResidue": MessageLookupByLibrary.simpleMessage(
             "Ensure no residue is left behind to maintain hair volume and texture."),
         "ensureYouAreGetting": MessageLookupByLibrary.simpleMessage(
@@ -182,21 +311,45 @@ class MessageLookup extends MessageLookupByLibrary {
         "exercise": MessageLookupByLibrary.simpleMessage("Exercise:"),
         "exerciseEyes": MessageLookupByLibrary.simpleMessage(
             "Strengthen eye muscles with regular exercises; blinking and focusing on different distances can help."),
-        "exercises": MessageLookupByLibrary.simpleMessage("Exercises"),
+        "exerciseFacial": MessageLookupByLibrary.simpleMessage(
+            "Facial exercises can help tone and strengthen your facial muscles, improving symmetry over time."),
+        "exercises": MessageLookupByLibrary.simpleMessage("Exercises:"),
         "exfoliate": MessageLookupByLibrary.simpleMessage(
             "Regular exfoliation, 1-2 times a week, removes dead skin cells, promoting a clearer, smoother complexion."),
         "exfoliateTitle": MessageLookupByLibrary.simpleMessage("Exfoliate:"),
         "exfoliation": MessageLookupByLibrary.simpleMessage("Exfoliation:"),
+        "exfoliationAndMasks":
+            MessageLookupByLibrary.simpleMessage("Exfoliation & Masks"),
+        "exfoliationDescription": MessageLookupByLibrary.simpleMessage(
+            "Exfoliate your scalp to remove dead skin cells and promote healthy hair growth."),
+        "exfoliationJaw": MessageLookupByLibrary.simpleMessage(
+            "Regularly exfoliate your neck and jawline area to keep the skin smooth and tight."),
+        "exfoliationText": MessageLookupByLibrary.simpleMessage(
+            "Exfoliate 1-2 times a week to remove dead skin cells and reveal smoother, brighter skin. Use a chemical exfoliant for sensitive skin or a physical scrub for tougher skin."),
         "experimentWithColor": MessageLookupByLibrary.simpleMessage(
             "Don’t shy away from color experimentation. While neutrals are safe and versatile, adding pops of color can add interest and personality to your outfits."),
         "experimentWithProducts": MessageLookupByLibrary.simpleMessage(
             "Experiment with products that enhance your natural hair texture, from curl creams to volumizing sprays."),
         "experimentation": MessageLookupByLibrary.simpleMessage(
             "Experiment with trend pieces by incorporating them into your existing wardrobe in small doses. This could mean trying out a trendy accessory or color before adopting a full trend-focused outfit."),
+        "experimentationDescription": MessageLookupByLibrary.simpleMessage(
+            "Don’t be afraid to experiment with different styles until you find what suits you best. Fashion is personal, and it’s okay to break the rules."),
+        "experimentationFash":
+            MessageLookupByLibrary.simpleMessage("Experimentation:"),
         "eyeBags": MessageLookupByLibrary.simpleMessage("Eye Bags"),
+        "eyeCream": MessageLookupByLibrary.simpleMessage("Eye Cream:"),
+        "eyeCreamDescription": MessageLookupByLibrary.simpleMessage(
+            "Use an eye cream daily to keep the delicate skin around your eyes hydrated and reduce the appearance of fine lines and dark circles."),
+        "eyeHealth": MessageLookupByLibrary.simpleMessage("Eye Health"),
         "eyeIssuesAnalysis":
             MessageLookupByLibrary.simpleMessage("Eye Issues Analysis"),
+        "eyeMakeup": MessageLookupByLibrary.simpleMessage("Eye Makeup"),
+        "eyebrowGrooming":
+            MessageLookupByLibrary.simpleMessage("Eyebrow Grooming"),
         "eyebrows": MessageLookupByLibrary.simpleMessage("Eyebrows"),
+        "eyeliner": MessageLookupByLibrary.simpleMessage("Eyeliner:"),
+        "eyelinerDescription": MessageLookupByLibrary.simpleMessage(
+            "Eyeliner adds definition to your eyes. For a natural look, line your upper lash line. For more drama, try a winged liner."),
         "eyes": MessageLookupByLibrary.simpleMessage("Eyes"),
         "eyesAnalyzing": MessageLookupByLibrary.simpleMessage("Eyes Analyzing"),
         "eyesBrightness": MessageLookupByLibrary.simpleMessage("Brightness"),
@@ -210,6 +363,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "eyesShapeImage": MessageLookupByLibrary.simpleMessage("👁️"),
         "eyesSymmetry": MessageLookupByLibrary.simpleMessage("Symmetry"),
         "eyesSymmetryImage": MessageLookupByLibrary.simpleMessage("📏"),
+        "eyeshadow": MessageLookupByLibrary.simpleMessage("Eyeshadow:"),
+        "eyeshadowDescription": MessageLookupByLibrary.simpleMessage(
+            "Choose eyeshadow shades that complement your eye color. Browns and golds make blue eyes pop, while purples and greens enhance brown eyes."),
+        "eyeshadowDescriptionMakeup": MessageLookupByLibrary.simpleMessage(
+            "Start with a neutral base color over your entire eyelid. Build depth with darker shades in the crease and blend well to avoid harsh lines."),
         "face": MessageLookupByLibrary.simpleMessage("Face"),
         "faceAnalyzing": MessageLookupByLibrary.simpleMessage("Face Analyzing"),
         "faceCoolImage": MessageLookupByLibrary.simpleMessage("😎"),
@@ -217,26 +375,42 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceEmotionImage": MessageLookupByLibrary.simpleMessage("🧬"),
         "faceJawlineImage": MessageLookupByLibrary.simpleMessage("🧏‍♂️"),
         "faceJawlineImageAndroid": MessageLookupByLibrary.simpleMessage("🤠"),
+        "faceMasks": MessageLookupByLibrary.simpleMessage("Face Masks:"),
         "faceNoseImage": MessageLookupByLibrary.simpleMessage("👃"),
         "faceSymmetryImage": MessageLookupByLibrary.simpleMessage("🪞"),
         "faceSymmetryImageAndroid": MessageLookupByLibrary.simpleMessage("💫"),
         "facialExercises":
-            MessageLookupByLibrary.simpleMessage("Facial Exercises:"),
+            MessageLookupByLibrary.simpleMessage("Facial Exercises"),
         "facialExercisesCheekbones": MessageLookupByLibrary.simpleMessage(
             "Perform exercises that target the cheeks to enhance bone structure."),
         "facialExercisesForehead": MessageLookupByLibrary.simpleMessage(
             "Reduce forehead wrinkles with targeted facial exercises that improve muscle tone and skin elasticity."),
         "facialExercisesMouth": MessageLookupByLibrary.simpleMessage(
             "Strengthen your jawline and mouth area with exercises that promote muscle tone and skin elasticity."),
+        "facialFeaturesEnhancement":
+            MessageLookupByLibrary.simpleMessage("Facial Features Enhancement"),
         "facialGeometry":
             MessageLookupByLibrary.simpleMessage("Facial Geometry Mapping"),
+        "facialHair": MessageLookupByLibrary.simpleMessage("Facial Hair"),
         "facialSkin":
             MessageLookupByLibrary.simpleMessage("💆‍ Facial & Skin Insights"),
+        "facialSymmetry":
+            MessageLookupByLibrary.simpleMessage("Facial Symmetry"),
+        "facials": MessageLookupByLibrary.simpleMessage("Facials:"),
+        "facialsText": MessageLookupByLibrary.simpleMessage(
+            "Regular facials can help deep clean your skin, address specific concerns, and keep it glowing."),
+        "falseLashes": MessageLookupByLibrary.simpleMessage("False Lashes:"),
+        "falseLashesDescription": MessageLookupByLibrary.simpleMessage(
+            "For special occasions, consider using false lashes to add volume and length. Choose a style that suits your eye shape—natural for daily wear or dramatic for evening looks."),
         "fashion": MessageLookupByLibrary.simpleMessage("Fashion"),
         "fashionIsEverEvolving": MessageLookupByLibrary.simpleMessage(
             "Fashion is an ever-evolving field, but understanding its fundamentals can make it easier to navigate and use to your advantage. By focusing on trends that suit you, ensuring your clothes fit perfectly, thoughtfully selecting accessories, and understanding color theory, you can create a distinctive and personal style that stands the test of time."),
         "fashionIsExplored": MessageLookupByLibrary.simpleMessage(
-            "Fashion is an expression of individuality—a way to convey your personality and preferences without saying a word. It\'s not just about following the latest trends; it\'s about understanding the fundamentals of fit, color, and style to create a wardrobe that feels uniquely yours. This guide explores the core aspects of fashion, from staying abreast of seasonal trends to mastering the art of fit, selecting the right accessories, and incorporating color effectively. Whether you\'re refining your current style or building a new look from the ground up, these insights will help you navigate the world of fashion with confidence, making informed choices that enhance your appearance and express your personal brand."),
+            "Fashion is a powerful form of self-expression. The way you dress can significantly impact how you feel and how others perceive you. Here’s a guide to help you develop your style:"),
+        "fashionTrends": MessageLookupByLibrary.simpleMessage("Fashion Trends"),
+        "fatLoss": MessageLookupByLibrary.simpleMessage("Fat Loss:"),
+        "fatLossDescription": MessageLookupByLibrary.simpleMessage(
+            "To reduce body fat, aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week."),
         "femininity": MessageLookupByLibrary.simpleMessage("Femininity"),
         "fineLinesOnForehead":
             MessageLookupByLibrary.simpleMessage("Fine Lines on Forehead"),
@@ -245,6 +419,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "fineLinesUnderRightEye":
             MessageLookupByLibrary.simpleMessage("Fine Lines under Right Eye"),
         "fit": MessageLookupByLibrary.simpleMessage("Fit"),
+        "fitTailoring":
+            MessageLookupByLibrary.simpleMessage("Fit & Tailoring:"),
+        "fitTailoringDescription": MessageLookupByLibrary.simpleMessage(
+            "Always choose clothes that fit well. Consider tailoring items for a perfect fit, as even a small adjustment can make a big difference."),
         "fitness": MessageLookupByLibrary.simpleMessage("Fitness"),
         "fitnessAnalyzing":
             MessageLookupByLibrary.simpleMessage("Fitness Analyzing"),
@@ -258,12 +436,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "Fitness is a multifaceted journey that encompasses more than just physical activity; it includes proper nutrition, adequate recovery, and flexibility work. Tailoring these elements to your personal goals and preferences is key to developing a balanced, effective fitness routine that promotes overall health and well-being. Start small, stay consistent, and celebrate your progress along the way."),
         "fitnessMuscle": MessageLookupByLibrary.simpleMessage("Muscle Mass"),
         "fitnessMuscleImage": MessageLookupByLibrary.simpleMessage("🏋️‍"),
+        "fitnessOverview": MessageLookupByLibrary.simpleMessage(
+            "Physical fitness is essential for overall health and plays a significant role in how you look and feel. Here’s a comprehensive guide to help you stay fit and healthy:"),
         "fitnessStamina": MessageLookupByLibrary.simpleMessage("Stamina"),
         "fitnessStaminaImage": MessageLookupByLibrary.simpleMessage("🏃"),
         "fitnessStrength": MessageLookupByLibrary.simpleMessage("Strength"),
         "fitnessStrengthImage": MessageLookupByLibrary.simpleMessage("🦾"),
         "fitnessStrengthImageAndroid":
             MessageLookupByLibrary.simpleMessage("✊"),
+        "flexibilityMobility":
+            MessageLookupByLibrary.simpleMessage("Flexibility & Mobility"),
         "focusAreas": MessageLookupByLibrary.simpleMessage(
             "Pay attention to how clothes fit across the shoulders, chest, and waist. These areas are crucial for achieving the right look, especially for formal or professional attire."),
         "focusChanging":
@@ -279,6 +461,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Forehead Enlarged Pores Count"),
         "foreheadWrinkles":
             MessageLookupByLibrary.simpleMessage("Forehead Wrinkles"),
+        "foundationBaseMakeup":
+            MessageLookupByLibrary.simpleMessage("Foundation & Base Makeup"),
         "frequency": MessageLookupByLibrary.simpleMessage("Frequency:"),
         "gentleCleansing":
             MessageLookupByLibrary.simpleMessage("Gentle Cleansing:"),
@@ -303,29 +487,63 @@ class MessageLookup extends MessageLookupByLibrary {
             "Trim and shape your eyebrows regularly to enhance your facial features. Consider professional grooming for the best shape."),
         "groomingIsEssential": MessageLookupByLibrary.simpleMessage(
             "Grooming is an essential aspect of personal care that enhances not just appearance but also confidence and personal hygiene. By adopting these grooming practices, you can ensure that you present the best version of yourself to the world."),
-        "groomingIsNotJust": MessageLookupByLibrary.simpleMessage(
-            "Grooming is not just about maintaining cleanliness; it\'s an integral part of personal style and self-expression. This comprehensive guide delves into the art of grooming, covering everything from the basics of shaving and skincare to the nuances of haircare and selecting the right fragrance. It\'s designed to help you navigate the grooming landscape with confidence, ensuring that you can create and maintain a look that\'s both polished and uniquely yours. Whether you\'re refining your daily routine or exploring new grooming territories, these insights will provide the foundation you need to enhance your natural features and present your best self to the world."),
         "groomingNose": MessageLookupByLibrary.simpleMessage(
             "Regular trimming of nose hair can improve the overall appearance."),
+        "groupClasses": MessageLookupByLibrary.simpleMessage("Group Classes:"),
+        "groupClassesDescription": MessageLookupByLibrary.simpleMessage(
+            "Join group fitness classes for motivation, structure, and a sense of community."),
         "growthSerums": MessageLookupByLibrary.simpleMessage("Growth Serums:"),
         "hair": MessageLookupByLibrary.simpleMessage("Hair"),
         "hairAnalyzing": MessageLookupByLibrary.simpleMessage("Hair Analyzing"),
+        "hairColor": MessageLookupByLibrary.simpleMessage("Hair Color"),
         "hairHealth": MessageLookupByLibrary.simpleMessage("Hair Health"),
         "hairHealthImage": MessageLookupByLibrary.simpleMessage("🍃"),
         "hairShine": MessageLookupByLibrary.simpleMessage("Shine"),
         "hairShineImage": MessageLookupByLibrary.simpleMessage("✨"),
         "hairStyle": MessageLookupByLibrary.simpleMessage("Style"),
         "hairStyleImage": MessageLookupByLibrary.simpleMessage("💇‍♂️️"),
+        "hairStyling": MessageLookupByLibrary.simpleMessage("Hair Styling"),
+        "hairTexture": MessageLookupByLibrary.simpleMessage("Hair Texture:"),
+        "hairTextureText": MessageLookupByLibrary.simpleMessage(
+            "Understand whether your hair is straight, wavy, curly, or coily to choose the right care routine."),
         "hairThickness": MessageLookupByLibrary.simpleMessage("Thickness"),
         "hairThicknessImage": MessageLookupByLibrary.simpleMessage("🌟"),
+        "hairTreatments":
+            MessageLookupByLibrary.simpleMessage("Hair Treatments"),
+        "hairTypeIdentification":
+            MessageLookupByLibrary.simpleMessage("Hair Type Identification"),
         "hairVolume": MessageLookupByLibrary.simpleMessage("Volume"),
         "hairVolumeImage": MessageLookupByLibrary.simpleMessage("💁‍♂️"),
+        "haircuts": MessageLookupByLibrary.simpleMessage("Haircuts:"),
+        "haircutsDescription": MessageLookupByLibrary.simpleMessage(
+            "Regular trims every 6-8 weeks help prevent split ends and keep your hair looking healthy."),
+        "hairline": MessageLookupByLibrary.simpleMessage("Hairline:"),
+        "hairlineText": MessageLookupByLibrary.simpleMessage(
+            "Consider your hairline’s shape and height; it can significantly impact how your face is perceived. A neat hairline can make your face appear more proportionate."),
         "hairstyling": MessageLookupByLibrary.simpleMessage("Hairstyling:"),
+        "healthyDiet": MessageLookupByLibrary.simpleMessage("Healthy Diet:"),
+        "healthyDietDescription": MessageLookupByLibrary.simpleMessage(
+            "Maintain a healthy diet to avoid excess fat that can soften your jawline. Focus on whole foods, lean proteins, and reducing sugar intake."),
         "healthySkinIsABlend": MessageLookupByLibrary.simpleMessage(
             "Healthy skin is a blend of proper care, nutrition, and sometimes professional guidance. By addressing each aspect of skin health—hydration, pigmentation, acne, aging, and texture—you can enhance your skin\'s natural beauty and maintain its health over the long term. Remember, the journey to great skin is ongoing and evolves with your needs and lifestyle."),
+        "heartHealth": MessageLookupByLibrary.simpleMessage("Heart Health:"),
+        "heartHealthDescription": MessageLookupByLibrary.simpleMessage(
+            "Regular cardio exercises like running, swimming, or cycling improve heart health and help burn calories."),
         "heatProtection":
             MessageLookupByLibrary.simpleMessage("Heat Protection:"),
+        "heatProtectionDescription": MessageLookupByLibrary.simpleMessage(
+            "Always use a heat protectant spray before using hot tools like straighteners or curling irons."),
+        "highlighting": MessageLookupByLibrary.simpleMessage("Highlighting:"),
+        "highlightingDescription": MessageLookupByLibrary.simpleMessage(
+            "Highlight the area above your jawline to create contrast and further enhance the definition."),
+        "hoodedEyes": MessageLookupByLibrary.simpleMessage("Hooded Eyes:"),
+        "hoodedEyesDescription": MessageLookupByLibrary.simpleMessage(
+            "Focus on a darker shade on the outer corner and blend upwards to lift hooded eyes."),
         "hydration": MessageLookupByLibrary.simpleMessage("Hydration"),
+        "hydrationDescription": MessageLookupByLibrary.simpleMessage(
+            "Stay hydrated to prevent water retention, which can cause puffiness around the jawline."),
+        "hydrationDescriptionFit": MessageLookupByLibrary.simpleMessage(
+            "Drink plenty of water throughout the day, especially before, during, and after workouts to stay hydrated and support overall health."),
         "hydrationEyes": MessageLookupByLibrary.simpleMessage(
             "Keep your body well-hydrated to support eye health and minimize bags."),
         "hydrationForehead": MessageLookupByLibrary.simpleMessage(
@@ -363,6 +581,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("📚 Improvement Guide"),
         "improvingTheDefinitionAndContour": MessageLookupByLibrary.simpleMessage(
             "Improving the definition and contour of your jawline involves a combination of skincare, dietary habits, strategic styling, and targeted exercises. While genetics play a significant role in the shape of your jawline, these strategies can help in enhancing its appearance, contributing to a more sculpted and attractive profile. Remember, consistency is key to seeing results."),
+        "incorporateFaceMasks": MessageLookupByLibrary.simpleMessage(
+            "Incorporate face masks into your routine to address specific concerns like hydration, detoxification, or brightening."),
         "intermediate": MessageLookupByLibrary.simpleMessage("Intermediate"),
         "investInTailoring": MessageLookupByLibrary.simpleMessage(
             "Invest in tailoring. Even off-the-rack clothing can look custom-made with a few adjustments from a skilled tailor."),
@@ -375,15 +595,29 @@ class MessageLookup extends MessageLookupByLibrary {
         "itaSkinType":
             MessageLookupByLibrary.simpleMessage("ITA Skin Tone Type"),
         "jawClenching": MessageLookupByLibrary.simpleMessage("Jaw Clenching:"),
-        "jawline": MessageLookupByLibrary.simpleMessage("Jawline"),
+        "jawline": MessageLookupByLibrary.simpleMessage("Jawline:"),
         "jawlineCheekbone": MessageLookupByLibrary.simpleMessage(
             "Jawline & Cheekbone Assessment"),
         "jawlineDefinition":
             MessageLookupByLibrary.simpleMessage("Jawline Definition"),
+        "jawlineExercises":
+            MessageLookupByLibrary.simpleMessage("Jawline Exercises:"),
+        "jawlineExercisesDescription": MessageLookupByLibrary.simpleMessage(
+            "Perform facial exercises that target the muscles around your jaw to strengthen and define the area. Try chin lifts, neck curls, and jaw clenches."),
+        "jawlineS": MessageLookupByLibrary.simpleMessage("Jawline"),
+        "jawlineText": MessageLookupByLibrary.simpleMessage(
+            "Enhance your jawline with contouring or by maintaining a healthy weight."),
+        "jewelry": MessageLookupByLibrary.simpleMessage("Jewelry:"),
+        "jewelryDescription": MessageLookupByLibrary.simpleMessage(
+            "Use jewelry to elevate your outfit. Statement pieces can add a focal point, while delicate jewelry offers a subtle touch of elegance."),
         "keepYourEyeBrows": MessageLookupByLibrary.simpleMessage(
             "Keep your eyebrows well-groomed by trimming and removing stray hairs to maintain their natural shape."),
         "lashSerum": MessageLookupByLibrary.simpleMessage("Lash Serum:"),
         "lashes": MessageLookupByLibrary.simpleMessage("Lashes"),
+        "leaveInTreatments":
+            MessageLookupByLibrary.simpleMessage("Leave-In Treatments:"),
+        "leaveInTreatmentsDescription": MessageLookupByLibrary.simpleMessage(
+            "Apply leave-in conditioners or serums to add moisture and protect your hair from heat and environmental damage."),
         "leftCheek": MessageLookupByLibrary.simpleMessage("Left Cheek"),
         "leftCheekEnlargedPoresCount": MessageLookupByLibrary.simpleMessage(
             "Left Cheek Enlarged Pores Count"),
@@ -395,22 +629,46 @@ class MessageLookup extends MessageLookupByLibrary {
         "lipCare": MessageLookupByLibrary.simpleMessage("Lip Care:"),
         "lipCareText": MessageLookupByLibrary.simpleMessage(
             "Use a hydrating lip balm to keep your lips smooth and prevent chapping."),
+        "lipLiner": MessageLookupByLibrary.simpleMessage("Lip Liner:"),
+        "lipLinerDescription": MessageLookupByLibrary.simpleMessage(
+            "Lip liner defines your lips and prevents lipstick from bleeding. Choose a shade that matches your lipstick or is slightly darker for a more defined look."),
+        "lips": MessageLookupByLibrary.simpleMessage("Lips"),
+        "lipstick": MessageLookupByLibrary.simpleMessage("Lipstick:"),
+        "lipstickDescription": MessageLookupByLibrary.simpleMessage(
+            "Apply lipstick with a brush for precision or directly from the bullet for a quick application. Choose a finish—matte, satin, or glossy—based on your preference."),
         "logo": MessageLookupByLibrary.simpleMessage("LOGO"),
         "lookForProductsThatMatch": MessageLookupByLibrary.simpleMessage(
             "Look for products that match your skin type. Ingredients like hyaluronic acid and glycerin draw moisture into the skin, while ceramides help retain it."),
         "looksMaxGuide": MessageLookupByLibrary.simpleMessage("LooksMax Guide"),
         "looksMaxGuides":
             MessageLookupByLibrary.simpleMessage("📚 LooksMax Guides"),
+        "lowManipulationStyles":
+            MessageLookupByLibrary.simpleMessage("Low-Manipulation Styles:"),
+        "lowManipulationStylesDescription": MessageLookupByLibrary.simpleMessage(
+            "Opt for hairstyles that require minimal manipulation to protect your hair from damage."),
         "mainClockImage": MessageLookupByLibrary.simpleMessage("⏰"),
         "mainFlowersImage": MessageLookupByLibrary.simpleMessage("🌷"),
         "mainGirlImage": MessageLookupByLibrary.simpleMessage("👩🏼"),
         "mainManImage": MessageLookupByLibrary.simpleMessage("👨🏻"),
         "mainStrongImage": MessageLookupByLibrary.simpleMessage("💪"),
+        "maintenance": MessageLookupByLibrary.simpleMessage("Maintenance:"),
+        "maintenanceDescription": MessageLookupByLibrary.simpleMessage(
+            "Maintain your hair color with color-safe shampoos and regular touch-ups."),
         "makeDeepScanButton": MessageLookupByLibrary.simpleMessage(
             "Make a deep scanning of myself"),
         "makeNewScan": MessageLookupByLibrary.simpleMessage("Make New Scan"),
-        "makeup": MessageLookupByLibrary.simpleMessage("Makeup:"),
+        "makeup": MessageLookupByLibrary.simpleMessage("Makeup"),
+        "makeupOverview": MessageLookupByLibrary.simpleMessage(
+            "Makeup is an art form that allows you to express your personality and enhance your natural beauty. Whether you\'re a beginner or a makeup enthusiast, understanding the basics and learning some advanced techniques can take your look to the next level. Here’s a detailed guide to help you perfect your makeup routine:"),
+        "makeupRemoval": MessageLookupByLibrary.simpleMessage("Makeup Removal"),
+        "makeupTechniques":
+            MessageLookupByLibrary.simpleMessage("Makeup Techniques:"),
+        "makeupTechniquesDescription": MessageLookupByLibrary.simpleMessage(
+            "Use makeup to contour your jawline for a more defined look. Apply a contour shade along the jawline and blend well to create shadows and depth."),
         "makeupText": MessageLookupByLibrary.simpleMessage("Makeup"),
+        "mascara": MessageLookupByLibrary.simpleMessage("Mascara:"),
+        "mascaraDescription": MessageLookupByLibrary.simpleMessage(
+            "Mascara opens up your eyes and makes your lashes look longer and fuller. Use a volumizing mascara for more impact."),
         "mascularity": MessageLookupByLibrary.simpleMessage("Masculinity"),
         "maximizeYourself":
             MessageLookupByLibrary.simpleMessage("Maximize Yourself"),
@@ -421,18 +679,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "mild": MessageLookupByLibrary.simpleMessage("Mild"),
         "minimalistApproach":
             MessageLookupByLibrary.simpleMessage("Minimalist Approach:"),
+        "mobilityDrills":
+            MessageLookupByLibrary.simpleMessage("Mobility Drills:"),
+        "mobilityDrillsDescription": MessageLookupByLibrary.simpleMessage(
+            "Perform mobility exercises to improve joint function and range of motion, which can aid in daily activities and other workouts."),
         "moderate": MessageLookupByLibrary.simpleMessage("Moderate"),
         "moisturize": MessageLookupByLibrary.simpleMessage("Moisturize:"),
         "moisturizeEars": MessageLookupByLibrary.simpleMessage(
             "Apply a light moisturizer around the ears to keep the skin soft and prevent dryness."),
+        "moisturizing": MessageLookupByLibrary.simpleMessage("Moisturizing:"),
+        "moisturizingText": MessageLookupByLibrary.simpleMessage(
+            "Moisturize regularly to keep your skin hydrated. Choose a lightweight moisturizer for oily skin and a richer formula for dry skin."),
         "mouth": MessageLookupByLibrary.simpleMessage("Mouth"),
+        "muscleBuilding":
+            MessageLookupByLibrary.simpleMessage("Muscle Building:"),
+        "muscleBuildingDescription": MessageLookupByLibrary.simpleMessage(
+            "Incorporate strength training exercises like weight lifting, resistance bands, or bodyweight exercises into your routine to build muscle and increase metabolism."),
         "nasolabialFolds":
             MessageLookupByLibrary.simpleMessage("Nasolabial Folds"),
-        "navigatingTheWorld": MessageLookupByLibrary.simpleMessage(
-            "Navigating the world of hair care can transform not just your hairstyle, but your entire look and confidence. Whether it\'s maintaining a healthy scalp, finding the right balance between cleansing and conditioning, or mastering the art of styling, each step in your hair care routine plays a crucial role. This guide will walk you through essential hair care practices, from selecting products to addressing common concerns like thinning, to ensure your hair remains a highlight of your personal style."),
         "neckCurls": MessageLookupByLibrary.simpleMessage("Neck Curls:"),
         "neutral": MessageLookupByLibrary.simpleMessage("Neutral"),
         "neutralSkin": MessageLookupByLibrary.simpleMessage("Neutral skin"),
+        "nighttimeProtection":
+            MessageLookupByLibrary.simpleMessage("Nighttime Protection:"),
+        "nighttimeProtectionDescription": MessageLookupByLibrary.simpleMessage(
+            "Use a silk or satin pillowcase or hair wrap to reduce friction and prevent breakage while you sleep."),
         "noBagsUnderEyes":
             MessageLookupByLibrary.simpleMessage("No bags under the eyes"),
         "noCrowsFeet": MessageLookupByLibrary.simpleMessage("No crow\'s feet"),
@@ -443,6 +714,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "noInterbrowLines":
             MessageLookupByLibrary.simpleMessage("No interbrow lines"),
         "noLines": MessageLookupByLibrary.simpleMessage("No lines"),
+        "nonSurgicalEnhancements":
+            MessageLookupByLibrary.simpleMessage("Non-Surgical Enhancements"),
         "none": MessageLookupByLibrary.simpleMessage("None"),
         "normalSkin": MessageLookupByLibrary.simpleMessage("Normal Skin"),
         "nose": MessageLookupByLibrary.simpleMessage("Nose"),
@@ -450,6 +723,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "nourishment": MessageLookupByLibrary.simpleMessage("Nourishment:"),
         "nourishmentEyebrows": MessageLookupByLibrary.simpleMessage(
             "Apply castor oil or eyebrow serum to promote growth and thickness."),
+        "nutrition": MessageLookupByLibrary.simpleMessage("Nutrition:"),
+        "nutritionText": MessageLookupByLibrary.simpleMessage(
+            "A balanced diet rich in vitamins and antioxidants promotes healthy skin and facial features."),
         "oilDryness":
             MessageLookupByLibrary.simpleMessage("Oil & Dryness Check"),
         "oilySkin": MessageLookupByLibrary.simpleMessage("Oily skin"),
@@ -513,6 +789,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "overall": MessageLookupByLibrary.simpleMessage("Overall:"),
         "overview": MessageLookupByLibrary.simpleMessage("Overview"),
         "palming": MessageLookupByLibrary.simpleMessage("Palming:"),
+        "patterns": MessageLookupByLibrary.simpleMessage("Patterns:"),
+        "patternsDescription": MessageLookupByLibrary.simpleMessage(
+            "Incorporate patterns like stripes, polka dots, or florals to add interest to your outfits. Mix and match patterns carefully to avoid clashing."),
         "perceivedAge": MessageLookupByLibrary.simpleMessage("Perceived age:"),
         "percentageOfMelaninDeposition": MessageLookupByLibrary.simpleMessage(
             "Percentage of Melanin Deposition"),
@@ -524,8 +803,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "Persistent texture issues, such as scarring or deep wrinkles, may benefit from dermatological treatments like microdermabrasion, microneedling, or laser resurfacing."),
         "personalRating":
             MessageLookupByLibrary.simpleMessage("📈 Your Personal Rating"),
+        "personalStyle": MessageLookupByLibrary.simpleMessage("Personal Style"),
+        "personalTrainer":
+            MessageLookupByLibrary.simpleMessage("Personal Trainer:"),
+        "personalTrainerDescription": MessageLookupByLibrary.simpleMessage(
+            "Consider working with a personal trainer to create a customized workout plan that suits your goals and fitness level."),
         "personalization": MessageLookupByLibrary.simpleMessage(
             "Remember, not every trend is for everyone. Choose trends that resonate with your personal aesthetic and body type."),
+        "personalizedSkincare":
+            MessageLookupByLibrary.simpleMessage("Personalized Skincare"),
         "pigmentation": MessageLookupByLibrary.simpleMessage("Pigmentation"),
         "pigmentationAnalysis":
             MessageLookupByLibrary.simpleMessage("Pigmentation Analysis"),
@@ -536,6 +822,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "poreAnalysis": MessageLookupByLibrary.simpleMessage("Pore Analysis"),
         "poresEnhanced": MessageLookupByLibrary.simpleMessage(
             "Pores & Enhanced Texture Lines"),
+        "porosity": MessageLookupByLibrary.simpleMessage("Porosity:"),
+        "porosityText": MessageLookupByLibrary.simpleMessage(
+            "Determine your hair’s porosity (low, medium, or high) to know how well it absorbs moisture and which products to use."),
+        "posture": MessageLookupByLibrary.simpleMessage("Posture"),
         "potential": MessageLookupByLibrary.simpleMessage("Potential:"),
         "poweredAI": MessageLookupByLibrary.simpleMessage(
             "Powered by advanced AI, we charge just 4.99 US \$ per week for premium insights. Thank you for your support!"),
@@ -545,8 +835,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Always start with a clean face. Use warm water or a hot towel to open pores and soften hairs for a closer shave."),
         "prepYourSkinTitle":
             MessageLookupByLibrary.simpleMessage("Prep Your Skin:"),
+        "prescription": MessageLookupByLibrary.simpleMessage("Prescription:"),
+        "prescriptionDescription": MessageLookupByLibrary.simpleMessage(
+            "If you wear glasses, consider contact lenses for a glasses-free look, or choose stylish frames that complement your facial features."),
         "preventiveMeasures":
             MessageLookupByLibrary.simpleMessage("Preventive Measures:"),
+        "primer": MessageLookupByLibrary.simpleMessage("Primer:"),
+        "primerDescription": MessageLookupByLibrary.simpleMessage(
+            "Always start with a primer to create a smooth base for your makeup. Choose a primer that suits your skin type—hydrating for dry skin, mattifying for oily skin, and color-correcting for uneven tones."),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "privacyPolicyAndTermsOfUse": MessageLookupByLibrary.simpleMessage(
             "🔒 Privacy Policy & Terms of Use"),
@@ -558,8 +854,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Consider visiting a dermatologist annually for a skin check-up and personalized skincare advice."),
         "professionalCareTitle":
             MessageLookupByLibrary.simpleMessage("Professional Care:"),
+        "professionalGuidance":
+            MessageLookupByLibrary.simpleMessage("Professional Guidance"),
         "professionalTreatments":
-            MessageLookupByLibrary.simpleMessage("Professional Treatments:"),
+            MessageLookupByLibrary.simpleMessage("Professional Treatments"),
         "promoCodeActivated":
             MessageLookupByLibrary.simpleMessage("Promocode activated"),
         "promoCodeIsUsed": MessageLookupByLibrary.simpleMessage(
@@ -570,12 +868,25 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Proper Removal:"),
         "properlyHydratedSkinAppears": MessageLookupByLibrary.simpleMessage(
             "Properly hydrated skin appears plumper and smoother. In addition to topical moisturizers, consider using a humidifier to maintain air moisture."),
+        "proportions": MessageLookupByLibrary.simpleMessage("Proportions:"),
+        "proportionsDescription": MessageLookupByLibrary.simpleMessage(
+            "Dress to balance your proportions. For example, if you have a pear-shaped body, accentuate your shoulders and waist to create a more balanced silhouette."),
         "protectYourScalpFromUVDamage": MessageLookupByLibrary.simpleMessage(
             "Protect your scalp from UV damage with a hat or scalp-specific sunscreen, especially if your hair is thinning."),
         "protection": MessageLookupByLibrary.simpleMessage("Protection:"),
         "protectionNose": MessageLookupByLibrary.simpleMessage(
             "Use sunscreen to prevent skin damage and maintain an even skin tone."),
+        "protectiveStyles":
+            MessageLookupByLibrary.simpleMessage("Protective Styles"),
+        "puffiness": MessageLookupByLibrary.simpleMessage("Puffiness:"),
+        "puffinessDescription": MessageLookupByLibrary.simpleMessage(
+            "For puffiness, look for eye creams with caffeine or use cold compresses to reduce swelling."),
+        "qualityOverQuantity":
+            MessageLookupByLibrary.simpleMessage("Quality Over Quantity:"),
+        "qualityOverQuantityDescription": MessageLookupByLibrary.simpleMessage(
+            "Invest in quality items that will last longer, rather than buying cheap, fast-fashion pieces that wear out quickly."),
         "rateUs": MessageLookupByLibrary.simpleMessage("⭐️ Rate Us"),
+        "recoveryRest": MessageLookupByLibrary.simpleMessage("Recovery & Rest"),
         "redArea": MessageLookupByLibrary.simpleMessage("Red Area"),
         "redRoughArea":
             MessageLookupByLibrary.simpleMessage("Red & Rough Area"),
@@ -598,6 +909,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "regularTrimsTitle":
             MessageLookupByLibrary.simpleMessage("Regular Trims:"),
         "rest": MessageLookupByLibrary.simpleMessage("Rest:"),
+        "restDays": MessageLookupByLibrary.simpleMessage("Rest Days:"),
+        "restDaysDescription": MessageLookupByLibrary.simpleMessage(
+            "Schedule regular rest days to allow your muscles to recover and prevent overtraining."),
+        "restDescription": MessageLookupByLibrary.simpleMessage(
+            "Ensure you\'re getting enough sleep to prevent dark circles and puffiness."),
         "restEyes": MessageLookupByLibrary.simpleMessage(
             "Prioritize sleep to reduce eye strain and dark circles."),
         "restore": MessageLookupByLibrary.simpleMessage("Restore"),
@@ -609,11 +925,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Rinse Thoroughly:"),
         "roughAreaBlackheads":
             MessageLookupByLibrary.simpleMessage("Rough Area & Blackheads"),
+        "roundEyes": MessageLookupByLibrary.simpleMessage("Round Eyes:"),
+        "roundEyesDescription": MessageLookupByLibrary.simpleMessage(
+            "Use dark eyeliner on the waterline to elongate round eyes."),
         "rubYourHands": MessageLookupByLibrary.simpleMessage(
             "Rub your hands together to generate warmth, then gently cup your palms over your closed eyes to relax them."),
         "ruleOfBalance": MessageLookupByLibrary.simpleMessage(
             "Remember the rule of balance: if your outfit is bold, keep your accessories minimal, and vice versa."),
         "scalpCare": MessageLookupByLibrary.simpleMessage("Scalp Care"),
+        "scalpMassages":
+            MessageLookupByLibrary.simpleMessage("Scalp Massages:"),
+        "scalpMassagesDescription": MessageLookupByLibrary.simpleMessage(
+            "Regular scalp massages can stimulate blood flow and encourage hair growth."),
         "scanCompleted":
             MessageLookupByLibrary.simpleMessage("✅ Scan is Completed"),
         "scoreGivenByMen":
@@ -622,7 +945,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Score Given by Female:"),
         "screenShotButtonSubTitle":
             MessageLookupByLibrary.simpleMessage("Glow Up Tips for Girls"),
+        "sdfDaily": MessageLookupByLibrary.simpleMessage("SPF Daily:"),
+        "sdfDailyText": MessageLookupByLibrary.simpleMessage(
+            "Always wear sunscreen with at least SPF 30, even on cloudy days, to protect your skin from UV damage."),
+        "seasonalChanges":
+            MessageLookupByLibrary.simpleMessage("Seasonal Changes:"),
+        "seasonalChangesText": MessageLookupByLibrary.simpleMessage(
+            "Adjust your skincare routine based on the season-hydrating more in the winter and controlling oil in the summer."),
         "secondHydration": MessageLookupByLibrary.simpleMessage("Hydration:"),
+        "secondHydrationText": MessageLookupByLibrary.simpleMessage(
+            "Drink plenty of water to keep your skin hydrated and plump, which enhances your overall facial appearance."),
         "securedWithITunes":
             MessageLookupByLibrary.simpleMessage("Secured with iTunes"),
         "securedWithPlayMarket":
@@ -631,18 +963,41 @@ class MessageLookup extends MessageLookupByLibrary {
             "Select a shampoo that matches your scalp condition. Sulfate-free formulas are gentler and suitable for most hair types."),
         "sensitivityAnalysis":
             MessageLookupByLibrary.simpleMessage("Sensitivity Analysis"),
+        "serums": MessageLookupByLibrary.simpleMessage("Serums:"),
+        "serumsUseText": MessageLookupByLibrary.simpleMessage(
+            "Use serums that target your specific skin concerns, such as vitamin C for brightening or hyaluronic acid for hydration."),
+        "setGoals": MessageLookupByLibrary.simpleMessage("Set Goals:"),
+        "setGoalsDescription": MessageLookupByLibrary.simpleMessage(
+            "Set realistic fitness goals and track your progress to stay motivated."),
+        "settingSpray": MessageLookupByLibrary.simpleMessage("Setting Spray:"),
+        "settingSprayDescription": MessageLookupByLibrary.simpleMessage(
+            "Lock your makeup in place with a setting spray. Hold the bottle at arm’s length and mist your face to set your makeup for the day."),
+        "settingYourMakeup":
+            MessageLookupByLibrary.simpleMessage("Setting Your Makeup"),
         "severe": MessageLookupByLibrary.simpleMessage("Severe"),
+        "shampooingAndConditioning":
+            MessageLookupByLibrary.simpleMessage("Shampooing & Conditioning"),
+        "shape": MessageLookupByLibrary.simpleMessage("Shape:"),
+        "shapeDescription": MessageLookupByLibrary.simpleMessage(
+            "Well-groomed eyebrows frame your eyes and enhance their appearance. Shape your eyebrows to complement your face shape, whether it\'s an arch for round faces or a softer shape for square faces."),
+        "shapingEyebrows":
+            MessageLookupByLibrary.simpleMessage("Shaping Eyebrows:"),
         "shareFriendButton": MessageLookupByLibrary.simpleMessage(
             "Share with friends & Compare"),
         "shareWithFriends":
             MessageLookupByLibrary.simpleMessage("🫡 Share with Friends"),
         "shiftYourFocus": MessageLookupByLibrary.simpleMessage(
             "Shift your focus from an object close to you to one far away periodically, to exercise your eye muscles."),
+        "shoppingTips": MessageLookupByLibrary.simpleMessage("Shopping Tips"),
         "showDialogAccessPermissionCameraOrPhoto":
             MessageLookupByLibrary.simpleMessage(
                 "Please enable image access in Settings for photo analysis."),
         "showDialogChangeIcon": MessageLookupByLibrary.simpleMessage(
             "Please upload a better quality image. Try a new one."),
+        "signaturePieces":
+            MessageLookupByLibrary.simpleMessage("Signature Pieces:"),
+        "signaturePiecesDescription": MessageLookupByLibrary.simpleMessage(
+            "Identify signature pieces that define your style, whether it’s a particular color, accessory, or type of clothing."),
         "skin": MessageLookupByLibrary.simpleMessage("Skin"),
         "skinAcneImage": MessageLookupByLibrary.simpleMessage("📍"),
         "skinAge": MessageLookupByLibrary.simpleMessage("Skin Age"),
@@ -650,28 +1005,52 @@ class MessageLookup extends MessageLookupByLibrary {
         "skinDarkCircleImage": MessageLookupByLibrary.simpleMessage("⚫"),
         "skinHealth":
             MessageLookupByLibrary.simpleMessage("Skin Health AI Check"),
+        "skinHealthCanvas": MessageLookupByLibrary.simpleMessage(
+            "Your skin is the canvas of your beauty. Keeping it healthy and radiant is key to looking your best. Here\'s a guide to achieving glowing skin:"),
         "skinHealthEnum": MessageLookupByLibrary.simpleMessage("Skin Health"),
         "skinHealthImage": MessageLookupByLibrary.simpleMessage("✨"),
-        "skinHealthIsCritical": MessageLookupByLibrary.simpleMessage(
-            "Skin health is a critical component of overall wellness and aesthetics. A radiant complexion not only enhances your looks but also reflects your internal health. This guide covers key areas of skin care—hydration, pigmentation, acne management, aging, and texture improvement. By focusing on these aspects, you can achieve a clearer, more youthful appearance and boost your confidence."),
         "skinHueType": MessageLookupByLibrary.simpleMessage("HA Skin Hue Type"),
+        "skinPreparation":
+            MessageLookupByLibrary.simpleMessage("Skin Preparation"),
         "skinQuality": MessageLookupByLibrary.simpleMessage("Skin Quality"),
         "skinQualityImage": MessageLookupByLibrary.simpleMessage("🧴"),
         "skinStainImage": MessageLookupByLibrary.simpleMessage("💦"),
         "skinTexture":
             MessageLookupByLibrary.simpleMessage("Skin Texture AI Scan"),
-        "skinType":
-            MessageLookupByLibrary.simpleMessage("Skin Type Classification"),
+        "skinTighteningTreatments":
+            MessageLookupByLibrary.simpleMessage("Skin Tightening Treatments:"),
+        "skinTighteningTreatmentsDescription": MessageLookupByLibrary.simpleMessage(
+            "Explore treatments like radiofrequency or ultrasound therapy to tighten the skin around your jawline for a more defined look."),
+        "skinType": MessageLookupByLibrary.simpleMessage("Skin Type:"),
         "skinTypeClassification":
             MessageLookupByLibrary.simpleMessage("Skin Type Classification"),
+        "skinTypeIdentification":
+            MessageLookupByLibrary.simpleMessage("Skin Type Identification"),
+        "skinTypeText": MessageLookupByLibrary.simpleMessage(
+            " Identify your skin type (oily, dry, combination, or sensitive) and tailor your skincare routine accordingly."),
         "skincare": MessageLookupByLibrary.simpleMessage("Skincare:"),
+        "skincareAroundTheEyes":
+            MessageLookupByLibrary.simpleMessage("Skincare Around the Eyes"),
         "skincareCheekbones": MessageLookupByLibrary.simpleMessage(
             "Apply moisturizer and sunscreen to protect and maintain the skin’s elasticity."),
         "skincareEyes": MessageLookupByLibrary.simpleMessage(
             "Incorporate an eye cream into your daily routine to address dark circles and puffiness. Look for products with caffeine or vitamin C."),
+        "skincareGrooming":
+            MessageLookupByLibrary.simpleMessage("Skincare & Grooming"),
         "skincareNose": MessageLookupByLibrary.simpleMessage(
             "Keep your nose area clean and well-moisturized to avoid enlarged pores or blackheads."),
         "skincareSecond": MessageLookupByLibrary.simpleMessage("Skincare"),
+        "sleep": MessageLookupByLibrary.simpleMessage("Sleep:"),
+        "sleepDescription": MessageLookupByLibrary.simpleMessage(
+            "Aim for 7-9 hours of quality sleep each night to support muscle repair, mental health, and overall well-being."),
+        "spfProtection":
+            MessageLookupByLibrary.simpleMessage("SPF Protection:"),
+        "spfProtectionDescription": MessageLookupByLibrary.simpleMessage(
+            "Choose a primer with SPF for added sun protection, especially if you’re wearing makeup during the day."),
+        "spotTreatments":
+            MessageLookupByLibrary.simpleMessage("Spot Treatments:"),
+        "spotTreatmentsUseText": MessageLookupByLibrary.simpleMessage(
+            "Apply spot treatments directly on blemishes to reduce inflammation and speed up healing."),
         "stain": MessageLookupByLibrary.simpleMessage("Stain"),
         "startDeepSkin":
             MessageLookupByLibrary.simpleMessage("Start Deep Skin Analysis"),
@@ -679,9 +1058,18 @@ class MessageLookup extends MessageLookupByLibrary {
             "Start treatments at the first signs of thinning. Over-the-counter options like minoxidil can be effective."),
         "stayInformed": MessageLookupByLibrary.simpleMessage(
             "Stay informed about current fashion trends by following reputable fashion blogs, magazines, and influencers. However, it\'s crucial to filter trends through the lens of your personal style and comfort."),
+        "stayingCurrent":
+            MessageLookupByLibrary.simpleMessage("Staying Current:"),
+        "stayingCurrentDescription": MessageLookupByLibrary.simpleMessage(
+            "Keep up with fashion trends, but don’t feel pressured to follow them all. Incorporate trends that resonate with your style and personality."),
         "storage": MessageLookupByLibrary.simpleMessage(
             "Store your fragrances in a cool, dry place away from direct sunlight to preserve their quality."),
         "storageTitle": MessageLookupByLibrary.simpleMessage("Storage:"),
+        "strengthTraining":
+            MessageLookupByLibrary.simpleMessage("Strength Training"),
+        "stretching": MessageLookupByLibrary.simpleMessage("Stretching:"),
+        "stretchingDescription": MessageLookupByLibrary.simpleMessage(
+            "Include stretching exercises in your routine to maintain flexibility and prevent injuries. Yoga or Pilates are excellent options for enhancing flexibility."),
         "styling": MessageLookupByLibrary.simpleMessage("Styling"),
         "stylingEyebrows": MessageLookupByLibrary.simpleMessage(
             "Use a clear eyebrow gel to keep brows in place for a polished look."),
@@ -719,10 +1107,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Schedule regular rest days to prevent overtraining and injuries, allowing your body time to recuperate."),
         "subText3Strength": MessageLookupByLibrary.simpleMessage(
             "Gradually increase the intensity of your workouts by adding weight, reps, or reducing rest times to foster strength gains."),
-        "subTitleOverview": MessageLookupByLibrary.simpleMessage(
-            "Embarking on a fitness journey is about more than achieving a certain look; it\'s about nurturing your body\'s health, enhancing your physical capabilities, and improving your overall quality of life. This comprehensive guide is designed to walk you through the fundamental aspects of fitness—strength, cardio, nutrition, recovery, and flexibility. Each component plays a vital role in building a stronger, more resilient physique. Whether you\'re a beginner or looking to refine your existing routine, these insights will help you create a balanced approach tailored to your unique fitness goals."),
-        "sunProtection":
-            MessageLookupByLibrary.simpleMessage("Sun Protection:"),
+        "sunProtection": MessageLookupByLibrary.simpleMessage("Sun Protection"),
         "sunProtectionForehead": MessageLookupByLibrary.simpleMessage(
             "Protect the skin with a high SPF sunscreen to prevent aging signs."),
         "symmetry": MessageLookupByLibrary.simpleMessage("Symmetry"),
@@ -732,6 +1117,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Tailor your washing frequency to your hair type—oily scalps may need more frequent cleansing, while dry types might require less."),
         "tan": MessageLookupByLibrary.simpleMessage("Tan"),
         "tapToEnter": MessageLookupByLibrary.simpleMessage("TAP TO ENTER"),
+        "targetedTreatments":
+            MessageLookupByLibrary.simpleMessage("Targeted Treatments"),
+        "targetedTreatmentsText": MessageLookupByLibrary.simpleMessage(
+            "Use products that target specific concerns like acne, pigmentation, or aging to maintain a smooth, even complexion."),
         "technique": MessageLookupByLibrary.simpleMessage("Technique:"),
         "teethHealth": MessageLookupByLibrary.simpleMessage("Teeth Health:"),
         "teethHealthText": MessageLookupByLibrary.simpleMessage(
@@ -767,9 +1156,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "textureEnhancedPores":
             MessageLookupByLibrary.simpleMessage("Texture Enhanced Pores"),
         "theEyesAreFocal": MessageLookupByLibrary.simpleMessage(
-            "The eyes are a focal point of the face, often the first feature noticed during interactions. They reflect your health, emotions, and can significantly impact your overall facial aesthetics. Caring for the delicate skin around your eyes, enhancing your lashes and brows, and addressing common concerns like dark circles or puffiness are all crucial for brightening your eye area. This guide offers targeted advice to keep your eyes looking vibrant and expressive, from specialized skincare routines to simple exercises and grooming tips that highlight your eyes\' natural beauty."),
-        "theFaceMostNoticed": MessageLookupByLibrary.simpleMessage(
-            "The face is the most noticed part of our appearance and plays a vital role in our interactions and first impressions. Enhancing facial features not only boosts attractiveness but also uplifts confidence. This guide offers targeted advice for each key facial feature—eyes, mouth, cheekbones, nose, forehead, eyebrows, and ears—providing simple yet effective strategies to improve their appearance. Whether you\'re aiming to brighten your eyes, define your jawline, or maintain healthy skin, these tips are designed to help you present the best version of yourself."),
+            "Your eyes are one of the most expressive features of your face. Enhancing them can dramatically change your overall appearance. Here\'s how to make your eyes stand out:"),
         "thereAreLines":
             MessageLookupByLibrary.simpleMessage("There are lines"),
         "theseVitaminADerivatives": MessageLookupByLibrary.simpleMessage(
@@ -785,6 +1172,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "This guide is designed to provide targeted strategies for enhancing the area around your eyes, addressing common concerns like dark circles, and offering tips for brow and lash care. Implementing these practices can lead to brighter, more vibrant eyes, complementing your overall appearance."),
         "thisGuideCurated": MessageLookupByLibrary.simpleMessage(
             "This guide is curated to empower you with the knowledge and tools needed to enhance each facial feature effectively. Embrace these practices for a noticeable improvement in your facial aesthetics."),
+        "tinting": MessageLookupByLibrary.simpleMessage("Tinting:"),
+        "tintingDescription": MessageLookupByLibrary.simpleMessage(
+            "If your eyebrows are light, consider tinting them for more definition."),
         "titleDeepNotification":
             MessageLookupByLibrary.simpleMessage("Go Deeper! 🔬\n"),
         "titleHistory":
@@ -804,6 +1194,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleResults": MessageLookupByLibrary.simpleMessage("Your Results"),
         "titleSubscriptionNotification":
             MessageLookupByLibrary.simpleMessage("Your Results Are Ready! ✅"),
+        "toning": MessageLookupByLibrary.simpleMessage("Toning:"),
+        "toningMoisturizing":
+            MessageLookupByLibrary.simpleMessage("Toning & Moisturizing:"),
+        "toningMoisturizingDescription": MessageLookupByLibrary.simpleMessage(
+            "After cleansing, use a toner to restore your skin’s pH balance and a moisturizer to hydrate and repair your skin overnight."),
+        "toningText": MessageLookupByLibrary.simpleMessage(
+            "Apply a toner after cleansing to balance your skin’s pH and prepare it for moisturizing."),
         "top": MessageLookupByLibrary.simpleMessage("Top"),
         "top1": MessageLookupByLibrary.simpleMessage("Top 1% in the World"),
         "top12": MessageLookupByLibrary.simpleMessage("Top 12% in the World"),
@@ -811,9 +1208,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "top3": MessageLookupByLibrary.simpleMessage("Top 3% in the World"),
         "topicalTreatments":
             MessageLookupByLibrary.simpleMessage("Topical Treatments:"),
+        "touchUps": MessageLookupByLibrary.simpleMessage("Touch-Ups:"),
+        "touchUpsDescription": MessageLookupByLibrary.simpleMessage(
+            "Carry a small makeup bag with essentials like powder, lipstick, and blotting papers for quick touch-ups. This ensures your makeup stays fresh and flawless all day."),
         "transformYourOutfit": MessageLookupByLibrary.simpleMessage(
             "Accessories can transform an outfit from ordinary to standout. Consider watches, belts, hats, sunglasses, and bags as ways to express your style."),
-        "trends": MessageLookupByLibrary.simpleMessage("Trends"),
+        "trends": MessageLookupByLibrary.simpleMessage("Trends:"),
         "tryAnotherCode":
             MessageLookupByLibrary.simpleMessage("Try another code"),
         "typesOfConditioners":
@@ -822,10 +1222,19 @@ class MessageLookup extends MessageLookupByLibrary {
             "Uncover the most attractive version of yourself."),
         "understandTheColorWheel": MessageLookupByLibrary.simpleMessage(
             "Understand the basics of the color wheel and how colors complement or contrast with each other to create visually appealing outfits."),
+        "understandYourSkin":
+            MessageLookupByLibrary.simpleMessage("Understand Your Skin:"),
+        "understandYourSkinText": MessageLookupByLibrary.simpleMessage(
+            "Knowing whether your skin is oily, dry, combination, or sensitive will help you choose the right products."),
         "understandingHyperpigmentation": MessageLookupByLibrary.simpleMessage(
             "Understanding Hyperpigmentation:"),
         "understandingYourBodyShape": MessageLookupByLibrary.simpleMessage(
             "Understanding and dressing for your body shape is key. Clothes that fit well enhance your appearance and boost confidence."),
+        "understandingYourBodyShapeFash": MessageLookupByLibrary.simpleMessage(
+            "Understanding Your Body Shape"),
+        "undertones": MessageLookupByLibrary.simpleMessage("Undertones:"),
+        "undertonesDescription": MessageLookupByLibrary.simpleMessage(
+            "Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones."),
         "unlockFillAccess":
             MessageLookupByLibrary.simpleMessage("Unlock Full Access"),
         "uploadLimitDialog": MessageLookupByLibrary.simpleMessage(
@@ -854,8 +1263,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Utilize eye creams rich in hyaluronic acid to keep the delicate skin around your eyes well-hydrated and plump."),
         "uvExposureAcceleratesSkinAging": MessageLookupByLibrary.simpleMessage(
             "UV exposure accelerates skin aging, making sunscreen your best anti-aging tool."),
+        "variety": MessageLookupByLibrary.simpleMessage("Variety:"),
+        "varietyDescription": MessageLookupByLibrary.simpleMessage(
+            "Keep your workouts varied to prevent boredom and challenge your body in different ways. Try new activities like dance classes, hiking, or swimming."),
         "vascularDarkCircles":
             MessageLookupByLibrary.simpleMessage("Vascular dark circles"),
+        "versatility": MessageLookupByLibrary.simpleMessage("Versatility:"),
+        "versatilityDescription": MessageLookupByLibrary.simpleMessage(
+            "Choose versatile pieces that can be dressed up or down depending on the occasion."),
         "veryLight": MessageLookupByLibrary.simpleMessage(" Very light"),
         "vitaminCSerum":
             MessageLookupByLibrary.simpleMessage("Vitamin C Serum:"),
@@ -863,7 +1278,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "Find the right balance for your hair type—washing too often can strip natural oils, while washing too infrequently can lead to buildup."),
         "washingTitle": MessageLookupByLibrary.simpleMessage("Washing:"),
         "weightManagement":
-            MessageLookupByLibrary.simpleMessage("Weight Management:"),
+            MessageLookupByLibrary.simpleMessage("Weight Management"),
+        "wellGroomedEyebrows": MessageLookupByLibrary.simpleMessage(
+            "Well-groomed eyebrows frame your face. Shape them to suit your face shape—arch them slightly if you have a round face or keep them softer for a square face."),
         "whenThenPay": MessageLookupByLibrary.simpleMessage("when then pay"),
         "withBagsUnderEyes":
             MessageLookupByLibrary.simpleMessage("With bags under the eyes"),
@@ -879,6 +1296,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "You can activate someone`s code below"),
         "yourAnalysisHistory":
             MessageLookupByLibrary.simpleMessage("👤 Your Analysis History"),
+        "yourHairCrucial": MessageLookupByLibrary.simpleMessage(
+            "Your hair is a crucial part of your overall appearance. Keeping it healthy and well-styled can dramatically enhance your look. Here’s a guide to achieving and maintaining beautiful hair:"),
         "yourHairsHealth": MessageLookupByLibrary.simpleMessage(
             "Your hair\'s health and appearance are significantly influenced by how you treat it daily. From cleansing to styling, each step in your hair care routine should be tailored to your specific needs and concerns. Adopt these practices to ensure your hair remains strong, vibrant, and full of life."),
         "yourRes": MessageLookupByLibrary.simpleMessage("Your Results:")

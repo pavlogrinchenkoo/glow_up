@@ -46,13 +46,14 @@ class _GuideInfoPageState extends State<GuideInfoPage> {
             useRightButton: true,
             rightIcon: Assets.images.settings,
             rightOnClick: () => _bloc.toMenu(context),
-            leftIcon:Assets.images.back,
+            leftIcon: Assets.images.back,
             leftOnClick: () => _bloc.back(context),
+            backgroundeWhiteColor: BC.white,
           ),
           body: Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: BC.navyGrey,
+              color: BC.white,
             ),
             padding: const EdgeInsets.symmetric(horizontal: Sizes.s20),
             child: SingleChildScrollView(
@@ -60,6 +61,7 @@ class _GuideInfoPageState extends State<GuideInfoPage> {
             ),
           ),
           activateFullSafeArea: false,
+          backgroundColor: BC.white,
         );
       },
     );

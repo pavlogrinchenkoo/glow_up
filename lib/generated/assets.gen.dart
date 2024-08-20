@@ -151,10 +151,6 @@ class $AssetsImagesGuideGen {
   AssetGenImage get fitnessGuide =>
       const AssetGenImage('assets/images/guide/fitnessGuide.png');
 
-  /// File path: assets/images/guide/groomingGuide.png
-  AssetGenImage get groomingGuide =>
-      const AssetGenImage('assets/images/guide/groomingGuide.png');
-
   /// File path: assets/images/guide/hairGuide.png
   AssetGenImage get hairGuide =>
       const AssetGenImage('assets/images/guide/hairGuide.png');
@@ -177,7 +173,6 @@ class $AssetsImagesGuideGen {
         faceGuide,
         fashionGuide,
         fitnessGuide,
-        groomingGuide,
         hairGuide,
         jawlineGuide,
         makeupGuide,
@@ -204,10 +199,6 @@ class $AssetsImagesGuideInfoGen {
   AssetGenImage get fitnessGuideInfo =>
       const AssetGenImage('assets/images/guide_info/fitnessGuideInfo.png');
 
-  /// File path: assets/images/guide_info/groomingGuideInfo.png
-  AssetGenImage get groomingGuideInfo =>
-      const AssetGenImage('assets/images/guide_info/groomingGuideInfo.png');
-
   /// File path: assets/images/guide_info/hairGuideInfo.png
   AssetGenImage get hairGuideInfo =>
       const AssetGenImage('assets/images/guide_info/hairGuideInfo.png');
@@ -215,6 +206,10 @@ class $AssetsImagesGuideInfoGen {
   /// File path: assets/images/guide_info/jawlineGuideInfo.png
   AssetGenImage get jawlineGuideInfo =>
       const AssetGenImage('assets/images/guide_info/jawlineGuideInfo.png');
+
+  /// File path: assets/images/guide_info/makeupGuideInfo.png
+  AssetGenImage get makeupGuideInfo =>
+      const AssetGenImage('assets/images/guide_info/makeupGuideInfo.png');
 
   /// File path: assets/images/guide_info/skinGuideInfo.png
   AssetGenImage get skinGuideInfo =>
@@ -226,9 +221,9 @@ class $AssetsImagesGuideInfoGen {
         faceGuideInfo,
         fashionGuideInfo,
         fitnessGuideInfo,
-        groomingGuideInfo,
         hairGuideInfo,
         jawlineGuideInfo,
+        makeupGuideInfo,
         skinGuideInfo
       ];
 }

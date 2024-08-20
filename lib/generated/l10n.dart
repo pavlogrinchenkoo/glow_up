@@ -1110,16 +1110,6 @@ class S {
     );
   }
 
-  /// `Jawline`
-  String get jawline {
-    return Intl.message(
-      'Jawline',
-      name: 'jawline',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Eyes`
   String get eyes {
     return Intl.message(
@@ -1140,16 +1130,6 @@ class S {
     );
   }
 
-  /// `Cheekbones`
-  String get cheekbones {
-    return Intl.message(
-      'Cheekbones',
-      name: 'cheekbones',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Nose`
   String get nose {
     return Intl.message(
@@ -1165,16 +1145,6 @@ class S {
     return Intl.message(
       'Forehead',
       name: 'forehead',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Sun Protection:`
-  String get sunProtection {
-    return Intl.message(
-      'Sun Protection:',
-      name: 'sunProtection',
       desc: '',
       args: [],
     );
@@ -1260,10 +1230,10 @@ class S {
     );
   }
 
-  /// `The eyes are a focal point of the face, often the first feature noticed during interactions. They reflect your health, emotions, and can significantly impact your overall facial aesthetics. Caring for the delicate skin around your eyes, enhancing your lashes and brows, and addressing common concerns like dark circles or puffiness are all crucial for brightening your eye area. This guide offers targeted advice to keep your eyes looking vibrant and expressive, from specialized skincare routines to simple exercises and grooming tips that highlight your eyes' natural beauty.`
+  /// `Your eyes are one of the most expressive features of your face. Enhancing them can dramatically change your overall appearance. Here's how to make your eyes stand out:`
   String get theEyesAreFocal {
     return Intl.message(
-      'The eyes are a focal point of the face, often the first feature noticed during interactions. They reflect your health, emotions, and can significantly impact your overall facial aesthetics. Caring for the delicate skin around your eyes, enhancing your lashes and brows, and addressing common concerns like dark circles or puffiness are all crucial for brightening your eye area. This guide offers targeted advice to keep your eyes looking vibrant and expressive, from specialized skincare routines to simple exercises and grooming tips that highlight your eyes\' natural beauty.',
+      'Your eyes are one of the most expressive features of your face. Enhancing them can dramatically change your overall appearance. Here\'s how to make your eyes stand out:',
       name: 'theEyesAreFocal',
       desc: '',
       args: [],
@@ -1295,16 +1265,6 @@ class S {
     return Intl.message(
       'Hydration',
       name: 'hydration',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Hydration:`
-  String get secondHydration {
-    return Intl.message(
-      'Hydration:',
-      name: 'secondHydration',
       desc: '',
       args: [],
     );
@@ -1425,16 +1385,6 @@ class S {
     return Intl.message(
       'Ensure you\'re getting enough sleep to prevent the appearance of dark circles.',
       name: 'ensureYouAreGetting',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Exercises`
-  String get exercises {
-    return Intl.message(
-      'Exercises',
-      name: 'exercises',
       desc: '',
       args: [],
     );
@@ -1570,16 +1520,6 @@ class S {
     );
   }
 
-  /// `Lashes`
-  String get lashes {
-    return Intl.message(
-      'Lashes',
-      name: 'lashes',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Lash Serum:`
   String get lashSerum {
     return Intl.message(
@@ -1650,11 +1590,11 @@ class S {
     );
   }
 
-  /// `The face is the most noticed part of our appearance and plays a vital role in our interactions and first impressions. Enhancing facial features not only boosts attractiveness but also uplifts confidence. This guide offers targeted advice for each key facial feature—eyes, mouth, cheekbones, nose, forehead, eyebrows, and ears—providing simple yet effective strategies to improve their appearance. Whether you're aiming to brighten your eyes, define your jawline, or maintain healthy skin, these tips are designed to help you present the best version of yourself.`
-  String get theFaceMostNoticed {
+  /// `Enhancing your facial features is about understanding your unique structure and making subtle adjustments that highlight your best attributes. Here’s a comprehensive guide to help you optimize your facial appearance:`
+  String get enhancingFacial {
     return Intl.message(
-      'The face is the most noticed part of our appearance and plays a vital role in our interactions and first impressions. Enhancing facial features not only boosts attractiveness but also uplifts confidence. This guide offers targeted advice for each key facial feature—eyes, mouth, cheekbones, nose, forehead, eyebrows, and ears—providing simple yet effective strategies to improve their appearance. Whether you\'re aiming to brighten your eyes, define your jawline, or maintain healthy skin, these tips are designed to help you present the best version of yourself.',
-      name: 'theFaceMostNoticed',
+      'Enhancing your facial features is about understanding your unique structure and making subtle adjustments that highlight your best attributes. Here’s a comprehensive guide to help you optimize your facial appearance:',
+      name: 'enhancingFacial',
       desc: '',
       args: [],
     );
@@ -1695,16 +1635,6 @@ class S {
     return Intl.message(
       'Keep your body well-hydrated to support eye health and minimize bags.',
       name: 'hydrationEyes',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Rest:`
-  String get rest {
-    return Intl.message(
-      'Rest:',
-      name: 'rest',
       desc: '',
       args: [],
     );
@@ -1755,16 +1685,6 @@ class S {
     return Intl.message(
       'Maintain dental hygiene with regular brushing, flossing, and dental check-ups. Whitening strips can enhance your smile if needed.',
       name: 'teethHealthText',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Facial Exercises:`
-  String get facialExercises {
-    return Intl.message(
-      'Facial Exercises:',
-      name: 'facialExercises',
       desc: '',
       args: [],
     );
@@ -1990,20 +1910,20 @@ class S {
     );
   }
 
-  /// `Fashion is an expression of individuality—a way to convey your personality and preferences without saying a word. It's not just about following the latest trends; it's about understanding the fundamentals of fit, color, and style to create a wardrobe that feels uniquely yours. This guide explores the core aspects of fashion, from staying abreast of seasonal trends to mastering the art of fit, selecting the right accessories, and incorporating color effectively. Whether you're refining your current style or building a new look from the ground up, these insights will help you navigate the world of fashion with confidence, making informed choices that enhance your appearance and express your personal brand.`
+  /// `Fashion is a powerful form of self-expression. The way you dress can significantly impact how you feel and how others perceive you. Here’s a guide to help you develop your style:`
   String get fashionIsExplored {
     return Intl.message(
-      'Fashion is an expression of individuality—a way to convey your personality and preferences without saying a word. It\'s not just about following the latest trends; it\'s about understanding the fundamentals of fit, color, and style to create a wardrobe that feels uniquely yours. This guide explores the core aspects of fashion, from staying abreast of seasonal trends to mastering the art of fit, selecting the right accessories, and incorporating color effectively. Whether you\'re refining your current style or building a new look from the ground up, these insights will help you navigate the world of fashion with confidence, making informed choices that enhance your appearance and express your personal brand.',
+      'Fashion is a powerful form of self-expression. The way you dress can significantly impact how you feel and how others perceive you. Here’s a guide to help you develop your style:',
       name: 'fashionIsExplored',
       desc: '',
       args: [],
     );
   }
 
-  /// `Trends`
+  /// `Trends:`
   String get trends {
     return Intl.message(
-      'Trends',
+      'Trends:',
       name: 'trends',
       desc: '',
       args: [],
@@ -2170,11 +2090,11 @@ class S {
     );
   }
 
-  /// `Embarking on a fitness journey is about more than achieving a certain look; it's about nurturing your body's health, enhancing your physical capabilities, and improving your overall quality of life. This comprehensive guide is designed to walk you through the fundamental aspects of fitness—strength, cardio, nutrition, recovery, and flexibility. Each component plays a vital role in building a stronger, more resilient physique. Whether you're a beginner or looking to refine your existing routine, these insights will help you create a balanced approach tailored to your unique fitness goals.`
-  String get subTitleOverview {
+  /// `Physical fitness is essential for overall health and plays a significant role in how you look and feel. Here’s a comprehensive guide to help you stay fit and healthy:`
+  String get fitnessOverview {
     return Intl.message(
-      'Embarking on a fitness journey is about more than achieving a certain look; it\'s about nurturing your body\'s health, enhancing your physical capabilities, and improving your overall quality of life. This comprehensive guide is designed to walk you through the fundamental aspects of fitness—strength, cardio, nutrition, recovery, and flexibility. Each component plays a vital role in building a stronger, more resilient physique. Whether you\'re a beginner or looking to refine your existing routine, these insights will help you create a balanced approach tailored to your unique fitness goals.',
-      name: 'subTitleOverview',
+      'Physical fitness is essential for overall health and plays a significant role in how you look and feel. Here’s a comprehensive guide to help you stay fit and healthy:',
+      name: 'fitnessOverview',
       desc: '',
       args: [],
     );
@@ -2540,11 +2460,11 @@ class S {
     );
   }
 
-  /// `Grooming is not just about maintaining cleanliness; it's an integral part of personal style and self-expression. This comprehensive guide delves into the art of grooming, covering everything from the basics of shaving and skincare to the nuances of haircare and selecting the right fragrance. It's designed to help you navigate the grooming landscape with confidence, ensuring that you can create and maintain a look that's both polished and uniquely yours. Whether you're refining your daily routine or exploring new grooming territories, these insights will provide the foundation you need to enhance your natural features and present your best self to the world.`
-  String get groomingIsNotJust {
+  /// `Makeup is an art form that allows you to express your personality and enhance your natural beauty. Whether you're a beginner or a makeup enthusiast, understanding the basics and learning some advanced techniques can take your look to the next level. Here’s a detailed guide to help you perfect your makeup routine:`
+  String get makeupOverview {
     return Intl.message(
-      'Grooming is not just about maintaining cleanliness; it\'s an integral part of personal style and self-expression. This comprehensive guide delves into the art of grooming, covering everything from the basics of shaving and skincare to the nuances of haircare and selecting the right fragrance. It\'s designed to help you navigate the grooming landscape with confidence, ensuring that you can create and maintain a look that\'s both polished and uniquely yours. Whether you\'re refining your daily routine or exploring new grooming territories, these insights will provide the foundation you need to enhance your natural features and present your best self to the world.',
-      name: 'groomingIsNotJust',
+      'Makeup is an art form that allows you to express your personality and enhance your natural beauty. Whether you\'re a beginner or a makeup enthusiast, understanding the basics and learning some advanced techniques can take your look to the next level. Here’s a detailed guide to help you perfect your makeup routine:',
+      name: 'makeupOverview',
       desc: '',
       args: [],
     );
@@ -2760,16 +2680,6 @@ class S {
     );
   }
 
-  /// `Use conditioner to add moisture and shine, focusing on the mid-lengths and ends of your hair.`
-  String get conditioning {
-    return Intl.message(
-      'Use conditioner to add moisture and shine, focusing on the mid-lengths and ends of your hair.',
-      name: 'conditioning',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Styling Products:`
   String get stylingProductsTitle {
     return Intl.message(
@@ -2890,21 +2800,11 @@ class S {
     );
   }
 
-  /// `Navigating the world of hair care can transform not just your hairstyle, but your entire look and confidence. Whether it's maintaining a healthy scalp, finding the right balance between cleansing and conditioning, or mastering the art of styling, each step in your hair care routine plays a crucial role. This guide will walk you through essential hair care practices, from selecting products to addressing common concerns like thinning, to ensure your hair remains a highlight of your personal style.`
-  String get navigatingTheWorld {
+  /// `Your hair is a crucial part of your overall appearance. Keeping it healthy and well-styled can dramatically enhance your look. Here’s a guide to achieving and maintaining beautiful hair:`
+  String get yourHairCrucial {
     return Intl.message(
-      'Navigating the world of hair care can transform not just your hairstyle, but your entire look and confidence. Whether it\'s maintaining a healthy scalp, finding the right balance between cleansing and conditioning, or mastering the art of styling, each step in your hair care routine plays a crucial role. This guide will walk you through essential hair care practices, from selecting products to addressing common concerns like thinning, to ensure your hair remains a highlight of your personal style.',
-      name: 'navigatingTheWorld',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Cleansing`
-  String get cleansing {
-    return Intl.message(
-      'Cleansing',
-      name: 'cleansing',
+      'Your hair is a crucial part of your overall appearance. Keeping it healthy and well-styled can dramatically enhance your look. Here’s a guide to achieving and maintaining beautiful hair:',
+      name: 'yourHairCrucial',
       desc: '',
       args: [],
     );
@@ -3015,16 +2915,6 @@ class S {
     return Intl.message(
       'Ensure no residue is left behind to maintain hair volume and texture.',
       name: 'ensureNoResidue',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Heat Protection:`
-  String get heatProtection {
-    return Intl.message(
-      'Heat Protection:',
-      name: 'heatProtection',
       desc: '',
       args: [],
     );
@@ -3150,16 +3040,6 @@ class S {
     );
   }
 
-  /// `Scalp Care`
-  String get scalpCare {
-    return Intl.message(
-      'Scalp Care',
-      name: 'scalpCare',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Regular Exfoliation:`
   String get regularExfoliation {
     return Intl.message(
@@ -3210,10 +3090,10 @@ class S {
     );
   }
 
-  /// `A defined jawline is a coveted feature, symbolizing strength and attractiveness. Achieving and maintaining a sharp jawline involves a combination of targeted exercises, dietary choices, and skincare techniques. This section explores practical steps to enhance your jawline's definition, from exercises that tone facial muscles to contouring tips and professional treatments that refine your profile. Tailor your routine to sculpt a jawline that complements your facial features and boosts your confidence.`
+  /// `A defined jawline is often seen as a sign of strength and attractiveness. Here’s how to enhance your jawline and make it more prominent:`
   String get aDefinedJawline {
     return Intl.message(
-      'A defined jawline is a coveted feature, symbolizing strength and attractiveness. Achieving and maintaining a sharp jawline involves a combination of targeted exercises, dietary choices, and skincare techniques. This section explores practical steps to enhance your jawline\'s definition, from exercises that tone facial muscles to contouring tips and professional treatments that refine your profile. Tailor your routine to sculpt a jawline that complements your facial features and boosts your confidence.',
+      'A defined jawline is often seen as a sign of strength and attractiveness. Here’s how to enhance your jawline and make it more prominent:',
       name: 'aDefinedJawline',
       desc: '',
       args: [],
@@ -3240,16 +3120,6 @@ class S {
     );
   }
 
-  /// `Weight Management:`
-  String get weightManagement {
-    return Intl.message(
-      'Weight Management:',
-      name: 'weightManagement',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Reducing excess body fat through a balanced diet and regular exercise can help in accentuating the jawline by diminishing the appearance of a double chin.`
   String get reducingExcessBodyFat {
     return Intl.message(
@@ -3270,20 +3140,10 @@ class S {
     );
   }
 
-  /// `Contouring`
-  String get contouring {
-    return Intl.message(
-      'Contouring',
-      name: 'contouring',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Makeup:`
+  /// `Makeup`
   String get makeup {
     return Intl.message(
-      'Makeup:',
+      'Makeup',
       name: 'makeup',
       desc: '',
       args: [],
@@ -3430,11 +3290,11 @@ class S {
     );
   }
 
-  /// `Skin health is a critical component of overall wellness and aesthetics. A radiant complexion not only enhances your looks but also reflects your internal health. This guide covers key areas of skin care—hydration, pigmentation, acne management, aging, and texture improvement. By focusing on these aspects, you can achieve a clearer, more youthful appearance and boost your confidence.`
-  String get skinHealthIsCritical {
+  /// `Your skin is the canvas of your beauty. Keeping it healthy and radiant is key to looking your best. Here's a guide to achieving glowing skin:`
+  String get skinHealthCanvas {
     return Intl.message(
-      'Skin health is a critical component of overall wellness and aesthetics. A radiant complexion not only enhances your looks but also reflects your internal health. This guide covers key areas of skin care—hydration, pigmentation, acne management, aging, and texture improvement. By focusing on these aspects, you can achieve a clearer, more youthful appearance and boost your confidence.',
-      name: 'skinHealthIsCritical',
+      'Your skin is the canvas of your beauty. Keeping it healthy and radiant is key to looking your best. Here\'s a guide to achieving glowing skin:',
+      name: 'skinHealthCanvas',
       desc: '',
       args: [],
     );
@@ -3545,16 +3405,6 @@ class S {
     return Intl.message(
       'Use a broad-spectrum sunscreen daily to protect against UV-induced pigmentation. Vitamin C serums can also help brighten the skin and reduce dark spots.',
       name: 'useABroadSpectrumSunscreen',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Professional Treatments:`
-  String get professionalTreatments {
-    return Intl.message(
-      'Professional Treatments:',
-      name: 'professionalTreatments',
       desc: '',
       args: [],
     );
@@ -3705,16 +3555,6 @@ class S {
     return Intl.message(
       'Texture',
       name: 'texture',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Exfoliation:`
-  String get exfoliation {
-    return Intl.message(
-      'Exfoliation:',
-      name: 'exfoliation',
       desc: '',
       args: [],
     );
@@ -4730,16 +4570,6 @@ class S {
     );
   }
 
-  /// `Skin Type Classification`
-  String get skinType {
-    return Intl.message(
-      'Skin Type Classification',
-      name: 'skinType',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `ITA Skin Tone Type`
   String get itaSkinType {
     return Intl.message(
@@ -5375,6 +5205,2656 @@ class S {
     return Intl.message(
       'GlowUp Guide',
       name: 'glowUpGuide',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facial Symmetry`
+  String get facialSymmetry {
+    return Intl.message(
+      'Facial Symmetry',
+      name: 'facialSymmetry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balance:`
+  String get balance {
+    return Intl.message(
+      'Balance:',
+      name: 'balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Symmetry is often associated with attractiveness. Focus on balanced skincare, grooming, and makeup application to enhance facial symmetry.`
+  String get balanceSymmetry {
+    return Intl.message(
+      'Symmetry is often associated with attractiveness. Focus on balanced skincare, grooming, and makeup application to enhance facial symmetry.',
+      name: 'balanceSymmetry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exercises:`
+  String get exercises {
+    return Intl.message(
+      'Exercises:',
+      name: 'exercises',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facial exercises can help tone and strengthen your facial muscles, improving symmetry over time.`
+  String get exerciseFacial {
+    return Intl.message(
+      'Facial exercises can help tone and strengthen your facial muscles, improving symmetry over time.',
+      name: 'exerciseFacial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contouring:`
+  String get contouring {
+    return Intl.message(
+      'Contouring:',
+      name: 'contouring',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use makeup to contour and highlight, creating the illusion of more symmetrical features.`
+  String get contouringText {
+    return Intl.message(
+      'Use makeup to contour and highlight, creating the illusion of more symmetrical features.',
+      name: 'contouringText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facial Hair`
+  String get facialHair {
+    return Intl.message(
+      'Facial Hair',
+      name: 'facialHair',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shaping Eyebrows:`
+  String get shapingEyebrows {
+    return Intl.message(
+      'Shaping Eyebrows:',
+      name: 'shapingEyebrows',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Well-groomed eyebrows frame your face. Shape them to suit your face shape—arch them slightly if you have a round face or keep them softer for a square face.`
+  String get wellGroomedEyebrows {
+    return Intl.message(
+      'Well-groomed eyebrows frame your face. Shape them to suit your face shape—arch them slightly if you have a round face or keep them softer for a square face.',
+      name: 'wellGroomedEyebrows',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hairline:`
+  String get hairline {
+    return Intl.message(
+      'Hairline:',
+      name: 'hairline',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consider your hairline’s shape and height; it can significantly impact how your face is perceived. A neat hairline can make your face appear more proportionate.`
+  String get hairlineText {
+    return Intl.message(
+      'Consider your hairline’s shape and height; it can significantly impact how your face is perceived. A neat hairline can make your face appear more proportionate.',
+      name: 'hairlineText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facial Features Enhancement`
+  String get facialFeaturesEnhancement {
+    return Intl.message(
+      'Facial Features Enhancement',
+      name: 'facialFeaturesEnhancement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jawline:`
+  String get jawline {
+    return Intl.message(
+      'Jawline:',
+      name: 'jawline',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jawline`
+  String get jawlineS {
+    return Intl.message(
+      'Jawline',
+      name: 'jawlineS',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enhance your jawline with contouring or by maintaining a healthy weight.`
+  String get jawlineText {
+    return Intl.message(
+      'Enhance your jawline with contouring or by maintaining a healthy weight.',
+      name: 'jawlineText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cheekbones:`
+  String get cheekbones {
+    return Intl.message(
+      'Cheekbones:',
+      name: 'cheekbones',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Highlighting your cheekbones can add definition to your face. Use a highlighter on the high points of your cheeks for a lifted look.`
+  String get cheekbonesHighlight {
+    return Intl.message(
+      'Highlighting your cheekbones can add definition to your face. Use a highlighter on the high points of your cheeks for a lifted look.',
+      name: 'cheekbonesHighlight',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personalized Skincare`
+  String get personalizedSkincare {
+    return Intl.message(
+      'Personalized Skincare',
+      name: 'personalizedSkincare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skin Type:`
+  String get skinType {
+    return Intl.message(
+      'Skin Type:',
+      name: 'skinType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Identify your skin type (oily, dry, combination, or sensitive) and tailor your skincare routine accordingly.`
+  String get skinTypeText {
+    return Intl.message(
+      ' Identify your skin type (oily, dry, combination, or sensitive) and tailor your skincare routine accordingly.',
+      name: 'skinTypeText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use products that target specific concerns like acne, pigmentation, or aging to maintain a smooth, even complexion.`
+  String get targetedTreatmentsText {
+    return Intl.message(
+      'Use products that target specific concerns like acne, pigmentation, or aging to maintain a smooth, even complexion.',
+      name: 'targetedTreatmentsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Diet & Hydration`
+  String get dietAndHydration {
+    return Intl.message(
+      'Diet & Hydration',
+      name: 'dietAndHydration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nutrition:`
+  String get nutrition {
+    return Intl.message(
+      'Nutrition:',
+      name: 'nutrition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A balanced diet rich in vitamins and antioxidants promotes healthy skin and facial features.`
+  String get nutritionText {
+    return Intl.message(
+      'A balanced diet rich in vitamins and antioxidants promotes healthy skin and facial features.',
+      name: 'nutritionText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hydration:`
+  String get secondHydration {
+    return Intl.message(
+      'Hydration:',
+      name: 'secondHydration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Drink plenty of water to keep your skin hydrated and plump, which enhances your overall facial appearance.`
+  String get secondHydrationText {
+    return Intl.message(
+      'Drink plenty of water to keep your skin hydrated and plump, which enhances your overall facial appearance.',
+      name: 'secondHydrationText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skin Type Identification`
+  String get skinTypeIdentification {
+    return Intl.message(
+      'Skin Type Identification',
+      name: 'skinTypeIdentification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Understand Your Skin:`
+  String get understandYourSkin {
+    return Intl.message(
+      'Understand Your Skin:',
+      name: 'understandYourSkin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Knowing whether your skin is oily, dry, combination, or sensitive will help you choose the right products.`
+  String get understandYourSkinText {
+    return Intl.message(
+      'Knowing whether your skin is oily, dry, combination, or sensitive will help you choose the right products.',
+      name: 'understandYourSkinText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seasonal Changes:`
+  String get seasonalChanges {
+    return Intl.message(
+      'Seasonal Changes:',
+      name: 'seasonalChanges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adjust your skincare routine based on the season-hydrating more in the winter and controlling oil in the summer.`
+  String get seasonalChangesText {
+    return Intl.message(
+      'Adjust your skincare routine based on the season-hydrating more in the winter and controlling oil in the summer.',
+      name: 'seasonalChangesText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Daily Skincare Routine`
+  String get dailySkincare {
+    return Intl.message(
+      'Daily Skincare Routine',
+      name: 'dailySkincare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Toning:`
+  String get toning {
+    return Intl.message(
+      'Toning:',
+      name: 'toning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply a toner after cleansing to balance your skin’s pH and prepare it for moisturizing.`
+  String get toningText {
+    return Intl.message(
+      'Apply a toner after cleansing to balance your skin’s pH and prepare it for moisturizing.',
+      name: 'toningText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Moisturizing:`
+  String get moisturizing {
+    return Intl.message(
+      'Moisturizing:',
+      name: 'moisturizing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Moisturize regularly to keep your skin hydrated. Choose a lightweight moisturizer for oily skin and a richer formula for dry skin.`
+  String get moisturizingText {
+    return Intl.message(
+      'Moisturize regularly to keep your skin hydrated. Choose a lightweight moisturizer for oily skin and a richer formula for dry skin.',
+      name: 'moisturizingText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exfoliation & Masks`
+  String get exfoliationAndMasks {
+    return Intl.message(
+      'Exfoliation & Masks',
+      name: 'exfoliationAndMasks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exfoliate 1-2 times a week to remove dead skin cells and reveal smoother, brighter skin. Use a chemical exfoliant for sensitive skin or a physical scrub for tougher skin.`
+  String get exfoliationText {
+    return Intl.message(
+      'Exfoliate 1-2 times a week to remove dead skin cells and reveal smoother, brighter skin. Use a chemical exfoliant for sensitive skin or a physical scrub for tougher skin.',
+      name: 'exfoliationText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Face Masks:`
+  String get faceMasks {
+    return Intl.message(
+      'Face Masks:',
+      name: 'faceMasks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorporate face masks into your routine to address specific concerns like hydration, detoxification, or brightening.`
+  String get incorporateFaceMasks {
+    return Intl.message(
+      'Incorporate face masks into your routine to address specific concerns like hydration, detoxification, or brightening.',
+      name: 'incorporateFaceMasks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sun Protection`
+  String get sunProtection {
+    return Intl.message(
+      'Sun Protection',
+      name: 'sunProtection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `SPF Daily:`
+  String get sdfDaily {
+    return Intl.message(
+      'SPF Daily:',
+      name: 'sdfDaily',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Always wear sunscreen with at least SPF 30, even on cloudy days, to protect your skin from UV damage.`
+  String get sdfDailyText {
+    return Intl.message(
+      'Always wear sunscreen with at least SPF 30, even on cloudy days, to protect your skin from UV damage.',
+      name: 'sdfDailyText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Broad Spectrum:`
+  String get broadSpectrum {
+    return Intl.message(
+      'Broad Spectrum:',
+      name: 'broadSpectrum',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose a broad-spectrum sunscreen that protects against both UVA and UVB rays.`
+  String get broadSpectrumText {
+    return Intl.message(
+      'Choose a broad-spectrum sunscreen that protects against both UVA and UVB rays.',
+      name: 'broadSpectrumText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Targeted Treatments`
+  String get targetedTreatments {
+    return Intl.message(
+      'Targeted Treatments',
+      name: 'targetedTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Serums:`
+  String get serums {
+    return Intl.message(
+      'Serums:',
+      name: 'serums',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use serums that target your specific skin concerns, such as vitamin C for brightening or hyaluronic acid for hydration.`
+  String get serumsUseText {
+    return Intl.message(
+      'Use serums that target your specific skin concerns, such as vitamin C for brightening or hyaluronic acid for hydration.',
+      name: 'serumsUseText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Spot Treatments:`
+  String get spotTreatments {
+    return Intl.message(
+      'Spot Treatments:',
+      name: 'spotTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply spot treatments directly on blemishes to reduce inflammation and speed up healing.`
+  String get spotTreatmentsUseText {
+    return Intl.message(
+      'Apply spot treatments directly on blemishes to reduce inflammation and speed up healing.',
+      name: 'spotTreatmentsUseText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Professional Treatments`
+  String get professionalTreatments {
+    return Intl.message(
+      'Professional Treatments',
+      name: 'professionalTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facials:`
+  String get facials {
+    return Intl.message(
+      'Facials:',
+      name: 'facials',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regular facials can help deep clean your skin, address specific concerns, and keep it glowing.`
+  String get facialsText {
+    return Intl.message(
+      'Regular facials can help deep clean your skin, address specific concerns, and keep it glowing.',
+      name: 'facialsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dermatologist Visits:`
+  String get dermatologistVisits {
+    return Intl.message(
+      'Dermatologist Visits:',
+      name: 'dermatologistVisits',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See a dermatologist for persistent skin issues like acne, rosacea, or severe dryness.`
+  String get dermatologistVisitsText {
+    return Intl.message(
+      'See a dermatologist for persistent skin issues like acne, rosacea, or severe dryness.',
+      name: 'dermatologistVisitsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair Type Identification`
+  String get hairTypeIdentification {
+    return Intl.message(
+      'Hair Type Identification',
+      name: 'hairTypeIdentification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair Texture:`
+  String get hairTexture {
+    return Intl.message(
+      'Hair Texture:',
+      name: 'hairTexture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Understand whether your hair is straight, wavy, curly, or coily to choose the right care routine.`
+  String get hairTextureText {
+    return Intl.message(
+      'Understand whether your hair is straight, wavy, curly, or coily to choose the right care routine.',
+      name: 'hairTextureText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Porosity:`
+  String get porosity {
+    return Intl.message(
+      'Porosity:',
+      name: 'porosity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Determine your hair’s porosity (low, medium, or high) to know how well it absorbs moisture and which products to use.`
+  String get porosityText {
+    return Intl.message(
+      'Determine your hair’s porosity (low, medium, or high) to know how well it absorbs moisture and which products to use.',
+      name: 'porosityText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shampooing & Conditioning`
+  String get shampooingAndConditioning {
+    return Intl.message(
+      'Shampooing & Conditioning',
+      name: 'shampooingAndConditioning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cleansing:`
+  String get cleansing {
+    return Intl.message(
+      'Cleansing:',
+      name: 'cleansing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shampoo your hair based on your scalp’s needs—daily for oily scalps, or every few days for dry scalps. Use a sulfate-free shampoo for color-treated or sensitive hair.`
+  String get cleansingText {
+    return Intl.message(
+      'Shampoo your hair based on your scalp’s needs—daily for oily scalps, or every few days for dry scalps. Use a sulfate-free shampoo for color-treated or sensitive hair.',
+      name: 'cleansingText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Conditioning:`
+  String get conditioning {
+    return Intl.message(
+      'Conditioning:',
+      name: 'conditioning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Condition your hair after every wash to keep it hydrated. Apply conditioner from mid-lengths to ends, avoiding the scalp.`
+  String get conditioningText {
+    return Intl.message(
+      'Condition your hair after every wash to keep it hydrated. Apply conditioner from mid-lengths to ends, avoiding the scalp.',
+      name: 'conditioningText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair Treatments`
+  String get hairTreatments {
+    return Intl.message(
+      'Hair Treatments',
+      name: 'hairTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deep Conditioning:`
+  String get deepConditioning {
+    return Intl.message(
+      'Deep Conditioning:',
+      name: 'deepConditioning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use a deep conditioner or hair mask once a week to nourish and strengthen your hair.`
+  String get deepConditioningDescription {
+    return Intl.message(
+      'Use a deep conditioner or hair mask once a week to nourish and strengthen your hair.',
+      name: 'deepConditioningDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leave-In Treatments:`
+  String get leaveInTreatments {
+    return Intl.message(
+      'Leave-In Treatments:',
+      name: 'leaveInTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply leave-in conditioners or serums to add moisture and protect your hair from heat and environmental damage.`
+  String get leaveInTreatmentsDescription {
+    return Intl.message(
+      'Apply leave-in conditioners or serums to add moisture and protect your hair from heat and environmental damage.',
+      name: 'leaveInTreatmentsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair Styling`
+  String get hairStyling {
+    return Intl.message(
+      'Hair Styling',
+      name: 'hairStyling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Heat Protection:`
+  String get heatProtection {
+    return Intl.message(
+      'Heat Protection:',
+      name: 'heatProtection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Always use a heat protectant spray before using hot tools like straighteners or curling irons.`
+  String get heatProtectionDescription {
+    return Intl.message(
+      'Always use a heat protectant spray before using hot tools like straighteners or curling irons.',
+      name: 'heatProtectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Haircuts:`
+  String get haircuts {
+    return Intl.message(
+      'Haircuts:',
+      name: 'haircuts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regular trims every 6-8 weeks help prevent split ends and keep your hair looking healthy.`
+  String get haircutsDescription {
+    return Intl.message(
+      'Regular trims every 6-8 weeks help prevent split ends and keep your hair looking healthy.',
+      name: 'haircutsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair Color`
+  String get hairColor {
+    return Intl.message(
+      'Hair Color',
+      name: 'hairColor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing a Color:`
+  String get choosingAColor {
+    return Intl.message(
+      'Choosing a Color:',
+      name: 'choosingAColor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select a hair color that complements your skin tone. Warmer skin tones suit golden and caramel shades, while cooler tones look great with ash or platinum shades.`
+  String get choosingAColorDescription {
+    return Intl.message(
+      'Select a hair color that complements your skin tone. Warmer skin tones suit golden and caramel shades, while cooler tones look great with ash or platinum shades.',
+      name: 'choosingAColorDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Maintenance:`
+  String get maintenance {
+    return Intl.message(
+      'Maintenance:',
+      name: 'maintenance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Maintain your hair color with color-safe shampoos and regular touch-ups.`
+  String get maintenanceDescription {
+    return Intl.message(
+      'Maintain your hair color with color-safe shampoos and regular touch-ups.',
+      name: 'maintenanceDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Scalp Care`
+  String get scalpCare {
+    return Intl.message(
+      'Scalp Care',
+      name: 'scalpCare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exfoliate your scalp to remove dead skin cells and promote healthy hair growth.`
+  String get exfoliationDescription {
+    return Intl.message(
+      'Exfoliate your scalp to remove dead skin cells and promote healthy hair growth.',
+      name: 'exfoliationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Scalp Massages:`
+  String get scalpMassages {
+    return Intl.message(
+      'Scalp Massages:',
+      name: 'scalpMassages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regular scalp massages can stimulate blood flow and encourage hair growth.`
+  String get scalpMassagesDescription {
+    return Intl.message(
+      'Regular scalp massages can stimulate blood flow and encourage hair growth.',
+      name: 'scalpMassagesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Protective Styles`
+  String get protectiveStyles {
+    return Intl.message(
+      'Protective Styles',
+      name: 'protectiveStyles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Low-Manipulation Styles:`
+  String get lowManipulationStyles {
+    return Intl.message(
+      'Low-Manipulation Styles:',
+      name: 'lowManipulationStyles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Opt for hairstyles that require minimal manipulation to protect your hair from damage.`
+  String get lowManipulationStylesDescription {
+    return Intl.message(
+      'Opt for hairstyles that require minimal manipulation to protect your hair from damage.',
+      name: 'lowManipulationStylesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nighttime Protection:`
+  String get nighttimeProtection {
+    return Intl.message(
+      'Nighttime Protection:',
+      name: 'nighttimeProtection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use a silk or satin pillowcase or hair wrap to reduce friction and prevent breakage while you sleep.`
+  String get nighttimeProtectionDescription {
+    return Intl.message(
+      'Use a silk or satin pillowcase or hair wrap to reduce friction and prevent breakage while you sleep.',
+      name: 'nighttimeProtectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facial Exercises`
+  String get facialExercises {
+    return Intl.message(
+      'Facial Exercises',
+      name: 'facialExercises',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jawline Exercises:`
+  String get jawlineExercises {
+    return Intl.message(
+      'Jawline Exercises:',
+      name: 'jawlineExercises',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perform facial exercises that target the muscles around your jaw to strengthen and define the area. Try chin lifts, neck curls, and jaw clenches.`
+  String get jawlineExercisesDescription {
+    return Intl.message(
+      'Perform facial exercises that target the muscles around your jaw to strengthen and define the area. Try chin lifts, neck curls, and jaw clenches.',
+      name: 'jawlineExercisesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consistency:`
+  String get consistency {
+    return Intl.message(
+      'Consistency:',
+      name: 'consistency',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Like any workout, consistency is key. Practice these exercises daily for noticeable results over time.`
+  String get consistencyDescription {
+    return Intl.message(
+      'Like any workout, consistency is key. Practice these exercises daily for noticeable results over time.',
+      name: 'consistencyDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Weight Management`
+  String get weightManagement {
+    return Intl.message(
+      'Weight Management',
+      name: 'weightManagement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Healthy Diet:`
+  String get healthyDiet {
+    return Intl.message(
+      'Healthy Diet:',
+      name: 'healthyDiet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Maintain a healthy diet to avoid excess fat that can soften your jawline. Focus on whole foods, lean proteins, and reducing sugar intake.`
+  String get healthyDietDescription {
+    return Intl.message(
+      'Maintain a healthy diet to avoid excess fat that can soften your jawline. Focus on whole foods, lean proteins, and reducing sugar intake.',
+      name: 'healthyDietDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Stay hydrated to prevent water retention, which can cause puffiness around the jawline.`
+  String get hydrationDescription {
+    return Intl.message(
+      'Stay hydrated to prevent water retention, which can cause puffiness around the jawline.',
+      name: 'hydrationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skincare & Grooming`
+  String get skincareGrooming {
+    return Intl.message(
+      'Skincare & Grooming',
+      name: 'skincareGrooming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exfoliation:`
+  String get exfoliation {
+    return Intl.message(
+      'Exfoliation:',
+      name: 'exfoliation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regularly exfoliate your neck and jawline area to keep the skin smooth and tight.`
+  String get exfoliationJaw {
+    return Intl.message(
+      'Regularly exfoliate your neck and jawline area to keep the skin smooth and tight.',
+      name: 'exfoliationJaw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Beard Shaping:`
+  String get beardShaping {
+    return Intl.message(
+      'Beard Shaping:',
+      name: 'beardShaping',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you have facial hair, shape your beard to accentuate your jawline. A well-groomed beard can add definition and make your jaw appear stronger.`
+  String get beardShapingDescription {
+    return Intl.message(
+      'If you have facial hair, shape your beard to accentuate your jawline. A well-groomed beard can add definition and make your jaw appear stronger.',
+      name: 'beardShapingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contouring`
+  String get contouringJaw {
+    return Intl.message(
+      'Contouring',
+      name: 'contouringJaw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Makeup Techniques:`
+  String get makeupTechniques {
+    return Intl.message(
+      'Makeup Techniques:',
+      name: 'makeupTechniques',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use makeup to contour your jawline for a more defined look. Apply a contour shade along the jawline and blend well to create shadows and depth.`
+  String get makeupTechniquesDescription {
+    return Intl.message(
+      'Use makeup to contour your jawline for a more defined look. Apply a contour shade along the jawline and blend well to create shadows and depth.',
+      name: 'makeupTechniquesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Highlighting:`
+  String get highlighting {
+    return Intl.message(
+      'Highlighting:',
+      name: 'highlighting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Highlight the area above your jawline to create contrast and further enhance the definition.`
+  String get highlightingDescription {
+    return Intl.message(
+      'Highlight the area above your jawline to create contrast and further enhance the definition.',
+      name: 'highlightingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Posture`
+  String get posture {
+    return Intl.message(
+      'Posture',
+      name: 'posture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Correct Posture:`
+  String get correctPosture {
+    return Intl.message(
+      'Correct Posture:',
+      name: 'correctPosture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good posture can make your jawline more prominent. Keep your head up and shoulders back to naturally enhance your jawline.`
+  String get correctPostureDescription {
+    return Intl.message(
+      'Good posture can make your jawline more prominent. Keep your head up and shoulders back to naturally enhance your jawline.',
+      name: 'correctPostureDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Avoid Slouching:`
+  String get avoidSlouching {
+    return Intl.message(
+      'Avoid Slouching:',
+      name: 'avoidSlouching',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Slouching can make your neck and jawline appear less defined. Practice sitting and standing tall to maintain a sharp appearance.`
+  String get avoidSlouchingDescription {
+    return Intl.message(
+      'Slouching can make your neck and jawline appear less defined. Practice sitting and standing tall to maintain a sharp appearance.',
+      name: 'avoidSlouchingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Non-Surgical Enhancements`
+  String get nonSurgicalEnhancements {
+    return Intl.message(
+      'Non-Surgical Enhancements',
+      name: 'nonSurgicalEnhancements',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dermal Fillers:`
+  String get dermalFillers {
+    return Intl.message(
+      'Dermal Fillers:',
+      name: 'dermalFillers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consider non-surgical options like dermal fillers to enhance your jawline. Consult with a professional to explore this option.`
+  String get dermalFillersDescription {
+    return Intl.message(
+      'Consider non-surgical options like dermal fillers to enhance your jawline. Consult with a professional to explore this option.',
+      name: 'dermalFillersDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skin Tightening Treatments:`
+  String get skinTighteningTreatments {
+    return Intl.message(
+      'Skin Tightening Treatments:',
+      name: 'skinTighteningTreatments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Explore treatments like radiofrequency or ultrasound therapy to tighten the skin around your jawline for a more defined look.`
+  String get skinTighteningTreatmentsDescription {
+    return Intl.message(
+      'Explore treatments like radiofrequency or ultrasound therapy to tighten the skin around your jawline for a more defined look.',
+      name: 'skinTighteningTreatmentsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skincare Around the Eyes`
+  String get skincareAroundTheEyes {
+    return Intl.message(
+      'Skincare Around the Eyes',
+      name: 'skincareAroundTheEyes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eye Cream:`
+  String get eyeCream {
+    return Intl.message(
+      'Eye Cream:',
+      name: 'eyeCream',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use an eye cream daily to keep the delicate skin around your eyes hydrated and reduce the appearance of fine lines and dark circles.`
+  String get eyeCreamDescription {
+    return Intl.message(
+      'Use an eye cream daily to keep the delicate skin around your eyes hydrated and reduce the appearance of fine lines and dark circles.',
+      name: 'eyeCreamDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Puffiness:`
+  String get puffiness {
+    return Intl.message(
+      'Puffiness:',
+      name: 'puffiness',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For puffiness, look for eye creams with caffeine or use cold compresses to reduce swelling.`
+  String get puffinessDescription {
+    return Intl.message(
+      'For puffiness, look for eye creams with caffeine or use cold compresses to reduce swelling.',
+      name: 'puffinessDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eyebrow Grooming`
+  String get eyebrowGrooming {
+    return Intl.message(
+      'Eyebrow Grooming',
+      name: 'eyebrowGrooming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shape:`
+  String get shape {
+    return Intl.message(
+      'Shape:',
+      name: 'shape',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Well-groomed eyebrows frame your eyes and enhance their appearance. Shape your eyebrows to complement your face shape, whether it's an arch for round faces or a softer shape for square faces.`
+  String get shapeDescription {
+    return Intl.message(
+      'Well-groomed eyebrows frame your eyes and enhance their appearance. Shape your eyebrows to complement your face shape, whether it\'s an arch for round faces or a softer shape for square faces.',
+      name: 'shapeDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tinting:`
+  String get tinting {
+    return Intl.message(
+      'Tinting:',
+      name: 'tinting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If your eyebrows are light, consider tinting them for more definition.`
+  String get tintingDescription {
+    return Intl.message(
+      'If your eyebrows are light, consider tinting them for more definition.',
+      name: 'tintingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eye Makeup`
+  String get eyeMakeup {
+    return Intl.message(
+      'Eye Makeup',
+      name: 'eyeMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eyeshadow:`
+  String get eyeshadow {
+    return Intl.message(
+      'Eyeshadow:',
+      name: 'eyeshadow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose eyeshadow shades that complement your eye color. Browns and golds make blue eyes pop, while purples and greens enhance brown eyes.`
+  String get eyeshadowDescription {
+    return Intl.message(
+      'Choose eyeshadow shades that complement your eye color. Browns and golds make blue eyes pop, while purples and greens enhance brown eyes.',
+      name: 'eyeshadowDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eyeliner:`
+  String get eyeliner {
+    return Intl.message(
+      'Eyeliner:',
+      name: 'eyeliner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eyeliner adds definition to your eyes. For a natural look, line your upper lash line. For more drama, try a winged liner.`
+  String get eyelinerDescription {
+    return Intl.message(
+      'Eyeliner adds definition to your eyes. For a natural look, line your upper lash line. For more drama, try a winged liner.',
+      name: 'eyelinerDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mascara:`
+  String get mascara {
+    return Intl.message(
+      'Mascara:',
+      name: 'mascara',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mascara opens up your eyes and makes your lashes look longer and fuller. Use a volumizing mascara for more impact.`
+  String get mascaraDescription {
+    return Intl.message(
+      'Mascara opens up your eyes and makes your lashes look longer and fuller. Use a volumizing mascara for more impact.',
+      name: 'mascaraDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lashes`
+  String get lashes {
+    return Intl.message(
+      'Lashes',
+      name: 'lashes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Curling:`
+  String get curling {
+    return Intl.message(
+      'Curling:',
+      name: 'curling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Curl your lashes before applying mascara to lift them and make your eyes appear larger.`
+  String get curlingDescription {
+    return Intl.message(
+      'Curl your lashes before applying mascara to lift them and make your eyes appear larger.',
+      name: 'curlingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `False Lashes:`
+  String get falseLashes {
+    return Intl.message(
+      'False Lashes:',
+      name: 'falseLashes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For special occasions, consider using false lashes to add volume and length. Choose a style that suits your eye shape—natural for daily wear or dramatic for evening looks.`
+  String get falseLashesDescription {
+    return Intl.message(
+      'For special occasions, consider using false lashes to add volume and length. Choose a style that suits your eye shape—natural for daily wear or dramatic for evening looks.',
+      name: 'falseLashesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eye Health`
+  String get eyeHealth {
+    return Intl.message(
+      'Eye Health',
+      name: 'eyeHealth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rest:`
+  String get rest {
+    return Intl.message(
+      'Rest:',
+      name: 'rest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ensure you're getting enough sleep to prevent dark circles and puffiness.`
+  String get restDescription {
+    return Intl.message(
+      'Ensure you\'re getting enough sleep to prevent dark circles and puffiness.',
+      name: 'restDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blue Light Protection:`
+  String get blueLightProtection {
+    return Intl.message(
+      'Blue Light Protection:',
+      name: 'blueLightProtection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use glasses or screen filters to protect your eyes from blue light if you spend a lot of time in front of screens.`
+  String get blueLightProtectionDescription {
+    return Intl.message(
+      'Use glasses or screen filters to protect your eyes from blue light if you spend a lot of time in front of screens.',
+      name: 'blueLightProtectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enhancing Eye Shape`
+  String get enhancingEyeShape {
+    return Intl.message(
+      'Enhancing Eye Shape',
+      name: 'enhancingEyeShape',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Almond Eyes:`
+  String get almondEyes {
+    return Intl.message(
+      'Almond Eyes:',
+      name: 'almondEyes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Highlight your almond eyes with a cat-eye liner.`
+  String get almondEyesDescription {
+    return Intl.message(
+      'Highlight your almond eyes with a cat-eye liner.',
+      name: 'almondEyesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Round Eyes:`
+  String get roundEyes {
+    return Intl.message(
+      'Round Eyes:',
+      name: 'roundEyes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use dark eyeliner on the waterline to elongate round eyes.`
+  String get roundEyesDescription {
+    return Intl.message(
+      'Use dark eyeliner on the waterline to elongate round eyes.',
+      name: 'roundEyesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hooded Eyes:`
+  String get hoodedEyes {
+    return Intl.message(
+      'Hooded Eyes:',
+      name: 'hoodedEyes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Focus on a darker shade on the outer corner and blend upwards to lift hooded eyes.`
+  String get hoodedEyesDescription {
+    return Intl.message(
+      'Focus on a darker shade on the outer corner and blend upwards to lift hooded eyes.',
+      name: 'hoodedEyesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact Lenses`
+  String get contactLenses {
+    return Intl.message(
+      'Contact Lenses',
+      name: 'contactLenses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Colored Lenses:`
+  String get coloredLenses {
+    return Intl.message(
+      'Colored Lenses:',
+      name: 'coloredLenses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Experiment with colored contact lenses to temporarily change your eye color and enhance your look.`
+  String get coloredLensesDescription {
+    return Intl.message(
+      'Experiment with colored contact lenses to temporarily change your eye color and enhance your look.',
+      name: 'coloredLensesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Prescription:`
+  String get prescription {
+    return Intl.message(
+      'Prescription:',
+      name: 'prescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you wear glasses, consider contact lenses for a glasses-free look, or choose stylish frames that complement your facial features.`
+  String get prescriptionDescription {
+    return Intl.message(
+      'If you wear glasses, consider contact lenses for a glasses-free look, or choose stylish frames that complement your facial features.',
+      name: 'prescriptionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cardio Workouts`
+  String get cardioWorkouts {
+    return Intl.message(
+      'Cardio Workouts',
+      name: 'cardioWorkouts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Heart Health:`
+  String get heartHealth {
+    return Intl.message(
+      'Heart Health:',
+      name: 'heartHealth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regular cardio exercises like running, swimming, or cycling improve heart health and help burn calories.`
+  String get heartHealthDescription {
+    return Intl.message(
+      'Regular cardio exercises like running, swimming, or cycling improve heart health and help burn calories.',
+      name: 'heartHealthDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fat Loss:`
+  String get fatLoss {
+    return Intl.message(
+      'Fat Loss:',
+      name: 'fatLoss',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To reduce body fat, aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week.`
+  String get fatLossDescription {
+    return Intl.message(
+      'To reduce body fat, aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week.',
+      name: 'fatLossDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Strength Training`
+  String get strengthTraining {
+    return Intl.message(
+      'Strength Training',
+      name: 'strengthTraining',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Muscle Building:`
+  String get muscleBuilding {
+    return Intl.message(
+      'Muscle Building:',
+      name: 'muscleBuilding',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorporate strength training exercises like weight lifting, resistance bands, or bodyweight exercises into your routine to build muscle and increase metabolism.`
+  String get muscleBuildingDescription {
+    return Intl.message(
+      'Incorporate strength training exercises like weight lifting, resistance bands, or bodyweight exercises into your routine to build muscle and increase metabolism.',
+      name: 'muscleBuildingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Core Strength:`
+  String get coreStrength {
+    return Intl.message(
+      'Core Strength:',
+      name: 'coreStrength',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Focus on core exercises to improve posture and enhance abdominal definition.`
+  String get coreStrengthDescription {
+    return Intl.message(
+      'Focus on core exercises to improve posture and enhance abdominal definition.',
+      name: 'coreStrengthDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flexibility & Mobility`
+  String get flexibilityMobility {
+    return Intl.message(
+      'Flexibility & Mobility',
+      name: 'flexibilityMobility',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Stretching:`
+  String get stretching {
+    return Intl.message(
+      'Stretching:',
+      name: 'stretching',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Include stretching exercises in your routine to maintain flexibility and prevent injuries. Yoga or Pilates are excellent options for enhancing flexibility.`
+  String get stretchingDescription {
+    return Intl.message(
+      'Include stretching exercises in your routine to maintain flexibility and prevent injuries. Yoga or Pilates are excellent options for enhancing flexibility.',
+      name: 'stretchingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mobility Drills:`
+  String get mobilityDrills {
+    return Intl.message(
+      'Mobility Drills:',
+      name: 'mobilityDrills',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perform mobility exercises to improve joint function and range of motion, which can aid in daily activities and other workouts.`
+  String get mobilityDrillsDescription {
+    return Intl.message(
+      'Perform mobility exercises to improve joint function and range of motion, which can aid in daily activities and other workouts.',
+      name: 'mobilityDrillsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Diet & Nutrition`
+  String get dietNutrition {
+    return Intl.message(
+      'Diet & Nutrition',
+      name: 'dietNutrition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balanced Diet:`
+  String get balancedDiet {
+    return Intl.message(
+      'Balanced Diet:',
+      name: 'balancedDiet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eat a balanced diet with a mix of protein, carbohydrates, and healthy fats to fuel your workouts and aid in recovery.`
+  String get balancedDietDescription {
+    return Intl.message(
+      'Eat a balanced diet with a mix of protein, carbohydrates, and healthy fats to fuel your workouts and aid in recovery.',
+      name: 'balancedDietDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Drink plenty of water throughout the day, especially before, during, and after workouts to stay hydrated and support overall health.`
+  String get hydrationDescriptionFit {
+    return Intl.message(
+      'Drink plenty of water throughout the day, especially before, during, and after workouts to stay hydrated and support overall health.',
+      name: 'hydrationDescriptionFit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recovery & Rest`
+  String get recoveryRest {
+    return Intl.message(
+      'Recovery & Rest',
+      name: 'recoveryRest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rest Days:`
+  String get restDays {
+    return Intl.message(
+      'Rest Days:',
+      name: 'restDays',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Schedule regular rest days to allow your muscles to recover and prevent overtraining.`
+  String get restDaysDescription {
+    return Intl.message(
+      'Schedule regular rest days to allow your muscles to recover and prevent overtraining.',
+      name: 'restDaysDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sleep:`
+  String get sleep {
+    return Intl.message(
+      'Sleep:',
+      name: 'sleep',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Aim for 7-9 hours of quality sleep each night to support muscle repair, mental health, and overall well-being.`
+  String get sleepDescription {
+    return Intl.message(
+      'Aim for 7-9 hours of quality sleep each night to support muscle repair, mental health, and overall well-being.',
+      name: 'sleepDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consistency & Motivation`
+  String get consistencyMotivation {
+    return Intl.message(
+      'Consistency & Motivation',
+      name: 'consistencyMotivation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set Goals:`
+  String get setGoals {
+    return Intl.message(
+      'Set Goals:',
+      name: 'setGoals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set realistic fitness goals and track your progress to stay motivated.`
+  String get setGoalsDescription {
+    return Intl.message(
+      'Set realistic fitness goals and track your progress to stay motivated.',
+      name: 'setGoalsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Variety:`
+  String get variety {
+    return Intl.message(
+      'Variety:',
+      name: 'variety',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Keep your workouts varied to prevent boredom and challenge your body in different ways. Try new activities like dance classes, hiking, or swimming.`
+  String get varietyDescription {
+    return Intl.message(
+      'Keep your workouts varied to prevent boredom and challenge your body in different ways. Try new activities like dance classes, hiking, or swimming.',
+      name: 'varietyDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Professional Guidance`
+  String get professionalGuidance {
+    return Intl.message(
+      'Professional Guidance',
+      name: 'professionalGuidance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Trainer:`
+  String get personalTrainer {
+    return Intl.message(
+      'Personal Trainer:',
+      name: 'personalTrainer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consider working with a personal trainer to create a customized workout plan that suits your goals and fitness level.`
+  String get personalTrainerDescription {
+    return Intl.message(
+      'Consider working with a personal trainer to create a customized workout plan that suits your goals and fitness level.',
+      name: 'personalTrainerDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Group Classes:`
+  String get groupClasses {
+    return Intl.message(
+      'Group Classes:',
+      name: 'groupClasses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Join group fitness classes for motivation, structure, and a sense of community.`
+  String get groupClassesDescription {
+    return Intl.message(
+      'Join group fitness classes for motivation, structure, and a sense of community.',
+      name: 'groupClassesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Understanding Your Body Shape`
+  String get understandingYourBodyShapeFash {
+    return Intl.message(
+      'Understanding Your Body Shape',
+      name: 'understandingYourBodyShapeFash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Body Types:`
+  String get bodyTypes {
+    return Intl.message(
+      'Body Types:',
+      name: 'bodyTypes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Identify your body shape (pear, apple, hourglass, rectangle) to choose clothes that enhance your figure.`
+  String get bodyTypesDescription {
+    return Intl.message(
+      'Identify your body shape (pear, apple, hourglass, rectangle) to choose clothes that enhance your figure.',
+      name: 'bodyTypesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Proportions:`
+  String get proportions {
+    return Intl.message(
+      'Proportions:',
+      name: 'proportions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dress to balance your proportions. For example, if you have a pear-shaped body, accentuate your shoulders and waist to create a more balanced silhouette.`
+  String get proportionsDescription {
+    return Intl.message(
+      'Dress to balance your proportions. For example, if you have a pear-shaped body, accentuate your shoulders and waist to create a more balanced silhouette.',
+      name: 'proportionsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Building a Wardrobe`
+  String get buildingAWardrobe {
+    return Intl.message(
+      'Building a Wardrobe',
+      name: 'buildingAWardrobe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Basics:`
+  String get basics {
+    return Intl.message(
+      'Basics:',
+      name: 'basics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invest in high-quality basics like a well-fitted pair of jeans, a white shirt, and a little black dress that can be mixed and matched with other items.`
+  String get basicsDescription {
+    return Intl.message(
+      'Invest in high-quality basics like a well-fitted pair of jeans, a white shirt, and a little black dress that can be mixed and matched with other items.',
+      name: 'basicsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Versatility:`
+  String get versatility {
+    return Intl.message(
+      'Versatility:',
+      name: 'versatility',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose versatile pieces that can be dressed up or down depending on the occasion.`
+  String get versatilityDescription {
+    return Intl.message(
+      'Choose versatile pieces that can be dressed up or down depending on the occasion.',
+      name: 'versatilityDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Colors & Patterns`
+  String get colorsPatterns {
+    return Intl.message(
+      'Colors & Patterns',
+      name: 'colorsPatterns',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Color Coordination:`
+  String get colorCoordination {
+    return Intl.message(
+      'Color Coordination:',
+      name: 'colorCoordination',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Understand which colors complement your skin tone. Warm tones look great in earthy colors, while cool tones shine in blues and purples.`
+  String get colorCoordinationDescription {
+    return Intl.message(
+      'Understand which colors complement your skin tone. Warm tones look great in earthy colors, while cool tones shine in blues and purples.',
+      name: 'colorCoordinationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patterns:`
+  String get patterns {
+    return Intl.message(
+      'Patterns:',
+      name: 'patterns',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorporate patterns like stripes, polka dots, or florals to add interest to your outfits. Mix and match patterns carefully to avoid clashing.`
+  String get patternsDescription {
+    return Intl.message(
+      'Incorporate patterns like stripes, polka dots, or florals to add interest to your outfits. Mix and match patterns carefully to avoid clashing.',
+      name: 'patternsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accessorizing`
+  String get accessorizing {
+    return Intl.message(
+      'Accessorizing',
+      name: 'accessorizing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jewelry:`
+  String get jewelry {
+    return Intl.message(
+      'Jewelry:',
+      name: 'jewelry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use jewelry to elevate your outfit. Statement pieces can add a focal point, while delicate jewelry offers a subtle touch of elegance.`
+  String get jewelryDescription {
+    return Intl.message(
+      'Use jewelry to elevate your outfit. Statement pieces can add a focal point, while delicate jewelry offers a subtle touch of elegance.',
+      name: 'jewelryDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bags & Shoes:`
+  String get bagsShoes {
+    return Intl.message(
+      'Bags & Shoes:',
+      name: 'bagsShoes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Match your bags and shoes with your outfit to create a cohesive look. Consider the occasion when choosing between heels, flats, or sneakers.`
+  String get bagsShoesDescription {
+    return Intl.message(
+      'Match your bags and shoes with your outfit to create a cohesive look. Consider the occasion when choosing between heels, flats, or sneakers.',
+      name: 'bagsShoesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Style`
+  String get personalStyle {
+    return Intl.message(
+      'Personal Style',
+      name: 'personalStyle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Experimentation:`
+  String get experimentationFash {
+    return Intl.message(
+      'Experimentation:',
+      name: 'experimentationFash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t be afraid to experiment with different styles until you find what suits you best. Fashion is personal, and it’s okay to break the rules.`
+  String get experimentationDescription {
+    return Intl.message(
+      'Don’t be afraid to experiment with different styles until you find what suits you best. Fashion is personal, and it’s okay to break the rules.',
+      name: 'experimentationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Signature Pieces:`
+  String get signaturePieces {
+    return Intl.message(
+      'Signature Pieces:',
+      name: 'signaturePieces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Identify signature pieces that define your style, whether it’s a particular color, accessory, or type of clothing.`
+  String get signaturePiecesDescription {
+    return Intl.message(
+      'Identify signature pieces that define your style, whether it’s a particular color, accessory, or type of clothing.',
+      name: 'signaturePiecesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shopping Tips`
+  String get shoppingTips {
+    return Intl.message(
+      'Shopping Tips',
+      name: 'shoppingTips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quality Over Quantity:`
+  String get qualityOverQuantity {
+    return Intl.message(
+      'Quality Over Quantity:',
+      name: 'qualityOverQuantity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invest in quality items that will last longer, rather than buying cheap, fast-fashion pieces that wear out quickly.`
+  String get qualityOverQuantityDescription {
+    return Intl.message(
+      'Invest in quality items that will last longer, rather than buying cheap, fast-fashion pieces that wear out quickly.',
+      name: 'qualityOverQuantityDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fit & Tailoring:`
+  String get fitTailoring {
+    return Intl.message(
+      'Fit & Tailoring:',
+      name: 'fitTailoring',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Always choose clothes that fit well. Consider tailoring items for a perfect fit, as even a small adjustment can make a big difference.`
+  String get fitTailoringDescription {
+    return Intl.message(
+      'Always choose clothes that fit well. Consider tailoring items for a perfect fit, as even a small adjustment can make a big difference.',
+      name: 'fitTailoringDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fashion Trends`
+  String get fashionTrends {
+    return Intl.message(
+      'Fashion Trends',
+      name: 'fashionTrends',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Staying Current:`
+  String get stayingCurrent {
+    return Intl.message(
+      'Staying Current:',
+      name: 'stayingCurrent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Keep up with fashion trends, but don’t feel pressured to follow them all. Incorporate trends that resonate with your style and personality.`
+  String get stayingCurrentDescription {
+    return Intl.message(
+      'Keep up with fashion trends, but don’t feel pressured to follow them all. Incorporate trends that resonate with your style and personality.',
+      name: 'stayingCurrentDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Classic Pieces:`
+  String get classicPieces {
+    return Intl.message(
+      'Classic Pieces:',
+      name: 'classicPieces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invest in classic pieces that never go out of style, like a trench coat, tailored blazer, or a pair of black pumps.`
+  String get classicPiecesDescription {
+    return Intl.message(
+      'Invest in classic pieces that never go out of style, like a trench coat, tailored blazer, or a pair of black pumps.',
+      name: 'classicPiecesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Foundation & Base Makeup`
+  String get foundationBaseMakeup {
+    return Intl.message(
+      'Foundation & Base Makeup',
+      name: 'foundationBaseMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing the Right Foundation:`
+  String get choosingTheRightFoundation {
+    return Intl.message(
+      'Choosing the Right Foundation:',
+      name: 'choosingTheRightFoundation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select a foundation that matches your skin tone and type. For oily skin, a matte or oil-free foundation works best, while those with dry skin should opt for a hydrating or dewy foundation.`
+  String get choosingTheRightFoundationDescription {
+    return Intl.message(
+      'Select a foundation that matches your skin tone and type. For oily skin, a matte or oil-free foundation works best, while those with dry skin should opt for a hydrating or dewy foundation.',
+      name: 'choosingTheRightFoundationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Undertones:`
+  String get undertones {
+    return Intl.message(
+      'Undertones:',
+      name: 'undertones',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones.`
+  String get undertonesDescription {
+    return Intl.message(
+      'Identify your skin’s undertone (warm, cool, or neutral) to find the perfect shade. Warm undertones look best with yellow or golden shades, while cool undertones are complemented by pink or blue tones.',
+      name: 'undertonesDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start with a neutral base color over your entire eyelid. Build depth with darker shades in the crease and blend well to avoid harsh lines.`
+  String get eyeshadowDescriptionMakeup {
+    return Intl.message(
+      'Start with a neutral base color over your entire eyelid. Build depth with darker shades in the crease and blend well to avoid harsh lines.',
+      name: 'eyeshadowDescriptionMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Day vs. Night Looks:`
+  String get dayVsNightLooks {
+    return Intl.message(
+      'Day vs. Night Looks:',
+      name: 'dayVsNightLooks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For daytime, opt for softer shades like browns, taupes, and pinks. For a night out, experiment with bolder colors like deep purples, blues, or smoky blacks.`
+  String get dayVsNightLooksDescription {
+    return Intl.message(
+      'For daytime, opt for softer shades like browns, taupes, and pinks. For a night out, experiment with bolder colors like deep purples, blues, or smoky blacks.',
+      name: 'dayVsNightLooksDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contouring & Highlighting`
+  String get contouringHighlighting {
+    return Intl.message(
+      'Contouring & Highlighting',
+      name: 'contouringHighlighting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contouring:`
+  String get contouringMakeup {
+    return Intl.message(
+      'Contouring:',
+      name: 'contouringMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contouring enhances your facial structure by creating shadows. Use a matte contour powder or cream two shades darker than your skin tone to define your cheekbones, jawline, and nose.`
+  String get contouringDescription {
+    return Intl.message(
+      'Contouring enhances your facial structure by creating shadows. Use a matte contour powder or cream two shades darker than your skin tone to define your cheekbones, jawline, and nose.',
+      name: 'contouringDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blending:`
+  String get blending {
+    return Intl.message(
+      'Blending:',
+      name: 'blending',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blend well to avoid harsh lines. A makeup sponge or brush works well to diffuse the contour for a natural look.`
+  String get blendingDescription {
+    return Intl.message(
+      'Blend well to avoid harsh lines. A makeup sponge or brush works well to diffuse the contour for a natural look.',
+      name: 'blendingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blush & Bronzer`
+  String get blushBronzer {
+    return Intl.message(
+      'Blush & Bronzer',
+      name: 'blushBronzer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blush:`
+  String get blush {
+    return Intl.message(
+      'Blush:',
+      name: 'blush',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blush adds a healthy flush of color to your cheeks. Choose a shade that complements your skin tone—peachy tones for warm undertones, and pink or berry tones for cool undertones.`
+  String get blushDescription {
+    return Intl.message(
+      'Blush adds a healthy flush of color to your cheeks. Choose a shade that complements your skin tone—peachy tones for warm undertones, and pink or berry tones for cool undertones.',
+      name: 'blushDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bronzer:`
+  String get bronzer {
+    return Intl.message(
+      'Bronzer:',
+      name: 'bronzer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bronzer gives your skin a sun-kissed glow. Apply it to areas where the sun naturally hits your face, like your forehead, cheeks, and the bridge of your nose.`
+  String get bronzerDescription {
+    return Intl.message(
+      'Bronzer gives your skin a sun-kissed glow. Apply it to areas where the sun naturally hits your face, like your forehead, cheeks, and the bridge of your nose.',
+      name: 'bronzerDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lips`
+  String get lips {
+    return Intl.message(
+      'Lips',
+      name: 'lips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lip Liner:`
+  String get lipLiner {
+    return Intl.message(
+      'Lip Liner:',
+      name: 'lipLiner',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lip liner defines your lips and prevents lipstick from bleeding. Choose a shade that matches your lipstick or is slightly darker for a more defined look.`
+  String get lipLinerDescription {
+    return Intl.message(
+      'Lip liner defines your lips and prevents lipstick from bleeding. Choose a shade that matches your lipstick or is slightly darker for a more defined look.',
+      name: 'lipLinerDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lipstick:`
+  String get lipstick {
+    return Intl.message(
+      'Lipstick:',
+      name: 'lipstick',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply lipstick with a brush for precision or directly from the bullet for a quick application. Choose a finish—matte, satin, or glossy—based on your preference.`
+  String get lipstickDescription {
+    return Intl.message(
+      'Apply lipstick with a brush for precision or directly from the bullet for a quick application. Choose a finish—matte, satin, or glossy—based on your preference.',
+      name: 'lipstickDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Setting Your Makeup`
+  String get settingYourMakeup {
+    return Intl.message(
+      'Setting Your Makeup',
+      name: 'settingYourMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Setting Spray:`
+  String get settingSpray {
+    return Intl.message(
+      'Setting Spray:',
+      name: 'settingSpray',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lock your makeup in place with a setting spray. Hold the bottle at arm’s length and mist your face to set your makeup for the day.`
+  String get settingSprayDescription {
+    return Intl.message(
+      'Lock your makeup in place with a setting spray. Hold the bottle at arm’s length and mist your face to set your makeup for the day.',
+      name: 'settingSprayDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Touch-Ups:`
+  String get touchUps {
+    return Intl.message(
+      'Touch-Ups:',
+      name: 'touchUps',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Carry a small makeup bag with essentials like powder, lipstick, and blotting papers for quick touch-ups. This ensures your makeup stays fresh and flawless all day.`
+  String get touchUpsDescription {
+    return Intl.message(
+      'Carry a small makeup bag with essentials like powder, lipstick, and blotting papers for quick touch-ups. This ensures your makeup stays fresh and flawless all day.',
+      name: 'touchUpsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skin Preparation`
+  String get skinPreparation {
+    return Intl.message(
+      'Skin Preparation',
+      name: 'skinPreparation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Primer:`
+  String get primer {
+    return Intl.message(
+      'Primer:',
+      name: 'primer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Always start with a primer to create a smooth base for your makeup. Choose a primer that suits your skin type—hydrating for dry skin, mattifying for oily skin, and color-correcting for uneven tones.`
+  String get primerDescription {
+    return Intl.message(
+      'Always start with a primer to create a smooth base for your makeup. Choose a primer that suits your skin type—hydrating for dry skin, mattifying for oily skin, and color-correcting for uneven tones.',
+      name: 'primerDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `SPF Protection:`
+  String get spfProtection {
+    return Intl.message(
+      'SPF Protection:',
+      name: 'spfProtection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose a primer with SPF for added sun protection, especially if you’re wearing makeup during the day.`
+  String get spfProtectionDescription {
+    return Intl.message(
+      'Choose a primer with SPF for added sun protection, especially if you’re wearing makeup during the day.',
+      name: 'spfProtectionDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Makeup Removal`
+  String get makeupRemoval {
+    return Intl.message(
+      'Makeup Removal',
+      name: 'makeupRemoval',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cleansing:`
+  String get cleansingMakeup {
+    return Intl.message(
+      'Cleansing:',
+      name: 'cleansingMakeup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remove your makeup thoroughly at the end of the day to prevent clogged pores and breakouts. Use a gentle makeup remover or cleansing oil to dissolve makeup, followed by a cleanser to remove any residue.`
+  String get cleansingDescription {
+    return Intl.message(
+      'Remove your makeup thoroughly at the end of the day to prevent clogged pores and breakouts. Use a gentle makeup remover or cleansing oil to dissolve makeup, followed by a cleanser to remove any residue.',
+      name: 'cleansingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Toning & Moisturizing:`
+  String get toningMoisturizing {
+    return Intl.message(
+      'Toning & Moisturizing:',
+      name: 'toningMoisturizing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After cleansing, use a toner to restore your skin’s pH balance and a moisturizer to hydrate and repair your skin overnight.`
+  String get toningMoisturizingDescription {
+    return Intl.message(
+      'After cleansing, use a toner to restore your skin’s pH balance and a moisturizer to hydrate and repair your skin overnight.',
+      name: 'toningMoisturizingDescription',
       desc: '',
       args: [],
     );

@@ -25,101 +25,94 @@ class GuideSkinInstruction extends StatelessWidget {
           ),
         ),
         Space.h16,
-        GuideInfoOverview(title: s.overview, subTitle: s.skinHealthIsCritical),
+        GuideInfoOverview(title: s.overview, subTitle: s.skinHealthCanvas),
         Space.h32,
         GuideInfoListText(
-          titleList: s.hydration,
+          titleList: s.skinTypeIdentification,
           items: [
             ListItem(
-              text: s.importanceOfMoisturizing,
-              subText: s.regardlessOfYourSkinType,
+              text: s.understandYourSkin,
+              subText: s.understandYourSkinText,
             ),
             ListItem(
-              text: s.choosingTheRightMoisturizer,
-              subText: s.lookForProductsThatMatch,
-            ),
-            ListItem(
-              text: s.hydrationFromWithin,
-              subText: s.drinkingEnoughWater,
+              text: s.seasonalChanges,
+              subText: s.seasonalChangesText,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.pigmentation,
+          titleList: s.dailySkincare,
           items: [
             ListItem(
-              text: s.understandingHyperpigmentation,
-              subText: s.causedByExcessMelaninProduction,
+              text: s.cleansing,
+              subText: s.cleansingText,
             ),
             ListItem(
-              text: s.preventiveMeasures,
-              subText: s.useABroadSpectrumSunscreen,
+              text: s.toning,
+              subText: s.toningText,
             ),
             ListItem(
-              text: s.professionalTreatments,
-              subText: s.forStubbornPigmentation,
+              text: s.moisturizing,
+              subText: s.moisturizingText,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.acne,
-          items: [
-            ListItem(
-              text: s.gentleCleansing,
-              subText: s.useAMildCleanser,
-            ),
-            ListItem(
-              text: s.topicalTreatments,
-              subText: s.overTheCounterProducts,
-            ),
-            ListItem(
-              text: s.lifestyleFactors,
-              subText: s.dietStressAndHygiene,
-            ),
-          ],
-        ),
-        Space.h16,
-        GuideInfoListText(
-          titleList: s.aging,
-          items: [
-            ListItem(
-              text: s.sunProtection,
-              subText: s.uvExposureAcceleratesSkinAging,
-            ),
-            ListItem(
-              text: s.retinoids,
-              subText: s.theseVitaminADerivatives,
-            ),
-            ListItem(
-              text: s.antioxidants,
-              subText: s.productsContainingAntioxidants,
-            ),
-          ],
-        ),
-        Space.h16,
-        GuideInfoListText(
-          titleList: s.texture,
+          titleList: s.exfoliationAndMasks,
           items: [
             ListItem(
               text: s.exfoliation,
-              subText: s.regularExfoliationCanRemove,
+              subText: s.exfoliationText,
             ),
             ListItem(
-              text: s.secondHydration,
-              subText: s.properlyHydratedSkinAppears,
-            ),
-            ListItem(
-              text: s.professionalAdvice,
-              subText: s.persistentTextureIssues,
+              text: s.faceMasks,
+              subText: s.incorporateFaceMasks,
             ),
           ],
         ),
         Space.h16,
-        GuideInfoConclusion(
-          title: s.conclusion,
-          subTitle: s.healthySkinIsABlend,
+        GuideInfoListText(
+          titleList: s.sunProtection,
+          items: [
+            ListItem(
+              text: s.sdfDaily,
+              subText: s.sdfDailyText,
+            ),
+            ListItem(
+              text: s.broadSpectrum,
+              subText: s.broadSpectrumText,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.targetedTreatments,
+          items: [
+            ListItem(
+              text: s.serums,
+              subText: s.serumsUseText,
+            ),
+            ListItem(
+              text: s.spotTreatments,
+              subText: s.spotTreatmentsUseText,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.professionalTreatments,
+          items: [
+            ListItem(
+              text: s.facials,
+              subText: s.facialsText,
+            ),
+            ListItem(
+              text: s.dermatologistVisits,
+              subText: s.dermatologistVisitsText,
+            ),
+          ],
         ),
       ],
     );
