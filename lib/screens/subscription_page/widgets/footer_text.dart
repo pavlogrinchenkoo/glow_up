@@ -53,7 +53,7 @@ class FooterText extends StatelessWidget {
             Space.w8,
             Text(
               textCheckMark,
-              style: BS.tex14withFont400.apply(color: BC.white),
+              style: BS.tex14withFont400,
               textAlign: TextAlign.center,
             ),
           ],
@@ -79,7 +79,7 @@ class FooterText extends StatelessWidget {
                   onTap: restorePurchase,
                   child: Text(
                     restore ?? "",
-                    style: BS.tex12Text.apply(color: BC.white.withOpacity(0.7)),
+                    style: BS.tex12Text.apply(color: BC.avatarGrey.withOpacity(0.5)),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -88,7 +88,7 @@ class FooterText extends StatelessWidget {
                   onTap: eulaAction,
                   child: Text(
                     EUALA ?? "",
-                    style: BS.tex12Text.apply(color: BC.white.withOpacity(0.7)),
+                    style: BS.tex12Text.apply(color: BC.avatarGrey.withOpacity(0.5)),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -97,7 +97,7 @@ class FooterText extends StatelessWidget {
                   onTap: privacyPolicyAction,
                   child: Text(
                     privacyPolicy ?? "",
-                    style: BS.tex12Text.apply(color: BC.white.withOpacity(0.7)),
+                    style: BS.tex12Text.apply(color: BC.avatarGrey.withOpacity(0.5)),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -106,7 +106,7 @@ class FooterText extends StatelessWidget {
                   onTap: closeAction,
                   child: Text(
                     close ?? "",
-                    style: BS.tex12Text.apply(color: BC.white.withOpacity(0.7)),
+                    style: BS.tex12Text.apply(color: BC.avatarGrey.withOpacity(0.5)),
                     textAlign: TextAlign.center,
                   ),
                 ),
