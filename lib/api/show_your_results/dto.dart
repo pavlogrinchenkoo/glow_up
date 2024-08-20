@@ -160,23 +160,23 @@ enum ImageTextGroupEnum {
 }
 
 enum ColorGroupEnum {
-  white,
-  salad,
-  red,
-  purple;
+  black,
+  lightGreen,
+  pinkLight,
+  blueLight;
 
   const ColorGroupEnum();
 
   Color getColor(ColorGroupEnum colorGroupEnum) {
     switch (this) {
-      case white:
-        return BC.white;
-      case salad:
-        return BC.salad;
-      case red:
-        return BC.red;
-      case purple:
-        return BC.lightPurple;
+      case black:
+        return BC.black;
+      case lightGreen:
+        return BC.lightGreen;
+      case pinkLight:
+        return BC.pinkLight;
+      case blueLight:
+        return BC.blueLight;
       default:
         return BC.white;
     }

@@ -36,7 +36,7 @@ class CustomIndicator extends StatelessWidget {
                         scale: 1.3,
                         child: Blur(
                           blur: 5,
-                          borderRadius: BorderRadius.circular(AppRadius.r25),
+                          borderRadius: BorderRadius.circular(AppRadius.r10),
                           blurColor: BC.lightGray.withOpacity(0.1),
                           child: SizedBox(
                             width: height,
@@ -45,7 +45,7 @@ class CustomIndicator extends StatelessWidget {
                               value: downloadIndicatorValue,
                               strokeWidth: 10,
                               valueColor:
-                                  AlwaysStoppedAnimation<Color>(BC.salad),
+                                  AlwaysStoppedAnimation<Color>(BC.lightGreen),
                               backgroundColor: BC.lightGray,
                             ),
                           ),
@@ -57,7 +57,7 @@ class CustomIndicator extends StatelessWidget {
                         blurColor: BC.lightGray.withOpacity(0.8),
                         child: Text(
                           textProgress,
-                          style: BS.tex16.apply(color: BC.white),
+                          style: BS.tex16.apply(color: BC.black),
                         ),
                       ),
                     ],
@@ -73,7 +73,8 @@ class CustomIndicator extends StatelessWidget {
                           child: CircularProgressIndicator(
                             value: downloadIndicatorValue,
                             strokeWidth: strokeWidth,
-                            valueColor: AlwaysStoppedAnimation<Color>(BC.salad),
+                            valueColor:
+                                AlwaysStoppedAnimation<Color>(BC.lightGreen),
                             backgroundColor: BC.lightGray,
                             strokeCap: StrokeCap.round,
                           ),
@@ -81,7 +82,7 @@ class CustomIndicator extends StatelessWidget {
                       ),
                       Text(
                         textProgress,
-                        style: BS.tex16.apply(color: BC.white),
+                        style: BS.tex16,
                       ),
                     ],
                   ),

@@ -42,10 +42,10 @@ class CustomShowBigResults extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: Sizes.s12),
       child: Container(
         decoration: BoxDecoration(
-          color: BC.lightGray.withOpacity(0.4),
+          color: BC.white.withOpacity(0.4),
           borderRadius: BorderRadius.circular(AppRadius.r20),
           border: Border.all(
-            color: BC.white.withOpacity(0.6),
+            color: BC.white.withOpacity(1),
             width: 1,
           ),
         ),
@@ -71,13 +71,13 @@ class CustomShowBigResults extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: Sizes.s10, vertical: Sizes.s10),
                         decoration: BoxDecoration(
-                          color: BC.navyGrey,
+                          color: BC.white.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(AppRadius.r8),
                         ),
                         child: Center(
                           child: Text(
                             "${s.top} $textPercent%",
-                            style: BS.tex16.apply(color: BC.salad),
+                            style: BS.tex16.apply(color: BC.purpleViolet),
                           ),
                         ),
                       ),
@@ -88,7 +88,7 @@ class CustomShowBigResults extends StatelessWidget {
                     ),
                     Text(
                       s.overall,
-                      style: BS.tex16.apply(color: BC.white),
+                      style: BS.tex16,
                     ),
                     Space.w25,
                     CustomIndicator(
@@ -101,7 +101,7 @@ class CustomShowBigResults extends StatelessWidget {
                     const Spacer(),
                     Text(
                       s.potential,
-                      style: BS.tex16.apply(color: BC.white),
+                      style: BS.tex16,
                     ),
                     Space.w25,
                     CustomIndicator(
@@ -146,7 +146,7 @@ class CustomShowBigResults extends StatelessWidget {
                       children: [
                         Text(
                           item.leftTitle,
-                          style: BS.tex16.apply(color: BC.white),
+                          style: BS.tex16,
                         ),
                         if (item.subLeftTitle != "")
                           useBlur

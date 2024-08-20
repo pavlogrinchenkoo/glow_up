@@ -141,7 +141,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.r20),
           ),
-          backgroundColor: BC.salad,
+          backgroundColor: BC.white,
           child: Stack(
             children: <Widget>[
               Padding(
@@ -567,48 +567,48 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           mainResults?.age.toString() ?? "",
           s.perceivedAge,
           "",
-          ColorGroupEnum.white),
+          ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainGirlImage,
           "${mainResults?.valueScoreFemale}%",
           s.scoreGivenByWomen,
           "${mainResults?.scoreEnumFemale.getTitle(s)}",
           mainResults?.scoreEnumFemale.getColor(mainResults.scoreEnumFemale) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainManImage,
           "${mainResults?.valueScoreMale}%",
           s.scoreGivenByMen,
           "${mainResults?.scoreEnumMale.getTitle(s)}",
           mainResults?.scoreEnumMale.getColor(mainResults.scoreEnumFemale) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainFlowersImage,
           "${mainResults?.femininity}/10",
           s.femininity,
           "${mainResults?.femininityEnum.getTitle(s)}",
           mainResults?.femininityEnum.getColor(mainResults.femininityEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainStrongImage,
           "${mainResults?.masculinity}/10",
           s.mascularity,
           "${mainResults?.masculinityEnum.getTitle(s)}",
           mainResults?.masculinityEnum.getColor(mainResults.masculinityEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ], showFaceCardResultsModelList: [
       createShowYourResultsModel(
           ImageTextGroupEnum.faceEmotionImage,
           faceResults?.faceEmotionAPI ?? "",
           faceResults?.faceEmotion.getTitle(s) ?? "",
           "",
-          ColorGroupEnum.white),
+          ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.faceCoolImage,
           faceResults?.faceGlassAPI ?? "",
           faceResults?.faceGlass.getTitle(s) ?? "",
           "",
-          ColorGroupEnum.white),
+          ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.faceSymmetryImage,
           "${faceResults?.faceSymmetryRandomAPI}/10",
@@ -616,7 +616,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           faceResults?.faceSymmetryRandomEnum.getTitle(s) ?? "",
           faceResults?.faceSymmetryRandomEnum
                   .getColor(faceResults.faceSymmetryRandomEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.faceNoseImage,
           "${faceResults?.faceNoseShapeRandomAPI}/10",
@@ -624,7 +624,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           faceResults?.faceNoseShapeRandomEnum.getTitle(s) ?? "",
           faceResults?.faceNoseShapeRandomEnum
                   .getColor(faceResults.faceNoseShapeRandomEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.faceJawlineImage,
           "${faceResults?.faceJawlineDefinitionRandomAPI}/10",
@@ -632,7 +632,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           faceResults?.faceJawlineDefinitionRandomEnum.getTitle(s) ?? "",
           faceResults?.faceJawlineDefinitionRandomEnum
                   .getColor(faceResults.faceJawlineDefinitionRandomEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ], showSkinCardResultsModelList: [
       createShowYourResultsModel(
           ImageTextGroupEnum.skinQualityImage,
@@ -640,21 +640,21 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           skinResults?.skinQuality.getTitle(s) ?? "",
           skinResults?.skinQualityEnum.getTitle(s) ?? "",
           skinResults?.skinQualityEnum.getColor(skinResults.skinQualityEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.skinHealthImage,
           "${skinResults?.skinHealthAPI}%",
           skinResults?.skinHealth.getTitle(s) ?? "",
           skinResults?.skinHealthEnum.getTitle(s) ?? "",
           skinResults?.skinHealthEnum.getColor(skinResults.skinHealthEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.skinStainImage,
           "${skinResults?.skinStainAPI}%",
           skinResults?.skinStain.getTitle(s) ?? "",
           skinResults?.skinStainEnum.getTitle(s) ?? "",
           skinResults?.skinStainEnum.getColor(skinResults.skinStainEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.skinDarkCircleImage,
           "${skinResults?.skinDarkCircleAPI}/10",
@@ -662,14 +662,14 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           skinResults?.skinDarkCircleEnum.getTitle(s) ?? "",
           skinResults?.skinDarkCircleEnum
                   .getColor(skinResults.skinDarkCircleEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.skinAcneImage,
           "${skinResults?.skinAcneAPI}/10",
           skinResults?.skinAcne.getTitle(s) ?? "",
           skinResults?.skinAcneEnum.getTitle(s) ?? "",
           skinResults?.skinAcneEnum.getColor(skinResults.skinAcneEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ], showHairCardResultsModelList: [
       createShowYourResultsModel(
           ImageTextGroupEnum.hairThicknessImage,
@@ -678,35 +678,35 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           hairResults?.hairThicknessEnum.getTitle(s) ?? "",
           hairResults?.hairThicknessEnum
                   .getColor(hairResults.hairThicknessEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.hairHealthImage,
           "${hairResults?.hairHealthAPI}/10",
           hairResults?.hairHealth.getTitle(s) ?? "",
           hairResults?.hairHealthEnum.getTitle(s) ?? "",
           hairResults?.hairHealthEnum.getColor(hairResults.hairHealthEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.hairShineImage,
           "${hairResults?.hairShineAPI}/10",
           hairResults?.hairShine.getTitle(s) ?? "",
           hairResults?.hairShineEnum.getTitle(s) ?? "",
           hairResults?.hairShineEnum.getColor(hairResults.hairShineEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.hairStyleImage,
           "${hairResults?.hairStyleAPI}/10",
           hairResults?.hairStyle.getTitle(s) ?? "",
           hairResults?.hairStyleEnum.getTitle(s) ?? "",
           hairResults?.hairStyleEnum.getColor(hairResults.hairStyleEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.hairVolumeImage,
           "${hairResults?.hairVolumeAPI}/10",
           hairResults?.hairVolume.getTitle(s) ?? "",
           hairResults?.hairVolumeEnum.getTitle(s) ?? "",
           hairResults?.hairVolumeEnum.getColor(hairResults.hairVolumeEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ], showEyesCardResultsModelList: [
       createShowYourResultsModel(
           ImageTextGroupEnum.eyesShapeImage,
@@ -714,14 +714,14 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           eyesResults?.eyesShape.getTitle(s) ?? "",
           eyesResults?.eyesShapeEnum.getTitle(s) ?? "",
           eyesResults?.eyesShapeEnum.getColor(eyesResults.eyesShapeEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.eyesColorImage,
           "${eyesResults?.eyesColorAPI}/10",
           eyesResults?.eyesColor.getTitle(s) ?? "",
           eyesResults?.eyesColorEnum.getTitle(s) ?? "",
           eyesResults?.eyesColorEnum.getColor(eyesResults.eyesColorEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.eyesBrightnessImage,
           "${eyesResults?.eyesBrightnessAPI}/10",
@@ -729,7 +729,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           eyesResults?.eyesBrightnessEnum.getTitle(s) ?? "",
           eyesResults?.eyesBrightnessEnum
                   .getColor(eyesResults.eyesBrightnessEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.eyesSymmetryImage,
           "${eyesResults?.eyesSymmetryAPI}/10",
@@ -737,7 +737,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           eyesResults?.eyesSymmetryEnum.getTitle(s) ?? "",
           eyesResults?.eyesSymmetryEnum
                   .getColor(eyesResults.eyesSymmetryEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.eyesExpressivenessImage,
           "${eyesResults?.eyesExpressivenessAPI}/10",
@@ -745,7 +745,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           eyesResults?.eyesExpressivenessEnum.getTitle(s) ?? "",
           eyesResults?.eyesExpressivenessEnum
                   .getColor(eyesResults.eyesExpressivenessEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ], showFitnessCardResultsModelList: [
       createShowYourResultsModel(
           ImageTextGroupEnum.fitnessBodyImage,
@@ -754,7 +754,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           fitnessResults?.fitnessBodyEnum.getTitle(s) ?? "",
           fitnessResults?.fitnessBodyEnum
                   .getColor(fitnessResults.fitnessBodyEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.fitnessMuscleImage,
           "${fitnessResults?.fitnessMuscleAPI}/10",
@@ -762,7 +762,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           fitnessResults?.fitnessMuscleEnum.getTitle(s) ?? "",
           fitnessResults?.fitnessMuscleEnum
                   .getColor(fitnessResults.fitnessMuscleEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.fitnessStaminaImage,
           "${fitnessResults?.fitnessStaminaAPI}/10",
@@ -770,7 +770,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           fitnessResults?.fitnessStaminaEnum.getTitle(s) ?? "",
           fitnessResults?.fitnessStaminaEnum
                   .getColor(fitnessResults.fitnessStaminaEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.fitnessFlexibilityImage,
           "${fitnessResults?.fitnessFlexibilityAPI}/10",
@@ -778,7 +778,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           fitnessResults?.fitnessFlexibilityEnum.getTitle(s) ?? "",
           fitnessResults?.fitnessFlexibilityEnum
                   .getColor(fitnessResults.fitnessFlexibilityEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.fitnessStrengthImage,
           "${fitnessResults?.fitnessStrengthAPI}/10",
@@ -786,7 +786,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           fitnessResults?.fitnessStrengthEnum.getTitle(s) ?? "",
           fitnessResults?.fitnessStrengthEnum
                   .getColor(fitnessResults.fitnessStrengthEnum) ??
-              ColorGroupEnum.white),
+              ColorGroupEnum.black),
     ]);
 
     setState(currentState.copyWith(
@@ -832,8 +832,8 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
       ScreenshotController screenShotController) async {
     setState(currentState.copyWith(isTakingPhoto: true));
     try {
-      if (await storage.read(session.saveIconShare) == null) {
-        await Future.delayed(const Duration(milliseconds: 70));
+      if (await storage.read(session.saveIconShare) != null) {
+        await Future.delayed(const Duration(milliseconds: 3000));
         final imgBytes = await screenShotController.capture(pixelRatio: 2);
         final Directory appDir = await getApplicationDocumentsDirectory();
         final String appDirPath = appDir.path;

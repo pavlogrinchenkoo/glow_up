@@ -30,10 +30,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: BC.navyGrey,
-      foregroundColor: BC.navyGrey,
-      shadowColor: BC.navyGrey,
-      surfaceTintColor: BC.navyGrey,
+      backgroundColor: BC.pink,
+      foregroundColor: BC.pink,
+      shadowColor: BC.pink,
+      surfaceTintColor: BC.pink,
       elevation: 0,
       leading: useLeftButton
           ? IconButton(

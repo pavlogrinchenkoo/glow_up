@@ -103,20 +103,22 @@ class _ResultsPageState extends State<ResultsPage> {
                           width: double.infinity,
                           height: double.infinity,
                           decoration: BoxDecoration(
-                            color: BC.navyGrey,
+                            color: BC.pink,
                           ),
                           child: Stack(
                             children: [
                               state.useBlurBlock
                                   ? const SizedBox.shrink()
                                   : CustomBokeh(
-                                      size: height / 2,
-                                      scaleX: height < 840 ? 0.3 : 0.3,
-                                      scaleY: height < 840 ? 0.4 : 0.5,
+                                      size: height / 1,
+                                      scaleY: 1,
+                                      scaleX: 0.4,
                                       alignment: Alignment.bottomCenter,
-                                      transform: const Offset(0, Sizes.s160),
-                                      shape: BoxShape.circle,
+                                      transform:
+                                          Offset(Sizes.scale, height / 2.3),
+                                      shape: BoxShape.rectangle,
                                       angleInRadians: pi / Sizes.s2,
+                                      blurWhiteHard: true,
                                     ),
                               Column(
                                 children: [
@@ -148,7 +150,7 @@ class _ResultsPageState extends State<ResultsPage> {
                                     height: newHeight,
                                     width: width,
                                     itemCard: 6,
-                                    color: BC.navyGrey,
+                                    color: BC.pink,
                                     useBlur: state.useBlurBlock,
                                     autoSwipe: false,
                                     onIndexChanged: (index) =>

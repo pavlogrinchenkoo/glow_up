@@ -21,6 +21,8 @@ class ThemeColors {
   static const Color pink = Color(0xFFF19EC6);
   static const Color purpleViolet = Color(0xFF8A00D4);
   static const Color lightGreen = Color(0xFF00D42F);
+  static const Color pinkLight = Color(0xFFE661A8);
+  static const Color blueLight = Color(0xFF00A5FF);
 }
 
 abstract class BC {
@@ -61,6 +63,10 @@ abstract class BC {
   static Color get purpleViolet => ThemeColors.purpleViolet;
 
   static Color get lightGreen => ThemeColors.lightGreen;
+
+  static Color get pinkLight => ThemeColors.pinkLight;
+
+  static Color get blueLight => ThemeColors.blueLight;
 }
 
 abstract class BS {

@@ -34,7 +34,9 @@ class OnboardingEnableNotifications extends StatelessWidget {
                 ? 1600
                 : screenHeight > 920
                     ? 940
-                    : 800,
+                    : screenHeight > 840
+                        ? 850
+                        : 800,
             fit: BoxFit.cover,
           ),
         ),
@@ -87,4 +89,3 @@ class OnboardingEnableNotifications extends StatelessWidget {
     );
   }
 }
-

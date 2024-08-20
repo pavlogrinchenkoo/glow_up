@@ -468,7 +468,7 @@ class OnboardingBloc extends BlocBaseWithState<ScreenState> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.r20),
           ),
-          backgroundColor: BC.salad,
+          backgroundColor: BC.white,
           child: Stack(
             children: <Widget>[
               Padding(
@@ -511,7 +511,7 @@ class OnboardingBloc extends BlocBaseWithState<ScreenState> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.r20),
           ),
-          backgroundColor: BC.salad,
+          backgroundColor: BC.white,
           child: Stack(
             children: <Widget>[
               SizedBox(

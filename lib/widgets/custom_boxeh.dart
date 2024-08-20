@@ -8,8 +8,10 @@ class CustomBokeh extends StatelessWidget {
   final Offset? transform;
   final BoxShape? shape;
   final double? angleInRadians;
+  final bool isPinkShadow;
   final bool isPurpleShadow;
   final bool blurWhiteHard;
+  final bool blurWhiteSoft;
 
   const CustomBokeh({
     required this.size,
@@ -19,8 +21,10 @@ class CustomBokeh extends StatelessWidget {
     this.transform,
     this.shape,
     this.angleInRadians,
+    this.isPinkShadow = false,
     this.isPurpleShadow = false,
     this.blurWhiteHard = false,
+    this.blurWhiteSoft = false,
     super.key,
   });
 
@@ -40,11 +44,15 @@ class CustomBokeh extends StatelessWidget {
               height: size,
               decoration: BoxDecoration(
                 shape: shape ?? BoxShape.circle,
-                boxShadow: blurWhiteHard
-                    ? [CustomShadows.bokehWhiteHard(context)]
-                    : isPurpleShadow
-                        ? [CustomShadows.bokehPurpule(context)]
-                        : [CustomShadows.bokehWhite(context)],
+                boxShadow: isPinkShadow
+                    ? [CustomShadows.bokehPink(context)]
+                    : blurWhiteSoft
+                        ? [CustomShadows.bokehWhiteSoft(context)]
+                        : blurWhiteHard
+                            ? [CustomShadows.bokehWhiteHard(context)]
+                            : isPurpleShadow
+                                ? [CustomShadows.bokehPurpule(context)]
+                                : [CustomShadows.bokehWhite(context)],
               ),
             ),
           ),
@@ -72,6 +80,20 @@ class CustomShadows {
   static BoxShadow bokehWhiteHard(BuildContext context) {
     return BoxShadow(
       color: BC.white.withOpacity(1),
+      blurRadius: 200,
+    );
+  }
+
+  static BoxShadow bokehWhiteSoft(BuildContext context) {
+    return BoxShadow(
+      color: BC.white.withOpacity(1),
+      blurRadius: 300,
+    );
+  }
+
+  static BoxShadow bokehPink(BuildContext context) {
+    return BoxShadow(
+      color: BC.pink.withOpacity(1),
       blurRadius: 200,
     );
   }

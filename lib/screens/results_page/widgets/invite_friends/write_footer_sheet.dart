@@ -41,30 +41,31 @@ class WriteFooterSheet extends StatelessWidget {
                   : null,
           outLine: true,
           colorButton: exitingCode
-              ? BC.salad
+              ? BC.purpleViolet
               : isActivated
                   ? isAccept
-                      ? BC.navyGrey
-                      : BC.salad
+                      ? BC.white
+                      : BC.purpleViolet
                   : isAccept
                       ? BC.navyGrey
-                      : BC.darkSalad,
+                      : BC.purpleViolet.withOpacity(0.6),
           borderColor: exitingCode
-              ? BC.salad
+              ? BC.purpleViolet
               : isActivated
                   ? isAccept
-                      ? BC.salad
-                      : BC.salad
+                      ? BC.purpleViolet
+                      : BC.purpleViolet
                   : isAccept
                       ? BC.salad
-                      : BC.darkSalad,
+                      : BC.purpleViolet.withOpacity(0.6),
           borderRadius: AppRadius.r18,
           padding: Sizes.s25,
           textColor: exitingCode
-              ? BC.black
+              ? BC.white
               : isAccept
-                  ? BC.salad
-                  : BC.black,
+                  ? BC.purpleViolet
+                  : BC.white,
+          imageColor: isAccept ? BC.purpleViolet : BC.white,
           svgGenImage: exitingCode
               ? null
               : isAccept

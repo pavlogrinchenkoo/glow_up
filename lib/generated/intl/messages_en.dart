@@ -57,7 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Analyzing your info..."),
         "antioxidants": MessageLookupByLibrary.simpleMessage("Antioxidants:"),
         "appName": MessageLookupByLibrary.simpleMessage(
-            "LooksMax - Looksmaxxing Guide"),
+            "GlowUp - Glow Up Tips, Skin AI"),
         "application": MessageLookupByLibrary.simpleMessage(
             "Apply fragrance to pulse points like wrists, neck, and chest. These areas emit heat, helping to diffuse the scent. Less is more—start with one or two spritzes and adjust based on the strength of the fragrance."),
         "applicationTitle":
@@ -487,7 +487,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingReviewTitleText":
             MessageLookupByLibrary.simpleMessage("Your Review, Our Strength"),
         "onboardingShapeText": MessageLookupByLibrary.simpleMessage(
-            "Craft the appearance you\'ve always desired. Begin your transformational journey today."),
+            "Build the appearance you\'ve always desired. Begin your transformational journey today."),
         "onboardingShapeTitleText":
             MessageLookupByLibrary.simpleMessage("Shape Your Future"),
         "onboardingTakeFrontSelfie":
@@ -619,8 +619,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Score Given by Male:"),
         "scoreGivenByWomen":
             MessageLookupByLibrary.simpleMessage("Score Given by Female:"),
-        "screenShotButtonSubTitle": MessageLookupByLibrary.simpleMessage(
-            "Analyze, Enhance, Scan, Improve"),
+        "screenShotButtonSubTitle":
+            MessageLookupByLibrary.simpleMessage("Glow Up Tips for Girls"),
         "secondHydration": MessageLookupByLibrary.simpleMessage("Hydration:"),
         "securedWithITunes":
             MessageLookupByLibrary.simpleMessage("Secured with iTunes"),
@@ -639,7 +639,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Shift your focus from an object close to you to one far away periodically, to exercise your eye muscles."),
         "showDialogAccessPermissionCameraOrPhoto":
             MessageLookupByLibrary.simpleMessage(
-                "Please enable access to your camera or photo library."),
+                "Please enable image access in Settings for photo analysis."),
         "showDialogChangeIcon": MessageLookupByLibrary.simpleMessage(
             "Please upload a better quality image. Try a new one."),
         "skin": MessageLookupByLibrary.simpleMessage("Skin"),
