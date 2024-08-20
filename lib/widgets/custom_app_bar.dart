@@ -46,7 +46,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (!useLeftButton) const SizedBox(width: 0),
+            if (!useLeftButton) const SizedBox(width: 48),
             Flexible(
               child: Text(
                 title ?? "",
