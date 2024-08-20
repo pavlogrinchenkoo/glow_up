@@ -33,7 +33,7 @@ enum GuideTextGroupEnum {
   eyes,
   fitness,
   fashion,
-  grooming;
+  makeup;
 
   const GuideTextGroupEnum();
 
@@ -46,15 +46,15 @@ enum GuideTextGroupEnum {
       case hair:
         return s.hair;
       case jawline:
-        return s.jawline;
+        return s.jawlineS;
       case eyes:
         return s.eyes;
       case fitness:
         return s.fitness;
       case fashion:
         return s.fashion;
-      case grooming:
-        return s.grooming;
+      case makeup:
+        return s.makeupText;
       default:
         return "";
     }
@@ -69,7 +69,7 @@ enum GuideImageGroupEnum {
   eyes,
   fitness,
   fashion,
-  grooming;
+  makeup;
 
   const GuideImageGroupEnum();
 
@@ -89,8 +89,8 @@ enum GuideImageGroupEnum {
         return Assets.images.guide.fitnessGuide;
       case fashion:
         return Assets.images.guide.fashionGuide;
-      case grooming:
-        return Assets.images.guide.groomingGuide;
+      case makeup:
+        return Assets.images.guide.makeupGuide;
       default:
         return Assets.images.guide.faceGuide;
     }
@@ -105,7 +105,7 @@ enum GuideOnTapGroupEnum {
   eyes,
   fitness,
   fashion,
-  grooming;
+  makeup;
 
   const GuideOnTapGroupEnum();
 
@@ -132,9 +132,9 @@ enum GuideOnTapGroupEnum {
       case fashion:
         return context.router.push(
             GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.fashion));
-      case grooming:
+      case makeup:
         return context.router.push(
-            GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.grooming));
+            GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.makeup));
       default:
         return context.router.push(
             GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.face));
@@ -150,7 +150,7 @@ enum EnumCheckGuideModel {
   eyes,
   fitness,
   fashion,
-  grooming;
+  makeup;
 
   const EnumCheckGuideModel();
 }

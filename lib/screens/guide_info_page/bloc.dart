@@ -6,7 +6,7 @@ import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_face_instruction.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_fashion_instruction.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_fitness_instruction.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_grooming_instruction.dart';
+import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_makeup_instruction.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_hair_instruction.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_jawline_instruction.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_instructions/guide_skin_instruction.dart';
@@ -37,15 +37,15 @@ class GuideInfoBloc extends BlocBaseWithState<ScreenState> {
       case EnumCheckGuideModel.hair:
         return "${s.hair} Guide";
       case EnumCheckGuideModel.jawline:
-        return "${s.jawline} Guide";
+        return "${s.jawlineS} Guide";
       case EnumCheckGuideModel.eyes:
         return "${s.eyes} Guide";
       case EnumCheckGuideModel.fitness:
         return "${s.fitness} Guide";
       case EnumCheckGuideModel.fashion:
         return "${s.fashion} Guide";
-      case EnumCheckGuideModel.grooming:
-        return "${s.grooming} Guide";
+      case EnumCheckGuideModel.makeup:
+        return "${s.makeup} Guide";
       default:
         return "";
     }
@@ -74,9 +74,9 @@ class GuideInfoBloc extends BlocBaseWithState<ScreenState> {
       case EnumCheckGuideModel.fashion:
         setState(currentState.copyWith(
             widgetInstruction: const GuideFashionInstruction()));
-      case EnumCheckGuideModel.grooming:
+      case EnumCheckGuideModel.makeup:
         setState(currentState.copyWith(
-            widgetInstruction: const GuideGroomingInstruction()));
+            widgetInstruction: const GuideMakeupInstruction()));
       default:
         setState(currentState.copyWith(
             widgetInstruction: const GuideFaceInstruction()));

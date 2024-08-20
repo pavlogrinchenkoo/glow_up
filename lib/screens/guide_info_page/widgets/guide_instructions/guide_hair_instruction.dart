@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -25,76 +24,74 @@ class GuideHairInstruction extends StatelessWidget {
           ),
         ),
         Space.h16,
-        GuideInfoOverview(title: s.overview, subTitle: s.navigatingTheWorld),
+        GuideInfoOverview(title: s.overview, subTitle: s.yourHairCrucial),
         Space.h32,
         GuideInfoListText(
-          titleList: s.cleansing,
+          titleList: s.hairTypeIdentification,
           items: [
             ListItem(
-              text: s.frequency,
-              subText: s.tailorYourWashingFrequency,
+              text: s.hairTexture,
+              subText: s.hairTextureText,
             ),
             ListItem(
-              text: s.choosingShampoo,
-              subText: s.selectAShampoo,
-            ),
-            ListItem(
-              text: s.technique,
-              subText: s.focusOnCleansing,
+              text: s.porosity,
+              subText: s.porosityText,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.conditioningTitle,
+          titleList: s.shampooingAndConditioning,
           items: [
             ListItem(
-              text: s.applicationTitle,
-              subText: s.applyConditioner,
+              text: s.cleansing,
+              subText: s.cleansingText,
             ),
             ListItem(
-              text: s.typesOfConditioners,
-              subText: s.useLeaveInConditioners,
-            ),
-            ListItem(
-              text: s.rinseThoroughly,
-              subText: s.ensureNoResidue,
+              text: s.conditioning,
+              subText: s.conditioningText,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.styling,
+          titleList: s.hairTreatments,
+          items: [
+            ListItem(
+              text: s.deepConditioning,
+              subText: s.deepConditioningDescription,
+            ),
+            ListItem(
+              text: s.leaveInTreatments,
+              subText: s.leaveInTreatmentsDescription,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.hairStyling,
           items: [
             ListItem(
               text: s.heatProtection,
-              subText: s.alwaysUseAHeatProtectant,
+              subText: s.heatProtectionDescription,
             ),
             ListItem(
-              text: s.embraceNaturalTexture,
-              subText: s.experimentWithProducts,
-            ),
-            ListItem(
-              text: s.minimalistApproach,
-              subText: s.optForHairstyles,
+              text: s.haircuts,
+              subText: s.haircutsDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.thinning,
+          titleList: s.hairColor,
           items: [
             ListItem(
-              text: s.earlyIntervention,
-              subText: s.startTreatments,
+              text: s.choosingAColor,
+              subText: s.choosingAColorDescription,
             ),
             ListItem(
-              text: s.gentleHandling,
-              subText: s.avoidTightHairstyles,
-            ),
-            ListItem(
-              text: s.professionalAdvice,
-              subText: s.consultADermatologist,
+              text: s.maintenance,
+              subText: s.maintenanceDescription,
             ),
           ],
         ),
@@ -103,21 +100,29 @@ class GuideHairInstruction extends StatelessWidget {
           titleList: s.scalpCare,
           items: [
             ListItem(
-              text: s.regularExfoliation,
-              subText: s.useAScalpScrub,
+              text: s.exfoliation,
+              subText: s.exfoliationDescription,
             ),
             ListItem(
-              text: s.moisturize,
-              subText: s.ifYourScalpIsDry,
-            ),
-            ListItem(
-              text: s.sunProtection,
-              subText: s.protectYourScalpFromUVDamage,
+              text: s.scalpMassages,
+              subText: s.scalpMassagesDescription,
             ),
           ],
         ),
         Space.h16,
-        GuideInfoConclusion(title: s.conclusion, subTitle: s.yourHairsHealth),
+        GuideInfoListText(
+          titleList: s.protectiveStyles,
+          items: [
+            ListItem(
+              text: s.lowManipulationStyles,
+              subText: s.lowManipulationStylesDescription,
+            ),
+            ListItem(
+              text: s.nighttimeProtection,
+              subText: s.nighttimeProtectionDescription,
+            ),
+          ],
+        ),
       ],
     );
   }

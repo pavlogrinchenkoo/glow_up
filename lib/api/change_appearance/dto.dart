@@ -100,7 +100,7 @@ enum ChooseActionAppearanceEnum {
             GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.fashion));
       case ChooseActionAppearanceEnum.grooming:
         return () => context.router.push(
-            GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.grooming));
+            GuideInfoRoute(enumCheckGuideModel: EnumCheckGuideModel.makeup));
       default:
         return () {};
     }

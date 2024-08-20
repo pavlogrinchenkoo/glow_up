@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -28,70 +27,80 @@ class GuideEyesInstruction extends StatelessWidget {
         GuideInfoOverview(title: s.overview, subTitle: s.theEyesAreFocal),
         Space.h32,
         GuideInfoListText(
-          titleList: s.skincareSecond,
+          titleList: s.skincareAroundTheEyes,
           items: [
             ListItem(
-              text: s.secondHydration,
-              subText: s.utilizeEyeCreams,
+              text: s.eyeCream,
+              subText: s.eyeCreamDescription,
             ),
-            ListItem(
-                text: s.protection, subText: s.dailyApplicationOfSunscreen),
-            ListItem(
-              text: s.gentleRemoval,
-              subText: s.alwaysRemoveEye,
-            ),
+            ListItem(text: s.puffiness, subText: s.puffinessDescription),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.circles,
+          titleList: s.eyebrowGrooming,
           items: [
             ListItem(
-              text: s.coolCompresses,
-              subText: s.applyCoolCompresses,
+              text: s.shape,
+              subText: s.shapeDescription,
             ),
-            ListItem(text: s.vitaminCSerum, subText: s.aSerumWithVitaminC),
-            ListItem(text: s.adequateRest, subText: s.ensureYouAreGetting),
+            ListItem(text: s.tinting, subText: s.tintingDescription),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.exercises,
+          titleList: s.eyeMakeup,
           items: [
             ListItem(
-              text: s.palming,
-              subText: s.rubYourHands,
+              text: s.eyeshadow,
+              subText: s.eyeshadowDescription,
             ),
             ListItem(
-              text: s.focusChanging,
-              subText: s.shiftYourFocus,
+              text: s.eyeliner,
+              subText: s.eyelinerDescription,
             ),
             ListItem(
-              text: s.blinking,
-              subText: s.regularBlinking,
+              text: s.mascara,
+              subText: s.mascaraDescription,
             ),
-          ],
-        ),
-        Space.h16,
-        GuideInfoListText(
-          titleList: s.brows,
-          items: [
-            ListItem(text: s.regularTrimming, subText: s.keepYourEyeBrows),
-            ListItem(text: s.browGel, subText: s.useAClear),
-            ListItem(text: s.growthSerums, subText: s.ifYouHaveSparse),
           ],
         ),
         Space.h16,
         GuideInfoListText(
           titleList: s.lashes,
           items: [
-            ListItem(text: s.lashSerum, subText: s.applyAnEyeLash),
-            ListItem(text: s.gentleCurling, subText: s.useAnEyeLash),
-            ListItem(text: s.properRemoval, subText: s.beCautious),
+            ListItem(text: s.curling, subText: s.curlingDescription),
+            ListItem(text: s.falseLashes, subText: s.falseLashesDescription),
           ],
         ),
         Space.h16,
-        GuideInfoConclusion(title: s.conclusion, subTitle: s.thisGuide),
+        GuideInfoListText(
+          titleList: s.eyeHealth,
+          items: [
+            ListItem(text: s.rest, subText: s.restDescription),
+            ListItem(
+                text: s.blueLightProtection,
+                subText: s.blueLightProtectionDescription),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.enhancingEyeShape,
+          items: [
+            ListItem(text: s.almondEyes, subText: s.almondEyesDescription),
+            ListItem(text: s.roundEyes, subText: s.roundEyesDescription),
+            ListItem(text: s.hoodedEyes, subText: s.hoodedEyesDescription),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.contactLenses,
+          items: [
+            ListItem(
+                text: s.coloredLenses, subText: s.coloredLensesDescription),
+            ListItem(text: s.prescription, subText: s.prescriptionDescription),
+          ],
+        ),
       ],
     );
   }

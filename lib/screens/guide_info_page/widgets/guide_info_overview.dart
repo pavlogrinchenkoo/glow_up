@@ -19,12 +19,12 @@ class GuideInfoOverview extends StatelessWidget {
       children: [
         Text(
           title,
-          style: BS.tex20Text.apply(color: BC.salad),
+          style: BS.tex20Text.apply(color: BC.purpleViolet),
         ),
         Space.h8,
         Text(
           subTitle,
-          style: BS.tex14withFont500.apply(color: BC.white),
+          style: BS.tex14withFont500,
         ),
       ],
     );

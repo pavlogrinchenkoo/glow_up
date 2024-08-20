@@ -37,17 +37,18 @@ class _GuidePageState extends State<GuidePage> {
       builder: (context, ScreenState state) {
         return CustomScaffold(
           appBar: CustomAppBar(
-            title: "LooksMax Guide",
+            title: s.glowUpGuide,
             useLeftButton: false,
             useRightButton: true,
             rightIcon: Assets.images.settings,
             rightOnClick: () => _bloc.toMenu(context),
+            usePoint: true,
           ),
           body: Container(
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: BC.navyGrey,
+              color: BC.pink,
             ),
             child: GridView.builder(
               padding: const EdgeInsets.all(Sizes.s12),
@@ -61,10 +62,10 @@ class _GuidePageState extends State<GuidePage> {
                 final itemModel = _bloc.getModelGuide(index);
                 return Container(
                   decoration: BoxDecoration(
-                    color: BC.lightGray.withOpacity(0.4),
+                    color: BC.white.withOpacity(0.4),
                     borderRadius: BorderRadius.circular(AppRadius.r30),
                     border: Border.all(
-                      color: BC.white.withOpacity(0.6),
+                      color: BC.white.withOpacity(1),
                       width: 1,
                     ),
                   ),

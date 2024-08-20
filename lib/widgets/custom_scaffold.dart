@@ -10,6 +10,7 @@ class CustomScaffold extends StatelessWidget {
   final bool safeAreaTop;
   final bool safeAreaLeft;
   final bool safeAreaRight;
+  final Color? backgroundColor;
 
   const CustomScaffold({
     this.body,
@@ -20,6 +21,7 @@ class CustomScaffold extends StatelessWidget {
     this.safeAreaTop = true,
     this.safeAreaLeft = true,
     this.safeAreaRight = true,
+    this.backgroundColor,
     super.key,
   });
 
@@ -30,7 +32,7 @@ class CustomScaffold extends StatelessWidget {
       body: activateFullSafeArea
           ? body ?? const SizedBox.shrink()
           : Container(
-              color: BC.pink,
+              color: backgroundColor ?? BC.pink,
               child: SafeArea(
                   top: safeAreaTop,
                   bottom: safeAreaBottom,

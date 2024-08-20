@@ -5,8 +5,8 @@ import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dar
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
 
-class GuideFashionInstruction extends StatelessWidget {
-  const GuideFashionInstruction({Key? key}) : super(key: key);
+class GuideMakeupInstruction extends StatelessWidget {
+  const GuideMakeupInstruction({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class GuideFashionInstruction extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(AppRadius.r20),
           child: Image.asset(
-            Assets.images.guideInfo.fashionGuideInfo.path,
+            Assets.images.guideInfo.makeupGuideInfo.path,
             height: height < 840 ? height / 3 : height / 3.7,
             fit: BoxFit.cover,
           ),
@@ -26,107 +26,117 @@ class GuideFashionInstruction extends StatelessWidget {
         Space.h16,
         GuideInfoOverview(
           title: s.overview,
-          subTitle: s.fashionIsExplored,
+          subTitle: s.makeupOverview,
         ),
         Space.h32,
         GuideInfoListText(
-          titleList: s.understandingYourBodyShapeFash,
+          titleList: s.foundationBaseMakeup,
           items: [
             ListItem(
-              text: s.bodyTypes,
-              subText: s.bodyTypesDescription,
+              text: s.choosingTheRightFoundation,
+              subText: s.choosingTheRightFoundationDescription,
             ),
             ListItem(
-              text: s.proportions,
-              subText: s.proportionsDescription,
-            ),
-            ListItem(
-              text: s.trends,
-              subText: s.personalization,
+              text: s.undertones,
+              subText: s.undertonesDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.buildingAWardrobe,
+          titleList: s.eyeMakeup,
           items: [
             ListItem(
-              text: s.basics,
-              subText: s.basicsDescription,
+              text: s.eyeshadow,
+              subText: s.eyeshadowDescriptionMakeup,
             ),
             ListItem(
-              text: s.versatility,
-              subText: s.versatilityDescription,
+              text: s.dayVsNightLooks,
+              subText: s.dayVsNightLooksDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.colorsPatterns,
+          titleList: s.contouringHighlighting,
           items: [
             ListItem(
-              text: s.colorCoordination,
-              subText: s.colorCoordinationDescription,
+              text: s.contouringMakeup,
+              subText: s.contouringDescription,
             ),
             ListItem(
-              text: s.patterns,
-              subText: s.patternsDescription,
+              text: s.blending,
+              subText: s.blendingDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.accessorizing,
+          titleList: s.blushBronzer,
           items: [
             ListItem(
-              text: s.jewelry,
-              subText: s.jewelryDescription,
+              text: s.blush,
+              subText: s.blushDescription,
             ),
             ListItem(
-              text: s.bagsShoes,
-              subText: s.bagsShoesDescription,
+              text: s.bronzer,
+              subText: s.bronzerDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.personalStyle,
+          titleList: s.lips,
           items: [
             ListItem(
-              text: s.experimentationFash,
-              subText: s.experimentationDescription,
+              text: s.lipLiner,
+              subText: s.lipLinerDescription,
             ),
             ListItem(
-              text: s.signaturePieces,
-              subText: s.signaturePiecesDescription,
+              text: s.lipstick,
+              subText: s.lipstickDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.shoppingTips,
+          titleList: s.settingYourMakeup,
           items: [
             ListItem(
-              text: s.qualityOverQuantity,
-              subText: s.qualityOverQuantityDescription,
+              text: s.settingSpray,
+              subText: s.settingSprayDescription,
             ),
             ListItem(
-              text: s.fitTailoring,
-              subText: s.fitTailoringDescription,
+              text: s.touchUps,
+              subText: s.touchUpsDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.fashionTrends,
+          titleList: s.skinPreparation,
           items: [
             ListItem(
-              text: s.stayingCurrent,
-              subText: s.stayingCurrentDescription,
+              text: s.primer,
+              subText: s.primerDescription,
             ),
             ListItem(
-              text: s.classicPieces,
-              subText: s.classicPiecesDescription,
+              text: s.spfProtection,
+              subText: s.spfProtectionDescription,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.makeupRemoval,
+          items: [
+            ListItem(
+              text: s.cleansingMakeup,
+              subText: s.cleansingDescription,
+            ),
+            ListItem(
+              text: s.toningMoisturizing,
+              subText: s.toningMoisturizingDescription,
             ),
           ],
         ),

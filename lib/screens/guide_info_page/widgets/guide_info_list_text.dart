@@ -19,7 +19,7 @@ class GuideInfoListText extends StatelessWidget {
       children: [
         Text(
           titleList,
-          style: BS.tex20Text.apply(color: BC.salad),
+          style: BS.tex20Text.apply(color: BC.purpleViolet),
         ),
         Space.h16,
         Column(
@@ -40,20 +40,20 @@ class GuideInfoListText extends StatelessWidget {
           children: [
             Icon(
               Icons.circle,
-              color: BC.salad,
+              color: BC.purpleViolet,
               size: Sizes.s10,
             ),
             Space.w8,
             Text(
               item.text,
-              style: BS.tex16.apply(color: BC.white),
+              style: BS.tex16,
             ),
           ],
         ),
         Space.h8,
         Text(
           item.subText,
-          style: BS.tex14withFont500.apply(color: BC.white),
+          style: BS.tex14withFont500
         ),
         Space.h16,
       ],

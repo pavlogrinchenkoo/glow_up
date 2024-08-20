@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -27,122 +26,68 @@ class GuideFaceInstruction extends StatelessWidget {
         Space.h16,
         GuideInfoOverview(
           title: s.overview,
-          subTitle: s.theFaceMostNoticed,
+          subTitle: s.enhancingFacial,
         ),
         Space.h32,
-        GuideInfoListText(titleList: s.eyes, items: [
+        GuideInfoListText(titleList: s.facialSymmetry, items: [
           ListItem(
-            text: s.skincare,
-            subText: s.skincareEyes,
+            text: s.balance,
+            subText: s.balanceSymmetry,
           ),
           ListItem(
-            text: s.exercise,
-            subText: s.exerciseEyes,
+            text: s.exercises,
+            subText: s.exerciseFacial,
           ),
           ListItem(
-            text: s.hydration,
-            subText: s.hydrationEyes,
-          ),
-          ListItem(
-            text: s.rest,
-            subText: s.restEyes,
+            text: s.contouring,
+            subText: s.contouringText,
           ),
         ]),
         Space.h16,
-        GuideInfoListText(titleList: s.mouth, items: [
+        GuideInfoListText(titleList: s.facialHair, items: [
           ListItem(
-            text: s.lipCare,
-            subText: s.lipCareText,
+            text: s.shapingEyebrows,
+            subText: s.wellGroomedEyebrows,
           ),
           ListItem(
-            text: s.teethHealth,
-            subText: s.teethHealthText,
-          ),
-          ListItem(
-            text: s.facialExercises,
-            subText: s.facialExercisesMouth,
+            text: s.hairline,
+            subText: s.hairlineText,
           ),
         ]),
         Space.h16,
-        GuideInfoListText(titleList: s.cheekbones, items: [
+        GuideInfoListText(titleList: s.facialFeaturesEnhancement, items: [
           ListItem(
-            text: s.skincare,
-            subText: s.skincareCheekbones,
+            text: s.jawline,
+            subText: s.jawlineText,
           ),
           ListItem(
-            text: s.facialExercises,
-            subText: s.facialExercisesCheekbones,
-          ),
-          ListItem(
-            text: s.diet,
-            subText: s.dietCheekbones,
+            text: s.cheekbones,
+            subText: s.cheekbonesHighlight,
           ),
         ]),
         Space.h16,
-        GuideInfoListText(titleList: s.nose, items: [
+        GuideInfoListText(titleList: s.personalizedSkincare, items: [
           ListItem(
-            text: s.skincare,
-            subText: s.skincareNose,
+            text: s.skinType,
+            subText: s.skinTypeText,
           ),
           ListItem(
-            text: s.grooming,
-            subText: s.groomingNose,
-          ),
-          ListItem(
-            text: s.protection,
-            subText: s.protectionNose,
+            text: s.targetedTreatmentsFace,
+            subText: s.targetedTreatmentsText,
           ),
         ]),
         Space.h16,
-        GuideInfoListText(titleList: s.forehead, items: [
+        GuideInfoListText(titleList: s.dietAndHydration, items: [
+          ListItem(
+            text: s.nutrition,
+            subText: s.nutritionText,
+          ),
           ListItem(
             text: s.secondHydration,
-            subText: s.hydrationForehead,
+            subText: s.secondHydrationText,
           ),
-          ListItem(
-            text: s.sunProtection,
-            subText: s.sunProtectionForehead,
-          ),
-          ListItem(
-            text: s.facialExercises,
-            subText: s.facialExercisesForehead,
-          ),
+
         ]),
-        Space.h16,
-        GuideInfoListText(titleList: s.eyebrows, items: [
-          ListItem(
-            text: s.grooming,
-            subText: s.groomingEyebrows,
-          ),
-          ListItem(
-            text: s.nourishment,
-            subText: s.nourishmentEyebrows,
-          ),
-          ListItem(
-            text: s.styling,
-            subText: s.stylingEyebrows,
-          ),
-        ]),
-        Space.h16,
-        GuideInfoListText(titleList: s.ears, items: [
-          ListItem(
-            text: s.hygiene,
-            subText: s.hygieneEars,
-          ),
-          ListItem(
-            text: s.moisturize,
-            subText: s.moisturizeEars,
-          ),
-          ListItem(
-            text: s.grooming,
-            subText: s.groomingEars,
-          ),
-        ]),
-        Space.h16,
-        GuideInfoConclusion(
-          title: s.conclusion,
-          subTitle: s.thisGuideCurated,
-        ),
       ],
     );
   }

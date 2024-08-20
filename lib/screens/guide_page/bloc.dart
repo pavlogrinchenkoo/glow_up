@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:glow_up/api/guide/dto.dart';
-import 'package:glow_up/routers/routes.dart';
 import 'package:glow_up/utils/bloc_base.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -54,9 +53,9 @@ class GuideBloc extends BlocBaseWithState<ScreenState> {
         guideOnTapGroupEnum: GuideOnTapGroupEnum.fashion,
       ),
       7: GuideModel(
-        guideTextGroupEnum: GuideTextGroupEnum.grooming,
-        guideImageGroupEnum: GuideImageGroupEnum.grooming,
-        guideOnTapGroupEnum: GuideOnTapGroupEnum.grooming,
+        guideTextGroupEnum: GuideTextGroupEnum.makeup,
+        guideImageGroupEnum: GuideImageGroupEnum.makeup,
+        guideOnTapGroupEnum: GuideOnTapGroupEnum.makeup,
       ),
     };
 

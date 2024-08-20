@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -27,102 +26,105 @@ class GuideFitnessInstruction extends StatelessWidget {
         Space.h16,
         GuideInfoOverview(
           title: s.overview,
-          subTitle: s.subTitleOverview,
+          subTitle: s.fitnessOverview,
         ),
         Space.h32,
         GuideInfoListText(
-          titleList: s.titleListStrength,
+          titleList: s.cardioWorkouts,
           items: [
             ListItem(
-              text: s.text1Strength,
-              subText: s.subText1Strength,
+              text: s.heartHealth,
+              subText: s.heartHealthDescription,
             ),
             ListItem(
-              text: s.text2Strength,
-              subText: s.subText2Strength,
-            ),
-            ListItem(
-              text: s.text3Strength,
-              subText: s.subText3Strength,
+              text: s.fatLoss,
+              subText: s.fatLossDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.titleListCardio,
+          titleList: s.strengthTraining,
           items: [
             ListItem(
-              text: s.text1Cardio,
-              subText: s.subText1Cardio,
+              text: s.muscleBuilding,
+              subText: s.muscleBuildingDescription,
             ),
             ListItem(
-              text: s.text2Cardio,
-              subText: s.subText2Cardio,
-            ),
-            ListItem(
-              text: s.text3Cardio,
-              subText: s.subText3Cardio,
+              text: s.coreStrength,
+              subText: s.coreStrengthDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.titleListNutrition,
+          titleList: s.flexibilityMobility,
           items: [
             ListItem(
-              text: s.text1Nutrition,
-              subText: s.subText1Nutrition,
+              text: s.stretching,
+              subText: s.stretchingDescription,
             ),
             ListItem(
-              text: s.text2Nutrition,
-              subText: s.subText2Nutrition,
-            ),
-            ListItem(
-              text: s.text3Nutrition,
-              subText: s.subText3Nutrition,
+              text: s.mobilityDrills,
+              subText: s.mobilityDrillsDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.titleListRecovery,
+          titleList: s.dietNutrition,
           items: [
             ListItem(
-              text: s.text1Recovery,
-              subText: s.subText1Recovery,
+              text: s.balancedDiet,
+              subText: s.balancedDietDescription,
             ),
             ListItem(
-              text: s.text2Recovery,
-              subText: s.subText2Recovery,
-            ),
-            ListItem(
-              text: s.text3Recovery,
-              subText: s.subText3Recovery,
+              text: s.secondHydration,
+              subText: s.hydrationDescriptionFit,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.titleListFlexibility,
+          titleList: s.recoveryRest,
           items: [
             ListItem(
-              text: s.text1Flexibility,
-              subText: s.subText1Flexibility,
+              text: s.restDays,
+              subText: s.restDaysDescription,
             ),
             ListItem(
-              text: s.text2Flexibility,
-              subText: s.subText2Flexibility,
-            ),
-            ListItem(
-              text: s.text3Flexibility,
-              subText: s.subText3Flexibility,
+              text: s.sleep,
+              subText: s.sleepDescription,
             ),
           ],
         ),
         Space.h16,
-        GuideInfoConclusion(
-          title: s.conclusion,
-          subTitle: s.fitnessIsAMultifaceted,
+        GuideInfoListText(
+          titleList: s.consistencyMotivation,
+          items: [
+            ListItem(
+              text: s.setGoals,
+              subText: s.setGoalsDescription,
+            ),
+            ListItem(
+              text: s.variety,
+              subText: s.varietyDescription,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.professionalGuidance,
+          items: [
+            ListItem(
+              text: s.personalTrainer,
+              subText: s.personalTrainerDescription,
+            ),
+            ListItem(
+              text: s.groupClasses,
+              subText: s.groupClassesDescription,
+            ),
+          ],
         ),
       ],
     );

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/generated/l10n.dart';
-import 'package:glow_up/screens/guide_info_page/widgets/guide_info_conclusion.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_list_text.dart';
 import 'package:glow_up/screens/guide_info_page/widgets/guide_info_overview.dart';
 import 'package:glow_up/utils/spaces.dart';
@@ -31,66 +30,87 @@ class GuideJawlineInstruction extends StatelessWidget {
         ),
         Space.h32,
         GuideInfoListText(
-          titleList: s.definition,
+          titleList: s.facialExercises,
           items: [
             ListItem(
-              text: s.skincare,
-              subText: s.aWellMaintainedSkincareRoutine,
+              text: s.jawlineExercises,
+              subText: s.jawlineExercisesDescription,
             ),
             ListItem(
-              text: s.weightManagement,
-              subText: s.reducingExcessBodyFat,
+              text: s.consistency,
+              subText: s.consistencyDescription,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.weightManagement,
+          items: [
+            ListItem(
+              text: s.healthyDiet,
+              subText: s.healthyDietDescription,
             ),
             ListItem(
               text: s.secondHydration,
-              subText: s.adequateWaterIntake,
+              subText: s.hydrationDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.contouring,
+          titleList: s.skincareGrooming,
           items: [
             ListItem(
-              text: s.makeup,
-              subText: s.utilizeContouringTechniques,
+              text: s.exfoliation,
+              subText: s.exfoliationJaw,
             ),
             ListItem(
-              text: s.beardStyling,
-              subText: s.forThoseWhoCanGrowFacialHair,
-            ),
-            ListItem(
-              text: s.hairstyling,
-              subText: s.certainHairstylesCanVisuallyEnhance,
+              text: s.beardShaping,
+              subText: s.beardShapingDescription,
             ),
           ],
         ),
         Space.h16,
         GuideInfoListText(
-          titleList: s.exercises,
+          titleList: s.contouringJaw,
           items: [
             ListItem(
-              text: s.chinTucks,
-              subText: s.thisExerciseHelpsInStrengthening,
+              text: s.makeupTechniques,
+              subText: s.makeupTechniquesDescription,
             ),
             ListItem(
-              text: s.jawClenching,
-              subText: s.clenchYourJawFor10Seconds,
-            ),
-            ListItem(
-              text: s.neckCurls,
-              subText: s.lieOnYourBackWithYourTonguePressed,
-            ),
-            ListItem(
-              text: s.mewing,
-              subText: s.practiceProperTonguePosture,
+              text: s.highlighting,
+              subText: s.highlightingDescription,
             ),
           ],
         ),
         Space.h16,
-        GuideInfoConclusion(
-          title: s.conclusion,
-          subTitle: s.improvingTheDefinitionAndContour,
+        GuideInfoListText(
+          titleList: s.posture,
+          items: [
+            ListItem(
+              text: s.correctPosture,
+              subText: s.correctPostureDescription,
+            ),
+            ListItem(
+              text: s.avoidSlouching,
+              subText: s.avoidSlouchingDescription,
+            ),
+          ],
+        ),
+        Space.h16,
+        GuideInfoListText(
+          titleList: s.nonSurgicalEnhancements,
+          items: [
+            ListItem(
+              text: s.dermalFillers,
+              subText: s.dermalFillersDescription,
+            ),
+            ListItem(
+              text: s.skinTighteningTreatments,
+              subText: s.skinTighteningTreatmentsDescription,
+            ),
+          ],
         ),
       ],
     );
