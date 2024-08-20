@@ -41,7 +41,7 @@ class _HistoryPageState extends State<HistoryPage> {
       builder: (context, ScreenState state) {
         return CustomScaffold(
           appBar: CustomAppBar(
-            title: s.titleResults,
+            title: s.titleHistory,
             useLeftButton: false,
             useRightButton: true,
             rightIcon: Assets.images.settings,
@@ -49,22 +49,23 @@ class _HistoryPageState extends State<HistoryPage> {
               _bloc.toMenu(context);
               AnalyticsAmplitude().logHistoryGoToMenu();
             },
+            usePoint: true,
           ),
           body: Container(
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: BC.navyGrey,
+              color: BC.pink,
             ),
             child: Stack(
               children: [
                 CustomBokeh(
-                  size: height / 2,
-                  scaleX: 0.6,
+                  size: height / 1,
+                  scaleX: 1,
                   scaleY: 0.6,
                   alignment: Alignment.bottomCenter,
-                  transform: const Offset(Sizes.scale, Sizes.s100),
-                  shape: BoxShape.circle,
+                  transform: Offset(Sizes.scale, height / 3.5),
+                  shape: BoxShape.rectangle,
                   angleInRadians: pi / Sizes.s2,
                 ),
                 Column(
@@ -105,12 +106,14 @@ class _HistoryPageState extends State<HistoryPage> {
                           AnalyticsAmplitude().logHistoryMakeNewScan();
                         },
                         outLine: true,
-                        borderColor: BC.salad,
-                        colorButton: BC.salad,
+                        borderColor: BC.purpleViolet,
+                        colorButton: BC.purpleViolet,
                         borderRadius: AppRadius.r18,
                         padding: Sizes.s23,
                         svgGenImage: Assets.images.makeScan,
                         spaceBetweenTextImage: Sizes.s8,
+                        textColor: BC.white,
+                        imageColor: BC.white,
                       ),
                     ),
                     SizedBox(

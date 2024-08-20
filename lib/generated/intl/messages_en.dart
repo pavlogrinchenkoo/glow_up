@@ -786,6 +786,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "This guide is curated to empower you with the knowledge and tools needed to enhance each facial feature effectively. Embrace these practices for a noticeable improvement in your facial aesthetics."),
         "titleDeepNotification":
             MessageLookupByLibrary.simpleMessage("Go Deeper! 🔬\n"),
+        "titleHistory":
+            MessageLookupByLibrary.simpleMessage("Your Results History"),
         "titleListCardio": MessageLookupByLibrary.simpleMessage("Cardio"),
         "titleListFlexibility":
             MessageLookupByLibrary.simpleMessage("Flexibility"),

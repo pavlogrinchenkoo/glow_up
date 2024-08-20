@@ -840,6 +840,16 @@ class S {
     );
   }
 
+  /// `Your Results History`
+  String get titleHistory {
+    return Intl.message(
+      'Your Results History',
+      name: 'titleHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Make a deep scanning of myself`
   String get makeDeepScanButton {
     return Intl.message(
