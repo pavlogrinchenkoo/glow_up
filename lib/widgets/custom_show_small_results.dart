@@ -96,13 +96,13 @@ class CustomShowSmallResults extends StatelessWidget {
                                       horizontal: Sizes.s16,
                                       vertical: Sizes.s4),
                                   decoration: BoxDecoration(
-                                    color: BC.salad,
+                                    color: BC.purpleViolet,
                                     borderRadius:
                                         BorderRadius.circular(AppRadius.r40),
                                   ),
                                   child: Text(
                                     s.deepScan,
-                                    style: BS.tex12Text.apply(color: BC.black),
+                                    style: BS.tex12Text.apply(color: BC.white),
                                   ),
                                 )
                               : const SizedBox.shrink(),

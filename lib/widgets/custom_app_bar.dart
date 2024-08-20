@@ -11,6 +11,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? rightOnClick;
   final SvgGenImage? leftIcon;
   final SvgGenImage? rightIcon;
+  final bool usePoint;
 
   const CustomAppBar({
     this.title,
@@ -21,6 +22,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.rightOnClick,
     this.leftIcon,
     this.rightIcon,
+    this.usePoint = false,
     super.key,
   });
 
@@ -46,7 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (!useLeftButton) const SizedBox(width: 48),
+            if (!useLeftButton) SizedBox(width: usePoint ? 48 : 0),
             Flexible(
               child: Text(
                 title ?? "",

@@ -45,6 +45,7 @@ class _MenuPageState extends State<MenuPage> {
               _bloc.toResult(context);
               AnalyticsAmplitude().logMenuBack();
             },
+            usePoint: true,
           ),
           body: Container(
             width: double.infinity,
