@@ -80,10 +80,10 @@ class S {
     );
   }
 
-  /// `Craft the appearance you've always desired. Begin your transformational journey today.`
+  /// `Build the appearance you've always desired. Begin your transformational journey today.`
   String get onboardingShapeText {
     return Intl.message(
-      'Craft the appearance you\'ve always desired. Begin your transformational journey today.',
+      'Build the appearance you\'ve always desired. Begin your transformational journey today.',
       name: 'onboardingShapeText',
       desc: '',
       args: [],
@@ -320,10 +320,10 @@ class S {
     );
   }
 
-  /// `Please enable access to your camera or photo library.`
+  /// `Please enable image access in Settings for photo analysis.`
   String get showDialogAccessPermissionCameraOrPhoto {
     return Intl.message(
-      'Please enable access to your camera or photo library.',
+      'Please enable image access in Settings for photo analysis.',
       name: 'showDialogAccessPermissionCameraOrPhoto',
       desc: '',
       args: [],

@@ -487,7 +487,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingReviewTitleText":
             MessageLookupByLibrary.simpleMessage("Your Review, Our Strength"),
         "onboardingShapeText": MessageLookupByLibrary.simpleMessage(
-            "Craft the appearance you\'ve always desired. Begin your transformational journey today."),
+            "Build the appearance you\'ve always desired. Begin your transformational journey today."),
         "onboardingShapeTitleText":
             MessageLookupByLibrary.simpleMessage("Shape Your Future"),
         "onboardingTakeFrontSelfie":
@@ -639,7 +639,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Shift your focus from an object close to you to one far away periodically, to exercise your eye muscles."),
         "showDialogAccessPermissionCameraOrPhoto":
             MessageLookupByLibrary.simpleMessage(
-                "Please enable access to your camera or photo library."),
+                "Please enable image access in Settings for photo analysis."),
         "showDialogChangeIcon": MessageLookupByLibrary.simpleMessage(
             "Please upload a better quality image. Try a new one."),
         "skin": MessageLookupByLibrary.simpleMessage("Skin"),

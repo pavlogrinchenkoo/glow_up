@@ -102,13 +102,13 @@ class OnboardingPhotoPreview extends StatelessWidget {
                                     ConnectionState.done) {
                                   return Image.file(
                                     File(frontIconPath ?? ""),
-                                    width: screenHeight / 2,
+                                    width: screenHeight / 2.4,
                                     height: screenHeight / 1.9,
                                     fit: BoxFit.cover,
                                   );
                                 } else {
                                   return Container(
-                                    width: screenHeight / 2,
+                                    width: screenHeight / 2.4,
                                     height: screenHeight / 1.9,
                                     color: BC.black,
                                     child: const Center(
@@ -148,7 +148,7 @@ class OnboardingPhotoPreview extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: Sizes.s30),
                       child: Text(
                         s.onboardingUploadHighQuality,
-                        style: BS.tex14.apply(color: BC.white),
+                        style: BS.tex14,
                         textAlign: TextAlign.center,
                       ),
                     ),
