@@ -54,9 +54,9 @@ class GuideBloc extends BlocBaseWithState<ScreenState> {
         guideOnTapGroupEnum: GuideOnTapGroupEnum.fashion,
       ),
       7: GuideModel(
-        guideTextGroupEnum: GuideTextGroupEnum.grooming,
-        guideImageGroupEnum: GuideImageGroupEnum.grooming,
-        guideOnTapGroupEnum: GuideOnTapGroupEnum.grooming,
+        guideTextGroupEnum: GuideTextGroupEnum.makeup,
+        guideImageGroupEnum: GuideImageGroupEnum.makeup,
+        guideOnTapGroupEnum: GuideOnTapGroupEnum.makeup,
       ),
     };
 

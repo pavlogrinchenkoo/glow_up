@@ -44,8 +44,8 @@ class GuideInfoBloc extends BlocBaseWithState<ScreenState> {
         return "${s.fitness} Guide";
       case EnumCheckGuideModel.fashion:
         return "${s.fashion} Guide";
-      case EnumCheckGuideModel.grooming:
-        return "${s.grooming} Guide";
+      case EnumCheckGuideModel.makeup:
+        return "${s.makeup} Guide";
       default:
         return "";
     }
@@ -74,7 +74,7 @@ class GuideInfoBloc extends BlocBaseWithState<ScreenState> {
       case EnumCheckGuideModel.fashion:
         setState(currentState.copyWith(
             widgetInstruction: const GuideFashionInstruction()));
-      case EnumCheckGuideModel.grooming:
+      case EnumCheckGuideModel.makeup:
         setState(currentState.copyWith(
             widgetInstruction: const GuideGroomingInstruction()));
       default:

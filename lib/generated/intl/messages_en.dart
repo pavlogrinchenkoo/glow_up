@@ -293,10 +293,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "glabellaWrinkles":
             MessageLookupByLibrary.simpleMessage("Glabella Wrinkles"),
         "glass": MessageLookupByLibrary.simpleMessage("Glass"),
+        "glowUpGuide": MessageLookupByLibrary.simpleMessage("GlowUp Guide"),
         "goToSettings": MessageLookupByLibrary.simpleMessage("Go to Settings"),
         "gotInviteCode":
             MessageLookupByLibrary.simpleMessage("Got an invite code?"),
-        "grooming": MessageLookupByLibrary.simpleMessage("Grooming"),
         "groomingEars": MessageLookupByLibrary.simpleMessage(
             "Keep ear hair trimmed and neat. Regular checks for symmetry and proportion with your facial features can guide hairstyles that enhance your overall look."),
         "groomingEyebrows": MessageLookupByLibrary.simpleMessage(
@@ -410,6 +410,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Make a deep scanning of myself"),
         "makeNewScan": MessageLookupByLibrary.simpleMessage("Make New Scan"),
         "makeup": MessageLookupByLibrary.simpleMessage("Makeup:"),
+        "makeupText": MessageLookupByLibrary.simpleMessage("Makeup"),
         "mascularity": MessageLookupByLibrary.simpleMessage("Masculinity"),
         "maximizeYourself":
             MessageLookupByLibrary.simpleMessage("Maximize Yourself"),

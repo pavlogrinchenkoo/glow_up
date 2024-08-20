@@ -33,7 +33,7 @@ const _$GuideTextGroupEnumEnumMap = {
   GuideTextGroupEnum.eyes: 'eyes',
   GuideTextGroupEnum.fitness: 'fitness',
   GuideTextGroupEnum.fashion: 'fashion',
-  GuideTextGroupEnum.grooming: 'grooming',
+  GuideTextGroupEnum.makeup: 'makeup',
 };
 
 const _$GuideImageGroupEnumEnumMap = {
@@ -44,7 +44,7 @@ const _$GuideImageGroupEnumEnumMap = {
   GuideImageGroupEnum.eyes: 'eyes',
   GuideImageGroupEnum.fitness: 'fitness',
   GuideImageGroupEnum.fashion: 'fashion',
-  GuideImageGroupEnum.grooming: 'grooming',
+  GuideImageGroupEnum.makeup: 'makeup',
 };
 
 const _$GuideOnTapGroupEnumEnumMap = {
@@ -55,5 +55,5 @@ const _$GuideOnTapGroupEnumEnumMap = {
   GuideOnTapGroupEnum.eyes: 'eyes',
   GuideOnTapGroupEnum.fitness: 'fitness',
   GuideOnTapGroupEnum.fashion: 'fashion',
-  GuideOnTapGroupEnum.grooming: 'grooming',
+  GuideOnTapGroupEnum.makeup: 'grooming',
 };

@@ -85,7 +85,7 @@ class GuideFaceInstruction extends StatelessWidget {
             subText: s.skincareNose,
           ),
           ListItem(
-            text: s.grooming,
+            text: s.makeup,
             subText: s.groomingNose,
           ),
           ListItem(
@@ -111,7 +111,7 @@ class GuideFaceInstruction extends StatelessWidget {
         Space.h16,
         GuideInfoListText(titleList: s.eyebrows, items: [
           ListItem(
-            text: s.grooming,
+            text: s.makeup,
             subText: s.groomingEyebrows,
           ),
           ListItem(
@@ -134,7 +134,7 @@ class GuideFaceInstruction extends StatelessWidget {
             subText: s.moisturizeEars,
           ),
           ListItem(
-            text: s.grooming,
+            text: s.makeup,
             subText: s.groomingEars,
           ),
         ]),

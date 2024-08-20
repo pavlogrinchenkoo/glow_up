@@ -117,7 +117,7 @@
   "ears": "Ears",
   "fitness": "Fitness",
   "fashion": "Fashion",
-  "grooming": "Grooming",
+  "makeupText": "Makeup",
   "compare": "Compare",
   "overview": "Overview",
   "conclusion": "Conclusion",
@@ -531,6 +531,7 @@
   "promoCodeActivated": "Promocode activated",
   "promoCodeIsUsed": "Promocode is used or max number of using promocode is reached",
   "promoCodeNotFound": "Promocode not found",
-  "thisCodeNotFound": "This code doesn't found"
+  "thisCodeNotFound": "This code doesn't found",
+  "glowUpGuide": "GlowUp Guide"
 }
 

@@ -163,6 +163,10 @@ class $AssetsImagesGuideGen {
   AssetGenImage get jawlineGuide =>
       const AssetGenImage('assets/images/guide/jawlineGuide.png');
 
+  /// File path: assets/images/guide/makeupGuide.png
+  AssetGenImage get makeupGuide =>
+      const AssetGenImage('assets/images/guide/makeupGuide.png');
+
   /// File path: assets/images/guide/skinGuide.png
   AssetGenImage get skinGuide =>
       const AssetGenImage('assets/images/guide/skinGuide.png');
@@ -176,6 +180,7 @@ class $AssetsImagesGuideGen {
         groomingGuide,
         hairGuide,
         jawlineGuide,
+        makeupGuide,
         skinGuide
       ];
 }

@@ -1220,11 +1220,11 @@ class S {
     );
   }
 
-  /// `Grooming`
-  String get grooming {
+  /// `Makeup`
+  String get makeupText {
     return Intl.message(
-      'Grooming',
-      name: 'grooming',
+      'Makeup',
+      name: 'makeupText',
       desc: '',
       args: [],
     );
@@ -5365,6 +5365,16 @@ class S {
     return Intl.message(
       'This code doesn\'t found',
       name: 'thisCodeNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `GlowUp Guide`
+  String get glowUpGuide {
+    return Intl.message(
+      'GlowUp Guide',
+      name: 'glowUpGuide',
       desc: '',
       args: [],
     );
