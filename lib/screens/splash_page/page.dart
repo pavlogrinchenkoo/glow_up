@@ -1,13 +1,10 @@
 import 'dart:io';
-import 'dart:math';
 
 import 'package:auto_route/auto_route.dart';
 import 'package:glow_up/generated/assets.gen.dart';
 import 'package:glow_up/screens/splash_page/bloc.dart';
 import 'package:glow_up/style.dart';
 import 'package:glow_up/utils/custom_stream_builder.dart';
-import 'package:glow_up/utils/spaces.dart';
-import 'package:glow_up/widgets/custom_boxeh.dart';
 import 'package:glow_up/widgets/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 
