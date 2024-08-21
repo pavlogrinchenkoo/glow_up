@@ -24,11 +24,11 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
 
   final List<String> ids = [
     "glowup_weekly_4.99",
-    "looksmax_4.99_week",
+    "glowup_4.99_week",
     "sub3",
   ];
   String subscriptionId = Platform.isAndroid
-      ? "looksmax_4.99_week:looksmax-4-99-week"
+      ? "glowup_4.99_week:glowupsubweek"
       : "glowup_weekly_4.99";
   final storage = GetStorage();
   final session = Session();

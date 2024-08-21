@@ -16,7 +16,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 
 final _configuration = PurchasesConfiguration(Platform.isIOS
     ? 'appl_IVjwAFerSPDVYDZrItTfOGusdzF'
-    : 'goog_zxipBekshnKSHGXeNnEVfLVBUOk');
+    : 'goog_bLobNqwZEjDCagtkKwexDSyrCbH');
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
