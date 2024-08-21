@@ -39,12 +39,12 @@ class ListItemThird extends StatelessWidget {
       sections: [
         SectionData(
             title: s.brownArea,
-            titleStyle: BS.tex24.apply(color: BC.white),
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.pigmentationAnalysis,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
@@ -53,11 +53,11 @@ class ListItemThird extends StatelessWidget {
             items: [
               ItemData(
                 label: s.skinType,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisSkinToneEnum
                     .values[proAnalysisModel?.skintone?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
@@ -67,11 +67,11 @@ class ListItemThird extends StatelessWidget {
             items: [
               ItemData(
                 label: s.skinHueType,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisSkinHueEnum
                     .values[proAnalysisModel?.skin_hue_ha?.skin_hue ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
@@ -81,9 +81,9 @@ class ListItemThird extends StatelessWidget {
             items: [
               ItemData(
                 label: s.melaninConcentration,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: "$randomMelaninConcentration/100",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
@@ -93,10 +93,10 @@ class ListItemThird extends StatelessWidget {
             items: [
               ItemData(
                 label: s.percentageOfMelaninDeposition,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value:
                     "${proAnalysisModel?.score_info?.melanin_score ?? 0}/100",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),

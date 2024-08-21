@@ -36,12 +36,12 @@ class ListItemFourth extends StatelessWidget {
       sections: [
         SectionData(
             title: s.areaOutlineMap,
-            titleStyle: BS.tex24.apply(color: BC.white),
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.acneAnalysis,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
       ],

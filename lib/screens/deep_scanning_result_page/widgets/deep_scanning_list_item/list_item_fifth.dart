@@ -36,24 +36,24 @@ class ListItemFifth extends StatelessWidget {
       sections: [
         SectionData(
             title: s.redArea,
-            titleStyle: BS.tex24.apply(color: BC.white),
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.sensitivityAnalysis,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.percentageOfSensitiveAreas,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value:
                     "${proAnalysisModel?.score_info?.sensitivity_score ?? 0}%",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),

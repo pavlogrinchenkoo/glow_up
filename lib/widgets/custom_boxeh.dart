@@ -12,6 +12,7 @@ class CustomBokeh extends StatelessWidget {
   final bool isPurpleShadow;
   final bool blurWhiteHard;
   final bool blurWhiteSoft;
+  final bool blurPinkLight;
 
   const CustomBokeh({
     required this.size,
@@ -25,6 +26,7 @@ class CustomBokeh extends StatelessWidget {
     this.isPurpleShadow = false,
     this.blurWhiteHard = false,
     this.blurWhiteSoft = false,
+    this.blurPinkLight = false,
     super.key,
   });
 
@@ -44,15 +46,17 @@ class CustomBokeh extends StatelessWidget {
               height: size,
               decoration: BoxDecoration(
                 shape: shape ?? BoxShape.circle,
-                boxShadow: isPinkShadow
-                    ? [CustomShadows.bokehPink(context)]
-                    : blurWhiteSoft
-                        ? [CustomShadows.bokehWhiteSoft(context)]
-                        : blurWhiteHard
-                            ? [CustomShadows.bokehWhiteHard(context)]
-                            : isPurpleShadow
-                                ? [CustomShadows.bokehPurpule(context)]
-                                : [CustomShadows.bokehWhite(context)],
+                boxShadow: blurPinkLight
+                    ? [CustomShadows.bokehPinkLight(context)]
+                    : isPinkShadow
+                        ? [CustomShadows.bokehPink(context)]
+                        : blurWhiteSoft
+                            ? [CustomShadows.bokehWhiteSoft(context)]
+                            : blurWhiteHard
+                                ? [CustomShadows.bokehWhiteHard(context)]
+                                : isPurpleShadow
+                                    ? [CustomShadows.bokehPurpule(context)]
+                                    : [CustomShadows.bokehWhite(context)],
               ),
             ),
           ),
@@ -94,7 +98,14 @@ class CustomShadows {
   static BoxShadow bokehPink(BuildContext context) {
     return BoxShadow(
       color: BC.pink.withOpacity(1),
-      blurRadius: 200,
+      blurRadius: 100,
+    );
+  }
+
+  static BoxShadow bokehPinkLight(BuildContext context) {
+    return BoxShadow(
+      color: BC.pink.withOpacity(1),
+      blurRadius: 400,
     );
   }
 }

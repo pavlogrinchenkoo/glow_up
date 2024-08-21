@@ -32,40 +32,40 @@ class ListItemSeventh extends StatelessWidget {
       showImage: showImage,
       sections: [
         SectionData(
-            title: "Text",
-            titleStyle: BS.tex24.apply(color: BC.white),
+            title: "",
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.eyeIssuesAnalysis,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.eyeBags,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisEyeBagsEnum
                     .values[proAnalysisModel?.eye_pouch?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.darkCircles,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisDarkCirclesEnum
                     .values[proAnalysisModel?.dark_circle?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),

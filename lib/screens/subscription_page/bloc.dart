@@ -41,14 +41,14 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> buyProduct(BuildContext context) async {
     try {
-      // await storage.write(session.isUserDisableBlur, true);
-      // await storage.write(session.isUserSubscribed, true);
-      // context.router.push(ResultsRoute(activateSheet: false));
-      setState(currentState.copyWith(showCircularProgress: true));
-      CustomerInfo customerInfo =
-          await Purchases.purchaseStoreProduct(currentState.storeProduct!);
-      setState(currentState.copyWith(showCircularProgress: false));
-      checkCustomerInfo(customerInfo, context, isLog: true);
+      await storage.write(session.isUserDisableBlur, true);
+      await storage.write(session.isUserSubscribed, true);
+      context.router.push(ResultsRoute(activateSheet: false));
+      // setState(currentState.copyWith(showCircularProgress: true));
+      // CustomerInfo customerInfo =
+      //     await Purchases.purchaseStoreProduct(currentState.storeProduct!);
+      // setState(currentState.copyWith(showCircularProgress: false));
+      // checkCustomerInfo(customerInfo, context, isLog: true);
     } catch (e) {
       setState(currentState.copyWith(showCircularProgress: false));
       log("Error buy sub $e");
