@@ -480,6 +480,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Glabella Wrinkles"),
         "glass": MessageLookupByLibrary.simpleMessage("Glass"),
         "glowUpGuide": MessageLookupByLibrary.simpleMessage("GlowUp Guide"),
+        "glowUpGuides":
+            MessageLookupByLibrary.simpleMessage("📚 GlowUp Guides"),
         "goToSettings": MessageLookupByLibrary.simpleMessage("Go to Settings"),
         "gotInviteCode":
             MessageLookupByLibrary.simpleMessage("Got an invite code?"),
@@ -642,8 +644,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "lookForProductsThatMatch": MessageLookupByLibrary.simpleMessage(
             "Look for products that match your skin type. Ingredients like hyaluronic acid and glycerin draw moisture into the skin, while ceramides help retain it."),
         "looksMaxGuide": MessageLookupByLibrary.simpleMessage("LooksMax Guide"),
-        "looksMaxGuides":
-            MessageLookupByLibrary.simpleMessage("📚 LooksMax Guides"),
         "lowManipulationStyles":
             MessageLookupByLibrary.simpleMessage("Low-Manipulation Styles:"),
         "lowManipulationStylesDescription": MessageLookupByLibrary.simpleMessage(

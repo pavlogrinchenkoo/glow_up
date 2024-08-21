@@ -61,7 +61,7 @@ class CustomShowBigResults extends StatelessWidget {
                       fit: BoxFit.scaleDown,
                       child: Text(
                         titleText ?? "",
-                        style: BS.tex21Text.apply(color: BC.white),
+                        style: BS.tex21Text.apply(color: BC.lightGray),
                       ),
                     ),
                     Space.w8,
@@ -71,7 +71,7 @@ class CustomShowBigResults extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(
                             horizontal: Sizes.s10, vertical: Sizes.s10),
                         decoration: BoxDecoration(
-                          color: BC.white.withOpacity(0.4),
+                          color: BC.white.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(AppRadius.r8),
                         ),
                         child: Center(
@@ -146,7 +146,7 @@ class CustomShowBigResults extends StatelessWidget {
                       children: [
                         Text(
                           item.leftTitle,
-                          style: BS.tex16,
+                          style: BS.tex16.apply(color: BC.lightGray),
                         ),
                         if (item.subLeftTitle != "")
                           useBlur

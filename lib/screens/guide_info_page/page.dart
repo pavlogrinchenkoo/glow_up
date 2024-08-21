@@ -48,7 +48,8 @@ class _GuideInfoPageState extends State<GuideInfoPage> {
             rightOnClick: () => _bloc.toMenu(context),
             leftIcon: Assets.images.back,
             leftOnClick: () => _bloc.back(context),
-            backgroundeWhiteColor: BC.white,
+            backgroundWhiteColor: BC.white,
+            textColor: BC.lightGray,
           ),
           body: Container(
             width: double.infinity,

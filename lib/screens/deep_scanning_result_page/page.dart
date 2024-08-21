@@ -63,7 +63,7 @@ class _DeepScanningResultPageState extends State<DeepScanningResultPage> {
                 _bloc.toBack(context);
                 AnalyticsAmplitude().logDeepScanningResultsBack();
               },
-              backgroundeWhiteColor: BC.white,
+              backgroundWhiteColor: BC.white,
             ),
             body: Container(
               width: double.infinity,
@@ -84,9 +84,9 @@ class _DeepScanningResultPageState extends State<DeepScanningResultPage> {
                           CustomBokeh(
                             size: height / 1,
                             scaleY: 0.5,
-                            scaleX: 0.5,
+                            scaleX: 0.4,
                             alignment: Alignment.topCenter,
-                            transform: Offset(-Sizes.s150, -height / 4),
+                            transform: Offset(-Sizes.s150, -height / 5.5),
                             shape: BoxShape.rectangle,
                             angleInRadians: pi / Sizes.s2,
                             blurPinkLight: true,

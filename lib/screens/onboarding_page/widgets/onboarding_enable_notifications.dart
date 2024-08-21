@@ -24,9 +24,9 @@ class OnboardingEnableNotifications extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     double topOffset = screenHeight > 950
         ? screenHeight / 1.3
-        : screenHeight > 896
-            ? screenHeight / 1.65
-            : screenHeight / 1.6;
+        : screenHeight > 895
+            ? screenHeight / 1.6
+            : screenHeight / 1.65;
     return Stack(
       children: [
         Positioned(

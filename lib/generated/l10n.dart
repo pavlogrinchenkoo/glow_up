@@ -1020,11 +1020,11 @@ class S {
     );
   }
 
-  /// `📚 LooksMax Guides`
-  String get looksMaxGuides {
+  /// `📚 GlowUp Guides`
+  String get glowUpGuides {
     return Intl.message(
-      '📚 LooksMax Guides',
-      name: 'looksMaxGuides',
+      '📚 GlowUp Guides',
+      name: 'glowUpGuides',
       desc: '',
       args: [],
     );

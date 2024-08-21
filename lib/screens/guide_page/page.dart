@@ -42,7 +42,6 @@ class _GuidePageState extends State<GuidePage> {
             useRightButton: true,
             rightIcon: Assets.images.settings,
             rightOnClick: () => _bloc.toMenu(context),
-            usePoint: true,
           ),
           body: Container(
             width: double.infinity,

@@ -44,7 +44,7 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
         },
       },
       {
-        'text': (s) => s.looksMaxGuides,
+        'text': (s) => s.glowUpGuides,
         'action': () {
           context.router.push(const GuideRoute());
           AnalyticsAmplitude().logMenuLooksMaxGuide();

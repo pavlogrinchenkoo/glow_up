@@ -65,8 +65,9 @@ class _DeepScanningIndicatorWidgetState
                         child: CircularProgressIndicator(
                           value: widget.valueProgress,
                           strokeWidth: height < 840 ? 6 : 9,
-                          valueColor: AlwaysStoppedAnimation<Color>(BC.lightGreen),
-                          backgroundColor: BC.lightGray,
+                          valueColor:
+                              AlwaysStoppedAnimation<Color>(BC.lightGreen),
+                          backgroundColor: BC.black.withOpacity(0.3),
                         ),
                       ),
                     ),
