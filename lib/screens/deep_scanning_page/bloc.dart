@@ -27,12 +27,12 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
   final String offeringsDeepGroup = "DeepScan";
 
   final List<String> ids = [
-    "looksmax_consumable_7.99",
+    "glowup_consumable_7.99",
     "sub2",
     "sub3",
   ];
   String subscriptionDeepScanId =
-      Platform.isAndroid ? "deepscan_iap_7_99" : "looksmax_consumable_7.99";
+      Platform.isAndroid ? "deepscan_iap_7_99" : "glowup_consumable_7.99";
 
   Future<void> initialize() async {
     try {
@@ -60,13 +60,13 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> buyProductDeepScan(BuildContext context) async {
     try {
-      saveSubscribeDeep(true, context, true);
-      await storage.write(session.isUserSubscribeDeepScan, false);
-      // setState(currentState.copyWith(showCircularProgress: true));
-      // CustomerInfo customerInfo =
-      //     await Purchases.purchaseStoreProduct(currentState.storeProduct!);
-      // setState(currentState.copyWith(showCircularProgress: false));
-      // checkCustomerInfoDeep(customerInfo, context, false, isLog: true);
+      // saveSubscribeDeep(true, context, true);
+      // await storage.write(session.isUserSubscribeDeepScan, false);
+      setState(currentState.copyWith(showCircularProgress: true));
+      CustomerInfo customerInfo =
+          await Purchases.purchaseStoreProduct(currentState.storeProduct!);
+      setState(currentState.copyWith(showCircularProgress: false));
+      checkCustomerInfoDeep(customerInfo, context, false, isLog: true);
     } catch (e) {
       setState(currentState.copyWith(showCircularProgress: false));
       log("Error buy deep sub $e");

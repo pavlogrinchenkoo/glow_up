@@ -15,7 +15,7 @@ import 'package:provider/provider.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
 final _configuration = PurchasesConfiguration(Platform.isIOS
-    ? 'appl_mOfkFfadAWCsMNDUIMgZjbIVBja'
+    ? 'appl_IVjwAFerSPDVYDZrItTfOGusdzF'
     : 'goog_zxipBekshnKSHGXeNnEVfLVBUOk');
 
 Future<void> main() async {
