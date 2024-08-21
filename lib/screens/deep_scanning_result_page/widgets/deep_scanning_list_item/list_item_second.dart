@@ -36,45 +36,45 @@ class ListItemSecond extends StatelessWidget {
       sections: [
         SectionData(
             title: s.textureEnhancedPores,
-            titleStyle: BS.tex24.apply(color: BC.white),
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.analysisOfDryOilySkin,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
             title: s.poreAnalysis,
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.forehead,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value:
                     "${proAnalysisModel?.enlarged_pore_count?.forehead_count ?? ""} pcs",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
               ItemData(
                 label: s.leftCheek,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value:
                     "${proAnalysisModel?.enlarged_pore_count?.left_cheek_count ?? ""} pcs",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
               ItemData(
                 label: s.rightCheek,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value:
                     "${proAnalysisModel?.enlarged_pore_count?.right_cheek_count ?? ""} pcs",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
               ItemData(
                 label: s.chin,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value:
                     "${proAnalysisModel?.enlarged_pore_count?.chin_count ?? ""} pcs",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.s10,

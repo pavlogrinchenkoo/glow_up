@@ -31,10 +31,10 @@ class CustomBeforeAfter extends StatelessWidget {
       child: BeforeAfter(
         value: valueProgress,
         thumbDecoration: BoxDecoration(
-          color: BC.salad,
+          color: BC.purpleViolet,
           borderRadius: BorderRadius.circular(borderRadius),
         ),
-        trackColor: BC.salad,
+        trackColor: BC.purpleViolet,
         height: height,
         width: width,
         before: Container(

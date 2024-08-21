@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:auto_route/auto_route.dart';
 import 'package:glow_up/api/deep_results/dto.dart';
 import 'package:glow_up/generated/assets.gen.dart';
@@ -15,6 +17,7 @@ import 'package:glow_up/utils/analytics_amplitude.dart';
 import 'package:glow_up/utils/custom_stream_builder.dart';
 import 'package:glow_up/utils/spaces.dart';
 import 'package:glow_up/widgets/custom_app_bar.dart';
+import 'package:glow_up/widgets/custom_boxeh.dart';
 import 'package:glow_up/widgets/custom_circular_progress_indicator.dart';
 import 'package:glow_up/widgets/custom_scaffold.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +42,7 @@ class _DeepScanningResultPageState extends State<DeepScanningResultPage> {
   @override
   Widget build(BuildContext context) {
     final S s = S.of(context);
+    final height = MediaQuery.of(context).size.height;
     return PopScope(
       canPop: false,
       child: CustomStreamBuilder(
@@ -59,97 +63,114 @@ class _DeepScanningResultPageState extends State<DeepScanningResultPage> {
                 _bloc.toBack(context);
                 AnalyticsAmplitude().logDeepScanningResultsBack();
               },
+              backgroundeWhiteColor: BC.white,
             ),
             body: Container(
               width: double.infinity,
               height: double.infinity,
               decoration: BoxDecoration(
-                color: BC.navyGrey,
+                color: BC.white,
               ),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: BC.navyGrey,
+                  color: BC.white,
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s20),
                 child: state.proAnalysisModel == null
                     ? const Center(child: AppCircularProgressIndicator())
-                    : SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            ListItemFirst(
-                              valueProgress: state.valueProgressFirst,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.first),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath:
-                                  state.textureEnhancedBlackheads?.path ?? "",
+                    : Stack(
+                        children: [
+                          CustomBokeh(
+                            size: height / 1,
+                            scaleY: 0.5,
+                            scaleX: 0.5,
+                            alignment: Alignment.topCenter,
+                            transform: Offset(-Sizes.s150, -height / 4),
+                            shape: BoxShape.rectangle,
+                            angleInRadians: pi / Sizes.s2,
+                            blurPinkLight: true,
+                          ),
+                          SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                ListItemFirst(
+                                  valueProgress: state.valueProgressFirst,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.first),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath:
+                                      state.textureEnhancedBlackheads?.path ??
+                                          "",
+                                ),
+                                ListItemSecond(
+                                  valueProgress: state.valueProgressSecond,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.second),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath:
+                                      state.textureEnhancedPores?.path ?? "",
+                                ),
+                                ListItemThird(
+                                  valueProgress: state.valueProgressThird,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.third),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath: state.brownArea?.path ?? "",
+                                  randomMelaninConcentration:
+                                      state.randomMelaninConcentration ?? 0,
+                                ),
+                                ListItemFourth(
+                                  valueProgress: state.valueProgressFourth,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.fourth),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath: state.roiOutlineMap?.path ?? "",
+                                ),
+                                ListItemFifth(
+                                  valueProgress: state.valueProgressFifth,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.fifth),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath: state.redArea?.path ?? "",
+                                ),
+                                ListItemSixth(
+                                  valueProgress: state.valueProgressSixth,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.sixth),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  frontIconPath: state.frontIconDeepPath,
+                                  deepIconPath:
+                                      state.textureEnhancedLines?.path ?? "",
+                                ),
+                                ListItemSeventh(
+                                  valueProgress: state.valueProgressSeventh,
+                                  onValueChanged: (value) =>
+                                      _bloc.changeValueProgress(value,
+                                          DeepGetNumberResultsEnum.seventh),
+                                  proAnalysisModel: state.proAnalysisModel,
+                                  showImage: false,
+                                ),
+                              ],
                             ),
-                            ListItemSecond(
-                              valueProgress: state.valueProgressSecond,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.second),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath:
-                                  state.textureEnhancedPores?.path ?? "",
-                            ),
-                            ListItemThird(
-                              valueProgress: state.valueProgressThird,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.third),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath: state.brownArea?.path ?? "",
-                              randomMelaninConcentration:
-                                  state.randomMelaninConcentration ?? 0,
-                            ),
-                            ListItemFourth(
-                              valueProgress: state.valueProgressFourth,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.fourth),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath: state.roiOutlineMap?.path ?? "",
-                            ),
-                            ListItemFifth(
-                              valueProgress: state.valueProgressFifth,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.fifth),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath: state.redArea?.path ?? "",
-                            ),
-                            ListItemSixth(
-                              valueProgress: state.valueProgressSixth,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.sixth),
-                              proAnalysisModel: state.proAnalysisModel,
-                              frontIconPath: state.frontIconDeepPath,
-                              deepIconPath:
-                                  state.textureEnhancedLines?.path ?? "",
-                            ),
-                            ListItemSeventh(
-                              valueProgress: state.valueProgressSeventh,
-                              onValueChanged: (value) =>
-                                  _bloc.changeValueProgress(
-                                      value, DeepGetNumberResultsEnum.seventh),
-                              proAnalysisModel: state.proAnalysisModel,
-                              showImage: false,
-                            ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
               ),
             ),
             activateFullSafeArea: true,
+            backgroundColor: BC.white,
           );
         },
       ),

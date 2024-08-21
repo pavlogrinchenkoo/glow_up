@@ -36,7 +36,7 @@ class DeepScanningResultSectionWidget extends StatelessWidget {
         if (header != null) ...[
           Text(
             header ?? "",
-            style: BS.tex18Text.apply(color: BC.salad),
+            style: BS.tex18Text.apply(color: BC.purpleViolet),
           ),
           Space.h16,
         ],

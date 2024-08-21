@@ -35,64 +35,64 @@ class ListItemFirst extends StatelessWidget {
       frontIconPath: frontIconPath,
       deepIconPath: deepIconPath,
       sections: [
-        SectionData(
-            title: s.textureEnhancedBlackheads,
-            titleStyle: BS.tex24.apply(color: BC.white),
-            items: [],
-            space: Sizes.s10),
+        // SectionData(
+        //     title: s.textureEnhancedBlackheads,
+        //     titleStyle: BS.tex24,
+        //     items: [],
+        //     space: Sizes.s10),
         SectionData(
             title: s.analysisOfDryOilySkin,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.skinTypeClassification,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisSkinTypeEnum
                     .values[proAnalysisModel?.skin_type?.skin_type ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: s.percentageOfOiliness,
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.forehead,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value: "${proAnalysisModel?.pores_forehead?.value ?? ""}%",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
               ItemData(
                 label: s.leftCheek,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value: "${proAnalysisModel?.pores_left_cheek?.value ?? ""}%",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
               ItemData(
                 label: s.rightCheek,
-                labelStyle: BS.tex14withFont400.apply(color: BC.white),
+                labelStyle: BS.tex14withFont400,
                 value: "${proAnalysisModel?.pores_right_cheek?.value ?? ""}%",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.s10,
             useLeftPadding: true),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.blackheadCount,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: "${proAnalysisModel?.blackhead_count ?? ""} pcs",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),

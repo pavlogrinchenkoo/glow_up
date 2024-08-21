@@ -60,13 +60,13 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> buyProductDeepScan(BuildContext context) async {
     try {
-      // saveSubscribeDeep(true, context, true);
-      // await storage.write(session.isUserSubscribeDeepScan, false);
-      setState(currentState.copyWith(showCircularProgress: true));
-      CustomerInfo customerInfo =
-          await Purchases.purchaseStoreProduct(currentState.storeProduct!);
-      setState(currentState.copyWith(showCircularProgress: false));
-      checkCustomerInfoDeep(customerInfo, context, false, isLog: true);
+      saveSubscribeDeep(true, context, true);
+      await storage.write(session.isUserSubscribeDeepScan, false);
+      // setState(currentState.copyWith(showCircularProgress: true));
+      // CustomerInfo customerInfo =
+      //     await Purchases.purchaseStoreProduct(currentState.storeProduct!);
+      // setState(currentState.copyWith(showCircularProgress: false));
+      // checkCustomerInfoDeep(customerInfo, context, false, isLog: true);
     } catch (e) {
       setState(currentState.copyWith(showCircularProgress: false));
       log("Error buy deep sub $e");

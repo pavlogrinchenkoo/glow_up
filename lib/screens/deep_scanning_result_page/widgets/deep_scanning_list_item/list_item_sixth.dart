@@ -36,123 +36,123 @@ class ListItemSixth extends StatelessWidget {
       sections: [
         SectionData(
             title: s.enhancedTextureLines,
-            titleStyle: BS.tex24.apply(color: BC.white),
+            titleStyle: BS.tex24,
             items: [],
             space: Sizes.s10),
         SectionData(
             title: s.agingAnalysis,
-            titleStyle: BS.tex20Text.apply(color: BC.salad),
+            titleStyle: BS.tex20Text.apply(color: BC.purpleViolet),
             items: [],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.skinAge,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: proAnalysisModel?.skin_age?.value.toString() ?? "",
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.foreheadWrinkles,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisForeheadWrinklesEnum
                     .values[proAnalysisModel?.forehead_wrinkle?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.nasolabialFolds,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisNasolabialFoldEnum
                     .values[proAnalysisModel?.nasolabial_fold?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.crowsFeet,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisCrowsFeetEnum
                     .values[proAnalysisModel?.crows_feet?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.glabellaWrinkles,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisGlabellaWrinklesEnum
                     .values[proAnalysisModel?.glabella_wrinkle?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.fineLinesOnForehead,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisEyeFinelinesEnum
                     .values[proAnalysisModel?.eye_finelines?.value ?? 0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.fineLinesUnderLeftEye,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisFineLinesLeftEnum.values[
                         proAnalysisModel?.left_eye_finelines_severity?.value ??
                             0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
         SectionData(
             title: "",
-            titleStyle: BS.tex14withFont700.apply(color: BC.white),
+            titleStyle: BS.tex14withFont700,
             items: [
               ItemData(
                 label: s.fineLinesUnderRightEye,
-                labelStyle: BS.tex14withFont700.apply(color: BC.white),
+                labelStyle: BS.tex14withFont700,
                 value: ProAnalysisFineLinesRightEnum.values[
                         proAnalysisModel?.right_eye_finelines_severity?.value ??
                             0]
                     .getTitleText(s),
-                valueStyle: BS.tex14withFont400.apply(color: BC.salad),
+                valueStyle: BS.tex14withFont400.apply(color: BC.purpleViolet),
               ),
             ],
             space: Sizes.scaleZero),
