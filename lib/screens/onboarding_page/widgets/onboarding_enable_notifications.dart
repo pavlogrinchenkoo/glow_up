@@ -22,8 +22,11 @@ class OnboardingEnableNotifications extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    double topOffset =
-        screenHeight > 950 ? screenHeight / 1.3 : screenHeight / 1.6;
+    double topOffset = screenHeight > 950
+        ? screenHeight / 1.3
+        : screenHeight > 896
+            ? screenHeight / 1.65
+            : screenHeight / 1.6;
     return Stack(
       children: [
         Positioned(
@@ -46,7 +49,7 @@ class OnboardingEnableNotifications extends StatelessWidget {
           scaleX: screenHeight > 950 ? 0.2 : 0.4,
           alignment: Alignment.bottomCenter,
           transform: Offset(Sizes.scale,
-              screenHeight > 950 ? screenHeight / 4 : screenHeight / 7),
+              screenHeight > 950 ? screenHeight / 4 : screenHeight / 8),
           shape: BoxShape.rectangle,
           angleInRadians: pi / Sizes.s2,
           isPurpleShadow: true,
