@@ -23,13 +23,13 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
   }
 
   final List<String> ids = [
-    "looksmax_weekly_4.99",
-    "looksmax_4.99_week",
+    "glowup_weekly_4.99",
+    "glowup_4.99_week",
     "sub3",
   ];
   String subscriptionId = Platform.isAndroid
-      ? "looksmax_4.99_week:looksmax-4-99-week"
-      : "looksmax_weekly_4.99";
+      ? "glowup_4.99_week:glowupsubweek"
+      : "glowup_weekly_4.99";
   final storage = GetStorage();
   final session = Session();
 
@@ -41,14 +41,14 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> buyProduct(BuildContext context) async {
     try {
-      await storage.write(session.isUserDisableBlur, true);
-      await storage.write(session.isUserSubscribed, true);
-      context.router.push(ResultsRoute(activateSheet: false));
-      // setState(currentState.copyWith(showCircularProgress: true));
-      // CustomerInfo customerInfo =
-      //     await Purchases.purchaseStoreProduct(currentState.storeProduct!);
-      // setState(currentState.copyWith(showCircularProgress: false));
-      // checkCustomerInfo(customerInfo, context, isLog: true);
+      // await storage.write(session.isUserDisableBlur, true);
+      // await storage.write(session.isUserSubscribed, true);
+      // context.router.push(ResultsRoute(activateSheet: false));
+      setState(currentState.copyWith(showCircularProgress: true));
+      CustomerInfo customerInfo =
+          await Purchases.purchaseStoreProduct(currentState.storeProduct!);
+      setState(currentState.copyWith(showCircularProgress: false));
+      checkCustomerInfo(customerInfo, context, isLog: true);
     } catch (e) {
       setState(currentState.copyWith(showCircularProgress: false));
       log("Error buy sub $e");
