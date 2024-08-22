@@ -121,7 +121,7 @@ class CustomShowBigResults extends StatelessWidget {
             Container(
               width: double.infinity,
               height: 1,
-              color: BC.white.withOpacity(0.6),
+              color: BC.lightGray.withOpacity(0.4),
             ),
             for (var item in listModels)
               Padding(

@@ -80,9 +80,10 @@ class CustomButton extends StatelessWidget {
                       children: [
                         Text(title,
                             style: textStyle ??
-                                BS.tex18Text.copyWith(
+                                BS.tex16.copyWith(
                                     color: textColor ??
-                                        (outLine ? BC.black : BC.white))),
+                                        (outLine ? BC.black : BC.white)),
+                            overflow: TextOverflow.ellipsis),
                         const SizedBox(height: Sizes.s8),
                         Text(subTitle ?? "",
                             style: textStyle ??
