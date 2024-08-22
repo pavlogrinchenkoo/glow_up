@@ -832,7 +832,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
       ScreenshotController screenShotController) async {
     setState(currentState.copyWith(isTakingPhoto: true));
     try {
-      if (await storage.read(session.saveIconShare) != null) {
+      if (await storage.read(session.saveIconShare) == null) {
         await Future.delayed(const Duration(milliseconds: 3000));
         final imgBytes = await screenShotController.capture(pixelRatio: 2);
         final Directory appDir = await getApplicationDocumentsDirectory();

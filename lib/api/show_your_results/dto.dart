@@ -170,7 +170,7 @@ enum ColorGroupEnum {
   Color getColor(ColorGroupEnum colorGroupEnum) {
     switch (this) {
       case black:
-        return BC.black;
+        return BC.darkGray.withOpacity(0.9);
       case lightGreen:
         return BC.lightGreen;
       case pinkLight:

@@ -99,7 +99,7 @@ class _GuidePageState extends State<GuidePage> {
                               const Spacer(),
                               Text(
                                 itemModel.guideTextGroupEnum.getTitle(s),
-                                style: BS.tex21Text.apply(color: Colors.white),
+                                style: BS.tex21Text.apply(color: BC.lightGray),
                                 textAlign: TextAlign.center,
                               ),
                               Space.h10,

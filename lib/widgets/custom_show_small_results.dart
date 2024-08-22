@@ -111,7 +111,7 @@ class CustomShowSmallResults extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: s.youAreA,
-                                  style: BS.tex21Text,
+                                  style: BS.tex21Text.apply(color: BC.lightGray),
                                 ),
                                 const WidgetSpan(
                                   child: SizedBox(width: Sizes.s8),
@@ -150,7 +150,7 @@ class CustomShowSmallResults extends StatelessWidget {
                   Space.h4,
                   Text(
                     topWorld,
-                    style: BS.tex16,
+                    style: BS.tex16.apply(color: BC.lightGray),
                   ),
                 ],
               )
