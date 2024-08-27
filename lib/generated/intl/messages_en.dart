@@ -762,7 +762,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingReviewButtonText":
             MessageLookupByLibrary.simpleMessage("Leave a review"),
         "onboardingReviewText": MessageLookupByLibrary.simpleMessage(
-            "Leave a review and help us empower more men. Together, we rise."),
+            "Leave a review and help us empower more women. Together, we shine."),
         "onboardingReviewTitleText":
             MessageLookupByLibrary.simpleMessage("Your Review, Our Strength"),
         "onboardingShapeText": MessageLookupByLibrary.simpleMessage(

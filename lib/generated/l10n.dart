@@ -170,10 +170,10 @@ class S {
     );
   }
 
-  /// `Leave a review and help us empower more men. Together, we rise.`
+  /// `Leave a review and help us empower more women. Together, we shine.`
   String get onboardingReviewText {
     return Intl.message(
-      'Leave a review and help us empower more men. Together, we rise.',
+      'Leave a review and help us empower more women. Together, we shine.',
       name: 'onboardingReviewText',
       desc: '',
       args: [],
