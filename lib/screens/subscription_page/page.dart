@@ -38,9 +38,13 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     final newHeight = height > 950
         ? Platform.isIOS
-            ? height / 1.6
+            ? width > 500
+                ? height / 1.5
+                : height / 1.6
             : height / 2.2
         : height > 840
             ? height / 2.2
@@ -49,7 +53,6 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                     ? height / 1.8
                     : height / 2.05
                 : height / 1.9;
-    final width = MediaQuery.of(context).size.width;
     final S s = S.of(context);
     return CustomStreamBuilder(
       bloc: _bloc,
@@ -64,37 +67,37 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
             child: state.showCircularProgress
                 ? Center(child: AppCircularProgressIndicator(color: BC.white))
                 : Stack(
-                  children: [
-                    CustomBokeh(
-                      size: height / 1,
-                      scaleY: 1,
-                      scaleX: 0.5,
-                      alignment: Alignment.center,
-                      transform:
-                      Offset(Sizes.scale, height/12),
-                      shape: BoxShape.rectangle,
-                      angleInRadians: pi / Sizes.s2,
-                      blurWhiteHard: true,
-                    ),
-                    CustomBokeh(
-                      size: height / 1,
-                      scaleY: 1,
-                      scaleX: 1,
-                      alignment: Alignment.bottomCenter,
-                      transform:
-                      Offset(Sizes.scale, height / 2.5),
-                      shape: BoxShape.rectangle,
-                      angleInRadians: pi / Sizes.s2,
-                      blurWhiteHard: true,
-                    ),
-                    Column(
+                    children: [
+                      CustomBokeh(
+                        size: height / 1,
+                        scaleY: 1,
+                        scaleX: 0.5,
+                        alignment: Alignment.center,
+                        transform: Offset(Sizes.scale, height / 12),
+                        shape: BoxShape.rectangle,
+                        angleInRadians: pi / Sizes.s2,
+                        blurWhiteHard: true,
+                      ),
+                      CustomBokeh(
+                        size: height / 1,
+                        scaleY: 1,
+                        scaleX: 1,
+                        alignment: Alignment.bottomCenter,
+                        transform: Offset(Sizes.scale, height / 2.5),
+                        shape: BoxShape.rectangle,
+                        angleInRadians: pi / Sizes.s2,
+                        blurWhiteHard: true,
+                      ),
+                      Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          height > 840
-                              ? SizedBox(height: height / Sizes.s10)
-                              : height > 670
-                                  ? SizedBox(height: height / Sizes.s15)
-                                  : SizedBox(height: height / Sizes.s25),
+                          width > 500
+                              ? SizedBox(height: height / Sizes.s15)
+                              : height > 840
+                                  ? SizedBox(height: height / Sizes.s10)
+                                  : height > 670
+                                      ? SizedBox(height: height / Sizes.s15)
+                                      : SizedBox(height: height / Sizes.s25),
                           Text(
                             s.maximizeYourself,
                             style: BS.tex32Text.apply(color: BC.white),
@@ -108,8 +111,8 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                           ),
                           Space.h20,
                           Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: Sizes.s25),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: Sizes.s25),
                             child: Column(
                               children: [
                                 CustomCardSwiper(
@@ -123,27 +126,33 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                       children: [
                                         Center(
                                             child: ClipRRect(
-                                                borderRadius: BorderRadius.circular(
-                                                    AppRadius.r20),
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        AppRadius.r20),
                                                 child: state.listSubscribeModel
                                                         .isNotEmpty
                                                     ? state
-                                                        .listSubscribeModel[index]
+                                                        .listSubscribeModel[
+                                                            index]
                                                         .subscribePhotoGroupEnum
                                                         .getImage()
                                                         .image(
                                                           fit: BoxFit.cover,
                                                         )
-                                                    : SubscribePhotoGroupEnum.first
+                                                    : SubscribePhotoGroupEnum
+                                                        .first
                                                         .getImage()
-                                                        .image(fit: BoxFit.cover))),
+                                                        .image(
+                                                            fit:
+                                                                BoxFit.cover))),
                                         height > 840
                                             ? SizedBox(
                                                 height: newHeight / Sizes.s80)
                                             : const SizedBox.shrink(),
                                         Text(
                                             state.listSubscribeModel.isNotEmpty
-                                                ? state.listSubscribeModel[index]
+                                                ? state
+                                                    .listSubscribeModel[index]
                                                     .subscribeTextGroupEnum
                                                     .getTitle(s)
                                                 : SubscribeTextGroupEnum.first
@@ -160,7 +169,8 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                           if (height > 840) Space.h16,
                           Padding(
                             padding: EdgeInsets.symmetric(
-                                horizontal: height > 840 ? Sizes.s30 : Sizes.s25),
+                                horizontal:
+                                    height > 840 ? Sizes.s30 : Sizes.s25),
                             child: Text(
                               s.poweredAI,
                               style: BS.tex12Text.apply(color: BC.avatarGrey),
@@ -169,13 +179,14 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                           ),
                           const Spacer(),
                           Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: Sizes.s25),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: Sizes.s25),
                             child: Column(
                               children: [
                                 SizedBox(
-                                    height:
-                                        height > 950 ? height / 60 : height / 40),
+                                    height: height > 950
+                                        ? height / 60
+                                        : height / 40),
                                 CustomButton(
                                   s.unlockFillAccess,
                                   onTap: () {
@@ -233,9 +244,12 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                     height < 950 &&
                                     Platform.isAndroid)
                                   SizedBox(height: height / 100),
-                                if (height > 840 && height < 950 && Platform.isIOS)
+                                if (height > 840 &&
+                                    height < 950 &&
+                                    Platform.isIOS)
                                   SizedBox(height: height / 25),
-                                if (height > 950) SizedBox(height: height / 40),
+                                if (height > 950 && width < 500)
+                                  SizedBox(height: height / 40),
                                 if (height > 700 && Platform.isAndroid)
                                   SizedBox(height: height / 45),
                                 if (height < 670) SizedBox(height: height / 45),
@@ -244,9 +258,8 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                           ),
                         ],
                       ),
-
-                  ],
-                ),
+                    ],
+                  ),
           ),
           activateFullSafeArea: true,
         );
