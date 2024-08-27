@@ -207,7 +207,8 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
     try {
       const androidLink =
           "https://play.google.com/store/apps/details?id=com.looksmax.io";
-      const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
+      const iosLink =
+          "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareIconPath = await storage.read(session.saveIconShare);
       await Share.shareXFiles(
         text: "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
@@ -569,18 +570,18 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           "",
           ColorGroupEnum.black),
       createShowYourResultsModel(
-          ImageTextGroupEnum.mainGirlImage,
-          "${mainResults?.valueScoreFemale}%",
-          s.scoreGivenByWomen,
-          "${mainResults?.scoreEnumFemale.getTitle(s)}",
-          mainResults?.scoreEnumFemale.getColor(mainResults.scoreEnumFemale) ??
-              ColorGroupEnum.black),
-      createShowYourResultsModel(
           ImageTextGroupEnum.mainManImage,
           "${mainResults?.valueScoreMale}%",
           s.scoreGivenByMen,
           "${mainResults?.scoreEnumMale.getTitle(s)}",
           mainResults?.scoreEnumMale.getColor(mainResults.scoreEnumFemale) ??
+              ColorGroupEnum.black),
+      createShowYourResultsModel(
+          ImageTextGroupEnum.mainGirlImage,
+          "${mainResults?.valueScoreFemale}%",
+          s.scoreGivenByWomen,
+          "${mainResults?.scoreEnumFemale.getTitle(s)}",
+          mainResults?.scoreEnumFemale.getColor(mainResults.scoreEnumFemale) ??
               ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainFlowersImage,

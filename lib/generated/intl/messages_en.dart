@@ -651,7 +651,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "mainClockImage": MessageLookupByLibrary.simpleMessage("⏰"),
         "mainFlowersImage": MessageLookupByLibrary.simpleMessage("🌷"),
         "mainGirlImage": MessageLookupByLibrary.simpleMessage("👩🏼"),
-        "mainManImage": MessageLookupByLibrary.simpleMessage("👨🏻"),
+        "mainManImage": MessageLookupByLibrary.simpleMessage("👨"),
         "mainStrongImage": MessageLookupByLibrary.simpleMessage("💪"),
         "maintenance": MessageLookupByLibrary.simpleMessage("Maintenance:"),
         "maintenanceDescription": MessageLookupByLibrary.simpleMessage(

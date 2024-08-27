@@ -730,10 +730,10 @@ class S {
     );
   }
 
-  /// `👨🏻`
+  /// `👨`
   String get mainManImage {
     return Intl.message(
-      '👨🏻',
+      '👨',
       name: 'mainManImage',
       desc: '',
       args: [],
