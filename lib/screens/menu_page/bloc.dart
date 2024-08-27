@@ -89,10 +89,9 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
   void toResultWithSheet(BuildContext context) {
     context.router.maybePop<bool>(true);
   }
-
   Future<void> openInstagram() async {
-    const nativeUrl = "instagram://user?username=looksmax_guide";
-    const webUrl = "https://www.instagram.com/looksmax_guide/";
+    const nativeUrl = "instagram://user?username=glow_up_app";
+    const webUrl = "https://www.instagram.com/glow_up_app/";
     if (await canLaunchUrl(Uri.parse(nativeUrl))) {
       await launchUrl(Uri.parse(nativeUrl));
       setState(currentState.copyWith(isInstagramShow: true));
@@ -106,9 +105,9 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> openTikTok() async {
     const nativeUrlAndroid =
-        "intent://user/@looksmaxapp#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
-    const nativeUrlIOS = "snssdk1233://user/@looksmaxapp";
-    const webUrl = "https://www.tiktok.com/@looksmaxapp";
+        "intent://user/@glow_up_app#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
+    const nativeUrlIOS = "snssdk1233://user/@glow_up_app";
+    const webUrl = "https://www.tiktok.com/@glow_up_app";
     bool launched = false;
     if (await canLaunchUrl(
         Uri.parse(Platform.isAndroid ? nativeUrlAndroid : nativeUrlIOS))) {

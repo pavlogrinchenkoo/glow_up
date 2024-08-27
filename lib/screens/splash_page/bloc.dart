@@ -28,7 +28,8 @@ class SplashBloc extends BlocBaseWithState<ScreenState> {
         if (checkShowOnboarding) {
           await NotificationService().initNotification();
           await hasActiveSubscription();
-          context.router.replaceAll([ResultsRoute(activateSheet: false)]);
+          context.router.replaceAll([MenuRoute()]);
+          // context.router.replaceAll([ResultsRoute(activateSheet: false)]);
         } else {
           context.router
               .replaceAll([OnboardingRoute(isUseFirstOnboarding: false)]);
