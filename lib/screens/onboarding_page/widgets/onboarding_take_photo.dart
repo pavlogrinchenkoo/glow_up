@@ -119,16 +119,17 @@ class _OnboardingTakePhotoState extends State<OnboardingTakePhoto> {
             ),
           ),
         ),
-        CustomBokeh(
-          size: screenWidth / 1.5,
-          scaleY: 0.7,
-          scaleX: 0.4,
-          alignment: Alignment.bottomCenter,
-          transform: Offset(Sizes.scale, screenHeight / 14),
-          shape: BoxShape.rectangle,
-          angleInRadians: pi / Sizes.s2,
-          blurWhiteHard: true,
-        ),
+        if (screenWidth < 500)
+          CustomBokeh(
+            size: screenWidth / 1.5,
+            scaleY: 0.7,
+            scaleX: 0.4,
+            alignment: Alignment.bottomCenter,
+            transform: Offset(Sizes.scale, screenHeight / 14),
+            shape: BoxShape.rectangle,
+            angleInRadians: pi / Sizes.s2,
+            blurWhiteHard: true,
+          ),
         Padding(
           padding: EdgeInsets.only(top: topOffset * 1.0),
           child: Center(
