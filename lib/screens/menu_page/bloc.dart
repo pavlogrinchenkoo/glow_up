@@ -161,7 +161,7 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
           "https://play.google.com/store/apps/details?id=com.looksmax.io";
       const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareText =
-          "Are you a 10/10? Check your rating quickly with Looksmax!\n\n"
+          "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
           "${Platform.isIOS ? iosLink : androidLink}";
       await Share.share(shareText);
     } catch (e) {

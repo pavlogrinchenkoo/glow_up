@@ -210,7 +210,7 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
       const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareIconPath = await storage.read(session.saveIconShare);
       await Share.shareXFiles(
-        text: "Are you a 10/10? Check your rating quickly with Looksmax!\n\n"
+        text: "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
             "${Platform.isIOS ? iosLink : androidLink}",
         [XFile(shareIconPath)],
       );
