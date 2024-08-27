@@ -76,7 +76,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
               color: BC.pink,
             ),
             child: state.showCircularProgress
-                ? const Center(child: AppCircularProgressIndicator())
+                ? Center(child: AppCircularProgressIndicator(color: BC.white))
                 : state.showIndicator
                     ? DeepScanningIndicatorWidget(
                         valueProgress: state.valueProgress,

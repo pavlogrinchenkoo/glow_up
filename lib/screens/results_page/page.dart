@@ -77,7 +77,7 @@ class _ResultsPageState extends State<ResultsPage> {
                         : height / 2.0;
           }
           return state.loading
-              ? const Center(child: AppCircularProgressIndicator())
+              ? Center(child: AppCircularProgressIndicator(color: BC.white))
               : Stack(
                   children: [
                     Screenshot(

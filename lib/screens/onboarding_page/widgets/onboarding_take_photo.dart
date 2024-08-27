@@ -107,11 +107,12 @@ class _OnboardingTakePhotoState extends State<OnboardingTakePhoto> {
                           ),
                         );
                       }
-                      return const Center(
-                          child: AppCircularProgressIndicator());
+                      return Center(
+                          child: AppCircularProgressIndicator(color: BC.white));
                     }
                   } else {
-                    return const Center(child: AppCircularProgressIndicator());
+                    return Center(
+                        child: AppCircularProgressIndicator(color: BC.white));
                   }
                 },
               ),

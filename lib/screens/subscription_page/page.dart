@@ -62,7 +62,7 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
               color: BC.pink,
             ),
             child: state.showCircularProgress
-                ? const Center(child: AppCircularProgressIndicator())
+                ? Center(child: AppCircularProgressIndicator(color: BC.white))
                 : Stack(
                   children: [
                     CustomBokeh(

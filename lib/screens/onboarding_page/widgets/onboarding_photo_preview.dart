@@ -33,7 +33,7 @@ class OnboardingPhotoPreview extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     double topOffset = screenHeight / 1.4;
     return showCircularIndicator
-        ? const Center(child: AppCircularProgressIndicator())
+        ? Center(child: AppCircularProgressIndicator(color: BC.white))
         : Stack(
             children: [
               Padding(

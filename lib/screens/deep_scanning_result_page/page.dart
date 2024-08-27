@@ -78,7 +78,7 @@ class _DeepScanningResultPageState extends State<DeepScanningResultPage> {
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: Sizes.s20),
                 child: state.proAnalysisModel == null
-                    ? const Center(child: AppCircularProgressIndicator())
+                    ? Center(child: AppCircularProgressIndicator(color: BC.white))
                     : Stack(
                         children: [
                           CustomBokeh(
