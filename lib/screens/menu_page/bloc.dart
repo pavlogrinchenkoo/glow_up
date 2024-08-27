@@ -60,7 +60,7 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
       {
         'text': (s) => s.shareWithFriends,
         'action': () async {
-          await sharingText();
+          await sharingText(context);
           AnalyticsAmplitude().logMenuShareWithFriend();
         },
       },
@@ -89,6 +89,7 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
   void toResultWithSheet(BuildContext context) {
     context.router.maybePop<bool>(true);
   }
+
   Future<void> openInstagram() async {
     const nativeUrl = "instagram://user?username=glow_up_app";
     const webUrl = "https://www.instagram.com/glow_up_app/";
@@ -154,17 +155,26 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
     }
   }
 
-  Future<void> sharingText() async {
+  Future<void> sharingText(BuildContext context) async {
     try {
+      final height = MediaQuery.of(context).size.height;
+      final width = MediaQuery.of(context).size.width;
       const androidLink =
           "https://play.google.com/store/apps/details?id=com.looksmax.io";
-      const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
+      const iosLink =
+          "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareText =
           "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
           "${Platform.isIOS ? iosLink : androidLink}";
-      await Share.share(shareText);
+      width > 500
+          ? await Share.share(
+              shareText,
+              sharePositionOrigin:
+                  Rect.fromLTWH(width / 2.8, height / 2.8, 100, 100),
+            )
+          : await Share.share(shareText);
     } catch (e) {
-      throw Exception("Error sharing image: $e");
+      throw Exception("Error sharing Text: $e");
     }
   }
 }

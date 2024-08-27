@@ -185,7 +185,7 @@ class _ResultsPageState extends State<ResultsPage> {
                                             await _bloc
                                                 .saveImageToCacheForSharing(
                                                     screenshotController);
-                                            await _bloc.sharingWithFriend();
+                                            await _bloc.sharingWithFriend(context);
                                             AnalyticsAmplitude()
                                                 .logResultsShareWithFriend();
                                           },
