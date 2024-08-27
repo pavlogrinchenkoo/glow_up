@@ -107,19 +107,6 @@ class _ResultsPageState extends State<ResultsPage> {
                           ),
                           child: Stack(
                             children: [
-                              state.useBlurBlock
-                                  ? const SizedBox.shrink()
-                                  : CustomBokeh(
-                                      size: height / 1,
-                                      scaleY: 1,
-                                      scaleX: 0.4,
-                                      alignment: Alignment.bottomCenter,
-                                      transform:
-                                          Offset(Sizes.scale, height / 2.3),
-                                      shape: BoxShape.rectangle,
-                                      angleInRadians: pi / Sizes.s2,
-                                      blurWhiteHard: true,
-                                    ),
                               Column(
                                 children: [
                                   height < 840
@@ -166,6 +153,24 @@ class _ResultsPageState extends State<ResultsPage> {
                                       ]);
                                     },
                                   ),
+                                ],
+                              ),
+                              state.useBlurBlock
+                                  ? const SizedBox.shrink()
+                                  : CustomBokeh(
+                                      size: height / 1,
+                                      scaleY: 1,
+                                      scaleX: 0.6,
+                                      alignment: Alignment.bottomCenter,
+                                      transform:
+                                          Offset(Sizes.scale, height / 2.3),
+                                      shape: BoxShape.rectangle,
+                                      angleInRadians: pi / Sizes.s2,
+                                      blurWhiteHard: true,
+                                    ),
+                              Column(
+                                children: [
+                                  const Spacer(),
                                   !state.useBlurBlock
                                       ? ResultFooterButtonWithoutBlurWidget(
                                           state: state,
@@ -186,6 +191,7 @@ class _ResultsPageState extends State<ResultsPage> {
                                           },
                                         )
                                       : const SizedBox.shrink(),
+                                  height > 840 ? Space.h32 : Space.h24,
                                 ],
                               ),
                               state.useBlurBlock
