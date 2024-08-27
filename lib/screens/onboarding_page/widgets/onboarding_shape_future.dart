@@ -43,17 +43,18 @@ class OnboardingShapeFuture extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        CustomBokeh(
-          size: screenWidth,
-          scaleY: screenHeight > 950 ? 0.8 : 0.6,
-          scaleX: screenHeight > 950 ? 0.2 : 0.4,
-          alignment: Alignment.bottomCenter,
-          transform: Offset(
-              Sizes.scale, screenHeight > 950 ? screenHeight / 4 : Sizes.s100),
-          shape: BoxShape.rectangle,
-          angleInRadians: pi / Sizes.s2,
-          isPurpleShadow: true,
-        ),
+        if (screenWidth < 500)
+          CustomBokeh(
+            size: screenWidth,
+            scaleY: screenHeight > 950 ? 0.8 : 0.6,
+            scaleX: screenHeight > 950 ? 0.2 : 0.4,
+            alignment: Alignment.bottomCenter,
+            transform: Offset(Sizes.scale,
+                screenHeight > 950 ? screenHeight / 4 : Sizes.s100),
+            shape: BoxShape.rectangle,
+            angleInRadians: pi / Sizes.s2,
+            isPurpleShadow: true,
+          ),
         Padding(
           padding: EdgeInsets.only(top: topOffset),
           child: Column(

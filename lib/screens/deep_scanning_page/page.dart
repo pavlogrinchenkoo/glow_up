@@ -43,7 +43,9 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
     final width = MediaQuery.of(context).size.width;
     final newHeight = height > 950
         ? Platform.isIOS
-            ? height / 1.9
+            ? width > 500
+                ? height / 1.85
+                : height / 1.9
             : height / 2.25
         : height > 840
             ? Platform.isIOS
@@ -76,7 +78,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
               color: BC.pink,
             ),
             child: state.showCircularProgress
-                ? const Center(child: AppCircularProgressIndicator())
+                ? Center(child: AppCircularProgressIndicator(color: BC.white))
                 : state.showIndicator
                     ? DeepScanningIndicatorWidget(
                         valueProgress: state.valueProgress,
@@ -92,8 +94,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                             scaleY: 1,
                             scaleX: 0.4,
                             alignment: Alignment.center,
-                            transform:
-                            Offset(Sizes.scale, height/10),
+                            transform: Offset(Sizes.scale, height / 10),
                             shape: BoxShape.rectangle,
                             angleInRadians: pi / Sizes.s2,
                             blurWhiteHard: true,
@@ -103,8 +104,7 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                             scaleY: 1,
                             scaleX: 1,
                             alignment: Alignment.bottomCenter,
-                            transform:
-                            Offset(Sizes.scale, height / 2.5),
+                            transform: Offset(Sizes.scale, height / 2.5),
                             shape: BoxShape.rectangle,
                             angleInRadians: pi / Sizes.s2,
                             blurWhiteHard: true,
@@ -112,9 +112,11 @@ class _DeepScanningPageState extends State<DeepScanningPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              height > 840
-                                  ? SizedBox(height: height / Sizes.s20)
-                                  : const SizedBox.shrink(),
+                              width > 500
+                                  ? SizedBox(height: height / Sizes.s25)
+                                  : height > 840
+                                      ? SizedBox(height: height / Sizes.s20)
+                                      : const SizedBox.shrink(),
                               Text(
                                 s.aiPoweredSkinAnalyzer,
                                 style: BS.tex24.apply(color: BC.white),

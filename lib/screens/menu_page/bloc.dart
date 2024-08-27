@@ -60,7 +60,7 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
       {
         'text': (s) => s.shareWithFriends,
         'action': () async {
-          await sharingText();
+          await sharingText(context);
           AnalyticsAmplitude().logMenuShareWithFriend();
         },
       },
@@ -91,8 +91,8 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
   }
 
   Future<void> openInstagram() async {
-    const nativeUrl = "instagram://user?username=looksmax_guide";
-    const webUrl = "https://www.instagram.com/looksmax_guide/";
+    const nativeUrl = "instagram://user?username=glow_up_app";
+    const webUrl = "https://www.instagram.com/glow_up_app/";
     if (await canLaunchUrl(Uri.parse(nativeUrl))) {
       await launchUrl(Uri.parse(nativeUrl));
       setState(currentState.copyWith(isInstagramShow: true));
@@ -106,9 +106,9 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
 
   Future<void> openTikTok() async {
     const nativeUrlAndroid =
-        "intent://user/@looksmaxapp#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
-    const nativeUrlIOS = "snssdk1233://user/@looksmaxapp";
-    const webUrl = "https://www.tiktok.com/@looksmaxapp";
+        "intent://user/@glow_up_app#Intent;scheme=https;package=com.zhiliaoapp.musically;end";
+    const nativeUrlIOS = "snssdk1233://user/@glow_up_app";
+    const webUrl = "https://www.tiktok.com/@glow_up_app";
     bool launched = false;
     if (await canLaunchUrl(
         Uri.parse(Platform.isAndroid ? nativeUrlAndroid : nativeUrlIOS))) {
@@ -155,17 +155,26 @@ class MenuBloc extends BlocBaseWithState<ScreenState> {
     }
   }
 
-  Future<void> sharingText() async {
+  Future<void> sharingText(BuildContext context) async {
     try {
+      final height = MediaQuery.of(context).size.height;
+      final width = MediaQuery.of(context).size.width;
       const androidLink =
           "https://play.google.com/store/apps/details?id=com.looksmax.io";
-      const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
+      const iosLink =
+          "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareText =
-          "Are you a 10/10? Check your rating quickly with Looksmax!\n\n"
+          "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
           "${Platform.isIOS ? iosLink : androidLink}";
-      await Share.share(shareText);
+      width > 500
+          ? await Share.share(
+              shareText,
+              sharePositionOrigin:
+                  Rect.fromLTWH(width / 2.8, height / 2.8, 100, 100),
+            )
+          : await Share.share(shareText);
     } catch (e) {
-      throw Exception("Error sharing image: $e");
+      throw Exception("Error sharing Text: $e");
     }
   }
 }

@@ -33,7 +33,7 @@ class OnboardingPhotoPreview extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     double topOffset = screenHeight / 1.4;
     return showCircularIndicator
-        ? const Center(child: AppCircularProgressIndicator())
+        ? Center(child: AppCircularProgressIndicator(color: BC.white))
         : Stack(
             children: [
               Padding(
@@ -102,14 +102,14 @@ class OnboardingPhotoPreview extends StatelessWidget {
                                     ConnectionState.done) {
                                   return Image.file(
                                     File(frontIconPath ?? ""),
-                                    width: screenHeight / 2,
-                                    height: screenHeight / 1.9,
+                                    width: screenHeight / 2.5,
+                                    height: screenHeight / 1.95,
                                     fit: BoxFit.cover,
                                   );
                                 } else {
                                   return Container(
-                                    width: screenHeight / 2,
-                                    height: screenHeight / 1.9,
+                                    width: screenHeight / 2.5,
+                                    height: screenHeight / 1.95,
                                     color: BC.black,
                                     child: const Center(
                                       child: CircularProgressIndicator(),

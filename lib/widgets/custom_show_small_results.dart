@@ -42,7 +42,7 @@ class CustomShowSmallResults extends StatelessWidget {
         width: double.infinity,
         child: Container(
           decoration: BoxDecoration(
-            color: BC.white.withOpacity(0.4),
+            color: BC.white.withOpacity(0.6),
             borderRadius: BorderRadius.circular(AppRadius.r20),
             border: Border.all(
               color: BC.white.withOpacity(1),

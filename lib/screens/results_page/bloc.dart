@@ -203,17 +203,28 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
     context.router.push(const DeepScanningRoute());
   }
 
-  Future<void> sharingWithFriend() async {
+  Future<void> sharingWithFriend(BuildContext context) async {
     try {
+      final height = MediaQuery.of(context).size.height;
+      final width = MediaQuery.of(context).size.width;
       const androidLink =
           "https://play.google.com/store/apps/details?id=com.looksmax.io";
-      const iosLink = "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
+      const iosLink =
+          "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
       final shareIconPath = await storage.read(session.saveIconShare);
-      await Share.shareXFiles(
-        text: "Are you a 10/10? Check your rating quickly with Looksmax!\n\n"
-            "${Platform.isIOS ? iosLink : androidLink}",
-        [XFile(shareIconPath)],
-      );
+      width > 500
+          ? await Share.shareXFiles(
+              text:
+                  "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
+                  "${Platform.isIOS ? iosLink : androidLink}",
+              [XFile(shareIconPath)],
+              sharePositionOrigin: Rect.fromLTWH(width/1.35, height/1.8, 100, 100))
+          : await Share.shareXFiles(
+              text:
+                  "Are you a 10/10? Check your rating quickly with GlowUp!\n\n"
+                  "${Platform.isIOS ? iosLink : androidLink}",
+              [XFile(shareIconPath)],
+            );
     } catch (e) {
       throw Exception("Error sharing image: $e");
     }
@@ -569,18 +580,18 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
           "",
           ColorGroupEnum.black),
       createShowYourResultsModel(
-          ImageTextGroupEnum.mainGirlImage,
-          "${mainResults?.valueScoreFemale}%",
-          s.scoreGivenByWomen,
-          "${mainResults?.scoreEnumFemale.getTitle(s)}",
-          mainResults?.scoreEnumFemale.getColor(mainResults.scoreEnumFemale) ??
-              ColorGroupEnum.black),
-      createShowYourResultsModel(
           ImageTextGroupEnum.mainManImage,
           "${mainResults?.valueScoreMale}%",
           s.scoreGivenByMen,
           "${mainResults?.scoreEnumMale.getTitle(s)}",
           mainResults?.scoreEnumMale.getColor(mainResults.scoreEnumFemale) ??
+              ColorGroupEnum.black),
+      createShowYourResultsModel(
+          ImageTextGroupEnum.mainGirlImage,
+          "${mainResults?.valueScoreFemale}%",
+          s.scoreGivenByWomen,
+          "${mainResults?.scoreEnumFemale.getTitle(s)}",
+          mainResults?.scoreEnumFemale.getColor(mainResults.scoreEnumFemale) ??
               ColorGroupEnum.black),
       createShowYourResultsModel(
           ImageTextGroupEnum.mainFlowersImage,

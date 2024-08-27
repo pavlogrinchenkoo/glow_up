@@ -77,7 +77,7 @@ class _ResultsPageState extends State<ResultsPage> {
                         : height / 2.0;
           }
           return state.loading
-              ? const Center(child: AppCircularProgressIndicator())
+              ? Center(child: AppCircularProgressIndicator(color: BC.white))
               : Stack(
                   children: [
                     Screenshot(
@@ -107,19 +107,6 @@ class _ResultsPageState extends State<ResultsPage> {
                           ),
                           child: Stack(
                             children: [
-                              state.useBlurBlock
-                                  ? const SizedBox.shrink()
-                                  : CustomBokeh(
-                                      size: height / 1,
-                                      scaleY: 1,
-                                      scaleX: 0.4,
-                                      alignment: Alignment.bottomCenter,
-                                      transform:
-                                          Offset(Sizes.scale, height / 2.3),
-                                      shape: BoxShape.rectangle,
-                                      angleInRadians: pi / Sizes.s2,
-                                      blurWhiteHard: true,
-                                    ),
                               Column(
                                 children: [
                                   height < 840
@@ -166,6 +153,24 @@ class _ResultsPageState extends State<ResultsPage> {
                                       ]);
                                     },
                                   ),
+                                ],
+                              ),
+                              state.useBlurBlock
+                                  ? const SizedBox.shrink()
+                                  : CustomBokeh(
+                                      size: height / 1,
+                                      scaleY: 1,
+                                      scaleX: 0.6,
+                                      alignment: Alignment.bottomCenter,
+                                      transform:
+                                          Offset(Sizes.scale, height / 2.3),
+                                      shape: BoxShape.rectangle,
+                                      angleInRadians: pi / Sizes.s2,
+                                      blurWhiteHard: true,
+                                    ),
+                              Column(
+                                children: [
+                                  const Spacer(),
                                   !state.useBlurBlock
                                       ? ResultFooterButtonWithoutBlurWidget(
                                           state: state,
@@ -180,12 +185,13 @@ class _ResultsPageState extends State<ResultsPage> {
                                             await _bloc
                                                 .saveImageToCacheForSharing(
                                                     screenshotController);
-                                            await _bloc.sharingWithFriend();
+                                            await _bloc.sharingWithFriend(context);
                                             AnalyticsAmplitude()
                                                 .logResultsShareWithFriend();
                                           },
                                         )
                                       : const SizedBox.shrink(),
+                                  height > 840 ? Space.h32 : Space.h24,
                                 ],
                               ),
                               state.useBlurBlock

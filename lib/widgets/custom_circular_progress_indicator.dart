@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
-
 class AppCircularProgressIndicator extends StatelessWidget {
   final double? size;
   final Color? color;
@@ -11,7 +10,8 @@ class AppCircularProgressIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext c) {
-    return Center(child: LoadingAnimationWidget.beat(
-        color: const Color(0xff7562D1), size: size ?? 80));
+    return Center(
+        child: LoadingAnimationWidget.beat(
+            color: color ?? Color(0xff7562D1), size: size ?? 80));
   }
 }

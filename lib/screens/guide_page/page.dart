@@ -75,14 +75,20 @@ class _GuidePageState extends State<GuidePage> {
                         ? Column(
                             children: [
                               itemModel.guideImageGroupEnum.getImage().image(
-                                    height: height < 840
-                                        ? height / 5.5
-                                        : height / 6.5,
-                                    width: width / 2.5,
+                                    height: width > 500
+                                        ? height / 4.5
+                                        : height < 840
+                                            ? height / 5.5
+                                            : height / 6.5,
+                                    width:
+                                        width > 500 ? width / 2.3 : width / 2.5,
                                   ),
+                              if (width > 500) Space.h24,
                               Text(
                                 itemModel.guideTextGroupEnum.getTitle(s),
-                                style: BS.tex21Text.apply(color: Colors.white),
+                                style: width > 500
+                                    ? BS.tex24.apply(color: Colors.white)
+                                    : BS.tex21Text.apply(color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                             ],

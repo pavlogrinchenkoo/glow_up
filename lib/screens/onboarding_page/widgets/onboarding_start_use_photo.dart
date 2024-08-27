@@ -88,13 +88,13 @@ class OnboardingStartUsePhoto extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
                 child: frontSelfie
                     ? Assets.images.onboarding.onboardingFrontSelfie.image(
-                        width: screenHeight / 2,
-                        height: screenHeight / 1.9,
+                        width: screenHeight / 2.5,
+                        height: screenHeight / 1.95,
                         fit: BoxFit.cover,
                       )
                     : Assets.images.onboarding.onboardingSideSelfie.image(
-                        width: screenHeight / 2,
-                        height: screenHeight / 1.9,
+                        width: screenHeight / 2.5,
+                        height: screenHeight / 1.95,
                         fit: BoxFit.cover,
                       ),
               ),

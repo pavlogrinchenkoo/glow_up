@@ -651,7 +651,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "mainClockImage": MessageLookupByLibrary.simpleMessage("⏰"),
         "mainFlowersImage": MessageLookupByLibrary.simpleMessage("🌷"),
         "mainGirlImage": MessageLookupByLibrary.simpleMessage("👩🏼"),
-        "mainManImage": MessageLookupByLibrary.simpleMessage("👨🏻"),
+        "mainManImage": MessageLookupByLibrary.simpleMessage("👨"),
         "mainStrongImage": MessageLookupByLibrary.simpleMessage("💪"),
         "maintenance": MessageLookupByLibrary.simpleMessage("Maintenance:"),
         "maintenanceDescription": MessageLookupByLibrary.simpleMessage(
@@ -762,7 +762,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboardingReviewButtonText":
             MessageLookupByLibrary.simpleMessage("Leave a review"),
         "onboardingReviewText": MessageLookupByLibrary.simpleMessage(
-            "Leave a review and help us empower more men. Together, we rise."),
+            "Leave a review and help us empower more women. Together, we shine."),
         "onboardingReviewTitleText":
             MessageLookupByLibrary.simpleMessage("Your Review, Our Strength"),
         "onboardingShapeText": MessageLookupByLibrary.simpleMessage(
