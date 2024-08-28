@@ -208,9 +208,9 @@ class ResultsBloc extends BlocBaseWithState<ScreenState> {
       final height = MediaQuery.of(context).size.height;
       final width = MediaQuery.of(context).size.width;
       const androidLink =
-          "https://play.google.com/store/apps/details?id=com.looksmax.io";
+          "https://play.google.com/store/apps/details?id=com.glowup.io";
       const iosLink =
-          "https://apps.apple.com/us/app/looksmax-looksmaxxing-guide/id6477722230";
+          "https://apps.apple.com/app/glowup-face-score-skincare/id6477722232";
       final shareIconPath = await storage.read(session.saveIconShare);
       width > 500
           ? await Share.shareXFiles(
