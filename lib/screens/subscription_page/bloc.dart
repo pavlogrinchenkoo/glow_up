@@ -34,9 +34,10 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
   final session = Session();
 
   Future<void> initialize() async {
+    setState(currentState.copyWith(showCircularProgress: true));
     List<StoreProduct> products = await Purchases.getProducts(ids);
     setState(currentState.copyWith(products: products));
-    createListSubscribeModel();
+    createListSubscribeModel(); // in method showCircularProgress is false
   }
 
   Future<void> buyProduct(BuildContext context) async {
@@ -114,6 +115,7 @@ class SubscriptionBloc extends BlocBaseWithState<ScreenState> {
     ];
     setState(currentState.copyWith(
       listSubscribeModel: listSubscribeModel,
+      showCircularProgress: false,
     ));
   }
 
