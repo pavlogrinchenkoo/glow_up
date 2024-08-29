@@ -50,8 +50,8 @@ class ResultFooterButtonWithoutBlurWidget extends StatelessWidget {
           else ...[
             if (state.checkUseMethodsPhoto == true)
               Padding(
-                padding:
-                    EdgeInsets.only(top: height < 840 ? Sizes.s45 : Sizes.s40),
+                padding: EdgeInsets.only(
+                    bottom: height < 840 ? Sizes.s45 : Sizes.s40),
                 child: CustomButton(
                   state.changeAppearanceModel?.chooseTextAppearanceEnum
                           .getTitle(

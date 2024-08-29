@@ -67,7 +67,7 @@ class _ResultsPageState extends State<ResultsPage> {
         builder: (context, ScreenState state) {
           if (newHeight == 0) {
             newHeight = height > 900
-                ? height / 2.2
+                ? height / 2.05
                 : height > 840
                     ? state.useBlurBlock
                         ? height / 2.19
