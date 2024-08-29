@@ -35,6 +35,7 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
       Platform.isAndroid ? "deepscan_iap_7_99" : "glowup_consumable_7.99";
 
   Future<void> initialize() async {
+    setState(currentState.copyWith(showCircularProgress: true));
     try {
       createListDeepModel();
       if (Platform.isIOS) {
@@ -56,6 +57,7 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
     } catch (e) {
       log("Error initializa get syb $e");
     }
+    setState(currentState.copyWith(showCircularProgress: false));
   }
 
   Future<void> buyProductDeepScan(BuildContext context) async {
@@ -160,14 +162,18 @@ class DeepScanningBloc extends BlocBaseWithState<ScreenState> {
       if (valueProgress < 1) {
         setState(currentState.copyWith(valueProgress: valueProgress += 0.02));
       } else {
-        context.router.push(const DeepScanningResultRoute());
-        await Future.delayed(const Duration(milliseconds: 100));
-        currentState.timer?.cancel();
-        setState(currentState.copyWith(
+        if (!currentState.isAnimationFinish) {
+          setState(currentState.copyWith(isAnimationFinish: true));
+          context.router.push(const DeepScanningResultRoute());
+          await Future.delayed(const Duration(milliseconds: 100));
+          currentState.timer?.cancel();
+          setState(currentState.copyWith(
             showIndicator: false,
             valueProgress: 1,
             isLastText: true,
-            timer: currentState.timer));
+            timer: currentState.timer,
+          ));
+        }
       }
     });
   }
@@ -197,6 +203,7 @@ class ScreenState {
   final bool showIndicator;
   final List<DeepModel> listDeepModel;
   final bool showCircularProgress;
+  final bool isAnimationFinish;
 
   ScreenState({
     this.loading = false,
@@ -208,6 +215,7 @@ class ScreenState {
     this.showIndicator = false,
     this.listDeepModel = const [],
     this.showCircularProgress = false,
+    this.isAnimationFinish = false,
   });
 
   ScreenState copyWith({
@@ -220,6 +228,7 @@ class ScreenState {
     bool? showIndicator,
     List<DeepModel>? listDeepModel,
     bool? showCircularProgress,
+    bool? isAnimationFinish,
   }) {
     return ScreenState(
       loading: loading ?? this.loading,
@@ -231,6 +240,7 @@ class ScreenState {
       showIndicator: showIndicator ?? this.showIndicator,
       listDeepModel: listDeepModel ?? this.listDeepModel,
       showCircularProgress: showCircularProgress ?? this.showCircularProgress,
+      isAnimationFinish: isAnimationFinish ?? this.isAnimationFinish,
     );
   }
 }
