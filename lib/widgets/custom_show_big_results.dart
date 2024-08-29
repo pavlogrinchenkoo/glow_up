@@ -44,9 +44,9 @@ class CustomShowBigResults extends StatelessWidget {
         children: [
           Positioned(
             top: width > 500
-                ? height / 2.85
+                ? height / 2.55
                 : height > 925
-                    ? height / 2.55
+                    ? height / 2.3
                     : height > 852
                         ? height / 2.5
                         : height / 2.45,
@@ -155,11 +155,13 @@ class CustomShowBigResults extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(
                         horizontal: Sizes.s18,
-                        vertical: height > 840
-                            ? height / 140
-                            : height < 670
-                                ? height / 700
-                                : height / 140),
+                        vertical: height > 925
+                            ? height / 90
+                            : height > 840
+                                ? height / 140
+                                : height < 670
+                                    ? height / 700
+                                    : height / 140),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
