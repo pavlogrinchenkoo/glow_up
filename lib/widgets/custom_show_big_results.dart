@@ -43,9 +43,9 @@ class CustomShowBigResults extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
-            top: width > 400
+            top: width > 500
                 ? height / 2.85
-                : height > 930
+                : height > 925
                     ? height / 2.55
                     : height > 852
                         ? height / 2.5
